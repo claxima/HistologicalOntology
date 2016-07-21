@@ -1,0 +1,357 @@
+{
+  "@context" : {
+    "OrganoVenaMedianoCalibreRadial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreRadial"
+    },
+    "OrganoArteriaElasticaFemoral" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaFemoral"
+    },
+    "SectorSistemaConducenteDelCorazón" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazón"
+    },
+    "OrganoArteriaMuscularTibial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularTibial"
+    },
+    "OrganoArteriaMuscularUlnar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularUlnar"
+    },
+    "OrganoArteriaElasticaCarotidaComun" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaCarotidaComun"
+    },
+    "OrganoArteriaMuscularPlantar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPlantar"
+    },
+    "SistemaCirculatorio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"
+    },
+    "OrganoVenaMedianoCalibre" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibre"
+    },
+    "OrganoVenaMedianoCalibreAxilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreAxilar"
+    },
+    "SectorValvulaPulmonar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar"
+    },
+    "SectorMusculoPectinado" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorMusculoPectinado"
+    },
+    "TunicaCorazónPericardioParietal" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardioParietal"
+    },
+    "OrganoArteriaArteriola" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaArteriola"
+    },
+    "OrganoVenaMedianoCalibreUlnar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreUlnar"
+    },
+    "espacio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#espacio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TunicaCorazónPericardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"
+    },
+    "RegionVentriculoDerecho" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#RegionVentriculoDerecho"
+    },
+    "SectorMusculoTrabéculasCárneas" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorMusculoTrabéculasCárneas"
+    },
+    "OrganoVenaGranCalibreIliaca" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreIliaca"
+    },
+    "SectorSistemaConducenteDelCorazónNodoSinusal" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoSinusal"
+    },
+    "SectorMusculoPapilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar"
+    },
+    "Sector" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Sector"
+    },
+    "SectorSistemaConducenteDelCorazónNodoAtrioVentricular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"
+    },
+    "TunicaCorazónSubendocardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio"
+    },
+    "TunicaVasosSanguineosMedia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"
+    },
+    "OrganoArteriaMuscularRadial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularRadial"
+    },
+    "tieneOrganoTipo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo",
+      "@type" : "@id"
+    },
+    "esOrganoDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esOrganoDe",
+      "@type" : "@id"
+    },
+    "SistemaCirculatorioLinfatico" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico"
+    },
+    "SectorValvulaMitral" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral"
+    },
+    "OrganoVenaGranCalibre" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"
+    },
+    "SectorValvulaTricuspide" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OrganoArteriaMuscular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular"
+    },
+    "OrganoVenaMedianoCalibrePalmar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePalmar"
+    },
+    "OrganoVenaGranCalibreYugular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreYugular"
+    },
+    "TunicaCorazónSubendotelio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio"
+    },
+    "tieneSector" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneSector",
+      "@type" : "@id"
+    },
+    "OrganoCapilarContinuo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilarContinuo"
+    },
+    "OrganoVenaPequeñoCalibre" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaPequeñoCalibre"
+    },
+    "OrganoVenaMedianoCalibrePopitlea" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePopitlea"
+    },
+    "RegionAtrioIzquierdo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#RegionAtrioIzquierdo"
+    },
+    "tieneRegion" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneRegion",
+      "@type" : "@id"
+    },
+    "tieneValvula" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneValvula",
+      "@type" : "@id"
+    },
+    "OrganoVisceral" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVisceral"
+    },
+    "OrganoVenaVénulaMuscular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénulaMuscular"
+    },
+    "OrganoArteriaMuscularAxilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularAxilar"
+    },
+    "esSector" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esSector",
+      "@type" : "@id"
+    },
+    "Organo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Organo"
+    },
+    "esTunicaDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esTunicaDe",
+      "@type" : "@id"
+    },
+    "OrganoVenaVénulaPostcapilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénulaPostcapilar"
+    },
+    "TunicaCorazónEndotelio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndotelio"
+    },
+    "esRegionDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esRegionDe",
+      "@type" : "@id"
+    },
+    "SectorSistemaConducenteDelCorazónHazDeHis" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis"
+    },
+    "OrganoVenaVena" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaVena"
+    },
+    "OrganoVenaMedianoCalibreTibial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreTibial"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "OrganoArteriaMuscularBraquial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularBraquial"
+    },
+    "OrganoCapilarFenestrado" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilarFenestrado"
+    },
+    "esTipoDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esTipoDe",
+      "@type" : "@id"
+    },
+    "OrganoCapilarSinusoide" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilarSinusoide"
+    },
+    "OrganoVenaVénulaColectora" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénulaColectora"
+    },
+    "Tunica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Tunica"
+    },
+    "TunicaCorazónPericardioVisceral" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardioVisceral"
+    },
+    "esOrganoTipo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esOrganoTipo",
+      "@type" : "@id"
+    },
+    "OrganoArteriaElasticaSubclavia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaSubclavia"
+    },
+    "OrganoTipo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoTipo"
+    },
+    "OrganoArteriaElasticaIliaca" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaIliaca"
+    },
+    "OrganoVenaMedianoCalibreBraquial" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreBraquial"
+    },
+    "TunicaVasosSanguineosAdventicia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"
+    },
+    "esComponenteDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esComponenteDe",
+      "@type" : "@id"
+    },
+    "SectorValvula" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorValvula"
+    },
+    "Sistema" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Sistema"
+    },
+    "TunicaCorazónEndocardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio"
+    },
+    "OrganoCorazon" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"
+    },
+    "OrganoCapilarDiscontinuo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilarDiscontinuo"
+    },
+    "OrganoCapilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"
+    },
+    "OrganoVenaGranCalibreFemoral" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreFemoral"
+    },
+    "esCercanoA" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esCercanoA",
+      "@type" : "@id"
+    },
+    "tieneTipo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneTipo",
+      "@type" : "@id"
+    },
+    "RegionAtrioDerecho" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho"
+    },
+    "TunicaCorazón" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazón"
+    },
+    "RegionVentriculoIzquierdo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo"
+    },
+    "SectorCuerdasTendinosas" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas"
+    },
+    "OrganoArteriaElasticaAorta" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaAorta"
+    },
+    "SectorMusculo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorMusculo"
+    },
+    "esValvulaDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esValvulaDe",
+      "@type" : "@id"
+    },
+    "grosor" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#grosor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrganoVenaVénula" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénula"
+    },
+    "TunicaVasosSanguineos" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineos"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "estaCompuestoDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe",
+      "@type" : "@id"
+    },
+    "tieneOrgano" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneOrgano",
+      "@type" : "@id"
+    },
+    "TunicaCorazónMiocardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio"
+    },
+    "OrganoArteriaMuscularPalmar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPalmar"
+    },
+    "OrganoTubular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoTubular"
+    },
+    "SectorValvulaAortica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica"
+    },
+    "OrganoVenaMedianoCalibrePlantar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePlantar"
+    },
+    "tieneTunica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#tieneTunica",
+      "@type" : "@id"
+    },
+    "OrganoVena" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVena"
+    },
+    "OrganoVenaGranCalibreSubclavia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreSubclavia"
+    },
+    "OrganoVenaGranCalibreCavaSuperior" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaSuperior"
+    },
+    "Region" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Region"
+    },
+    "OrganoArteria" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteria"
+    },
+    "OrganoVenaGranCalibreCavaInferior" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaInferior"
+    },
+    "TunicaVasosSanguineosIntima" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"
+    },
+    "SectorSistemaConducenteDelCorazónFibraDePurkinje" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"
+    },
+    "OrganoArteriaMuscularPopitlea" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPopitlea"
+    },
+    "OrganoArteriaElastica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica"
+    },
+    "SistemaCirculatorioSanguineo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo"
+    }
+  }
+}
