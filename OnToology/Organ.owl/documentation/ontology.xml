@@ -12,44 +12,28 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A0">
-    <rdf:rest rdf:nodeID="A1"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPectinado"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <owl:members rdf:nodeID="A3"/>
+    <owl:members rdf:nodeID="A1"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
+  <rdf:Description rdf:nodeID="A2">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoTrabéculasCárneas"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaSuperior"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A6">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <rdf:rest rdf:nodeID="A8"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioIzquierdo"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:rest rdf:nodeID="A10"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPopitlea"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoTrabéculasCárneas"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénulaPostcapilar">
     <rdfs:comment xml:lang="es">son muy porosas, mas parecidas a capilares que venas en este estado, y los fluidos y células sanguíneas atraviesan fácilmente sus paredes desde el torrente sanguíneo. </rdfs:comment>
@@ -73,13 +57,9 @@
     <rdfs:label xml:lang="en">Tubular Organ</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <rdf:rest rdf:nodeID="A13"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A14">
-    <owl:members rdf:nodeID="A15"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarSinusoide"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaInferior">
     <rdfs:comment xml:lang="es">retorna sangre de los miembros inferiores, los órganos del abdomen y la pelvis hasta la aurícula derecha del corazón</rdfs:comment>
@@ -87,6 +67,10 @@
     <rdfs:label xml:lang="es">Vena Cava Inferior</rdfs:label>
     <rdfs:label xml:lang="en">Inferior Vein Cava</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#tieneRegion">
     <rdfs:range rdf:resource="http://www.univalle.edu.co/ontologies/organ#Region"/>
@@ -96,14 +80,9 @@
     <rdfs:label xml:lang="en">has Region</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A16">
-    <rdf:rest rdf:nodeID="A17"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePopitlea"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A18">
-    <owl:hasValue>Gruesa</owl:hasValue>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:nodeID="A11"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaFemoral"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPlantar">
     <rdfs:comment xml:lang="es">Situada en el pie</rdfs:comment>
@@ -112,74 +91,22 @@
     <rdfs:label xml:lang="en">Plantar Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A19">
-    <rdf:rest rdf:nodeID="A0"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A20">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénula">
     <rdfs:comment xml:lang="es">pequeñas venas que conducen la sangre desde los capilares hacia las venas.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A21"/>
-    <rdfs:subClassOf rdf:nodeID="A22"/>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdfs:subClassOf rdf:nodeID="A14"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaPequeñoCalibre"/>
     <rdfs:label xml:lang="es">Vénula</rdfs:label>
     <rdfs:label xml:lang="en">Venule</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A23">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A24">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreYugular"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A25">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneValvula"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A26">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A27">
-    <rdf:rest rdf:nodeID="A7"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A28">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A29">
-    <rdf:rest rdf:nodeID="A9"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPlantar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A30">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A31">
-    <rdf:rest rdf:nodeID="A32"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPectinado"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#esRegionDe">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
@@ -189,10 +116,6 @@
     <rdfs:label xml:lang="es">es Región de</rdfs:label>
     <rdfs:label xml:lang="en">is Region of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A17">
-    <rdf:rest rdf:nodeID="A33"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreRadial"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar">
     <rdfs:comment xml:lang="es">proyecciones musculares con forma de cono,sus bases se unen a la pared ventricular,por lo tanto los músculos papilares se encuentran situados en en el interior de los ventrículos cardíacos.</rdfs:comment>
@@ -208,23 +131,13 @@
     <rdfs:label xml:lang="en">Purkinje Fibers</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A34">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaIliaca"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <rdf:rest rdf:nodeID="A35"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A36">
-    <rdf:rest rdf:nodeID="A37"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A38">
-    <rdf:rest rdf:nodeID="A24"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreSubclavia"/>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteria"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreBraquial">
     <rdfs:comment xml:lang="es">son venas comitantes de la arteria braquial en el brazo.</rdfs:comment>
@@ -240,17 +153,9 @@
     <rdfs:label xml:lang="en">Left Atrium</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A39">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A40">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A18"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreIliaca">
     <rdfs:comment xml:lang="es">prolongación de la vena femoral</rdfs:comment>
@@ -259,10 +164,6 @@
     <rdfs:label xml:lang="en">Iliac Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A41">
-    <rdf:rest rdf:nodeID="A42"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularTibial"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio">
     <rdfs:comment xml:lang="es">corresponde al tejido conectivo laxo que se ubica bajo el subendotelio del endocardio</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazón"/>
@@ -270,20 +171,9 @@
     <rdfs:label xml:lang="en">Subendocardial</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A43">
-    <owl:allValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A44">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A45">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo"/>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreAxilar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#tieneTipo">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#esTipoDe"/>
@@ -293,6 +183,10 @@
     <rdfs:label xml:lang="es">tiene Tipo</rdfs:label>
     <rdfs:label xml:lang="en">has Type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaAorta"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarContinuo">
     <rdfs:comment xml:lang="es">no poseen poros ni menestras en sus paredes. Se encuentran en los tejidos muscular, nervioso y conectivo</rdfs:comment>
@@ -308,33 +202,9 @@
     <rdfs:label xml:lang="en">Leading System of Heart</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A46">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A47">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A48">
-    <owl:intersectionOf rdf:nodeID="A36"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A49">
-    <rdf:rest rdf:nodeID="A50"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A33">
-    <rdf:rest rdf:nodeID="A51"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreTibial"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A35">
-    <rdf:rest rdf:nodeID="A52"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculo"/>
+  <rdf:Description rdf:nodeID="A23">
+    <owl:members rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular">
     <rdfs:comment xml:lang="es">Constituyen las arterias pequeñas y medianas del organismo.</rdfs:comment>
@@ -342,16 +212,6 @@
     <rdfs:label xml:lang="es">Arteria Muscular</rdfs:label>
     <rdfs:label xml:lang="en">Muscular Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A53">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A54">
-    <rdf:rest rdf:nodeID="A38"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreIliaca"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#esCercanoA">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#esCercanoA"/>
@@ -361,6 +221,10 @@
     <rdfs:label xml:lang="es">es cercano a </rdfs:label>
     <rdfs:label xml:lang="en">is near to</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaIliaca">
     <rdfs:comment xml:lang="es">se originan de la bifurcación de la aorta. Las arterias se extienden hacia abajo</rdfs:comment>
@@ -376,20 +240,6 @@
     <rdfs:label xml:lang="en">Femoral Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A55">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaSubclavia"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A56">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPectinado"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <rdf:rest rdf:nodeID="A41"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularRadial"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaSuperior">
     <rdfs:comment xml:lang="es"> recoge la sangre de la cabeza, el cuello, los miembros superiores y el tórax</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"/>
@@ -397,21 +247,11 @@
     <rdfs:label xml:lang="en">Superior Vein Cava</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <rdf:rest rdf:nodeID="A45"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoDerecho"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Region">
     <rdfs:comment xml:lang="es">zonas específicas delimitadas por ciertas estructuras.</rdfs:comment>
     <rdfs:label xml:lang="es">Región</rdfs:label>
     <rdfs:label xml:lang="en">Region</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A57">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico">
     <rdfs:comment xml:lang="es">conduce la linfa unidireccionalmente hacia el corazón</rdfs:comment>
@@ -428,14 +268,20 @@
     <rdfs:label xml:lang="en">Discontinuous Capilar</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A58">
-    <owl:someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A25">
+    <owl:members rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A50">
-    <rdf:rest rdf:nodeID="A12"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
+  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVena">
+    <rdfs:comment xml:lang="es">Las venas de los miembros inferiores de pequeño y mediano calibre</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A26"/>
+    <rdfs:subClassOf rdf:nodeID="A27"/>
+    <rdfs:subClassOf rdf:nodeID="A28"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
+    <rdfs:label xml:lang="es">Órgano Vena</rdfs:label>
+    <rdfs:label xml:lang="en">Vein Organ</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#esOrganoTipo">
     <rdfs:range rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sistema"/>
@@ -452,17 +298,6 @@
     <rdfs:label xml:lang="en">Muscle Venule</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVena">
-    <rdfs:comment xml:lang="es">Las venas de los miembros inferiores de pequeño y mediano calibre</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A59"/>
-    <rdfs:subClassOf rdf:nodeID="A46"/>
-    <rdfs:subClassOf rdf:nodeID="A34"/>
-    <rdfs:subClassOf rdf:nodeID="A60"/>
-    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
-    <rdfs:label xml:lang="es">Órgano Vena</rdfs:label>
-    <rdfs:label xml:lang="en">Vein Organ</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardioVisceral">
     <rdfs:comment xml:lang="es">Cara externa del pericardio</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"/>
@@ -470,11 +305,9 @@
     <rdfs:label xml:lang="en">Visceral Pericardium</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A61">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaCarotidaComun"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoTipo"/>
@@ -484,11 +317,6 @@
     <rdfs:label xml:lang="es">tiene Órgano Tipo</rdfs:label>
     <rdfs:label xml:lang="en">has Type Organ</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A62">
-    <owl:someValuesFrom rdf:nodeID="A48"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularBraquial">
     <rdfs:comment xml:lang="es">arteria del brazo</rdfs:comment>
@@ -504,20 +332,6 @@
     <rdfs:label xml:lang="en">Subclavian Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A52">
-    <rdf:rest rdf:nodeID="A63"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazón"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A59">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A51">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreUlnar"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaCarotidaComun">
     <rdfs:comment xml:lang="es">situadas a ambos lados de la región cervical anterior en el cuello</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica"/>
@@ -525,47 +339,52 @@
     <rdfs:label xml:lang="en">Common Carotid Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A64">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePalmar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio">
     <rdf:type rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio"/>
-    <rdfs:subClassOf rdf:nodeID="A65"/>
-    <rdfs:subClassOf rdf:nodeID="A66"/>
-    <rdfs:subClassOf rdf:nodeID="A67"/>
+    <rdfs:subClassOf rdf:nodeID="A31"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazón"/>
     <rdfs:comment xml:lang="es">Membrana que recubre el interior de las cavidades del corazón.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A32"/>
     <rdfs:label xml:lang="es">Endocardio</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A33"/>
     <rdfs:label xml:lang="en">Endocardium</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A68">
-    <rdf:rest rdf:nodeID="A69"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A35"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A70">
-    <rdf:rest rdf:nodeID="A55"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaIliaca"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A71">
+  <rdf:Description rdf:nodeID="A36">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A72">
-    <rdf:rest rdf:nodeID="A54"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreFemoral"/>
+  <rdf:Description rdf:nodeID="A37">
+    <owl:allValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A73">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:nodeID="A41"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineos">
     <rdfs:comment xml:lang="es">Capas que componen los vasos sanguineos</rdfs:comment>
@@ -574,20 +393,19 @@
     <rdfs:label xml:lang="en">Blood Vessels' Layers</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A74">
-    <rdf:rest rdf:nodeID="A72"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaSuperior"/>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:nodeID="A43"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVena"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A22">
+  <rdf:Description rdf:nodeID="A27">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A75">
-    <owl:someValuesFrom rdf:nodeID="A76"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe">
     <rdfs:range rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
@@ -597,10 +415,10 @@
     <rdfs:label xml:lang="en">is Composed of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A77">
+  <rdf:Description rdf:nodeID="A45">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndotelio">
@@ -615,33 +433,35 @@
     <rdfs:label xml:lang="en">Femoral Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A78">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:rest rdf:nodeID="A46"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePlantar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Organo">
     <rdfs:comment xml:lang="es">es una agrupación de diversos tejidos que forman una unidad estructural encargada del cumplimiento de una función determinada</rdfs:comment>
-    <owl:equivalentClass rdf:nodeID="A71"/>
-    <owl:equivalentClass rdf:nodeID="A79"/>
+    <owl:equivalentClass rdf:nodeID="A36"/>
+    <owl:equivalentClass rdf:nodeID="A47"/>
     <rdfs:label xml:lang="es">Órgano</rdfs:label>
     <rdfs:label xml:lang="en">Organ</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A79">
+  <rdf:Description rdf:nodeID="A47">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sistema"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A80">
-    <rdf:rest rdf:nodeID="A68"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
+  <rdf:Description rdf:nodeID="A48">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A81">
-    <rdf:rest rdf:nodeID="A70"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaFemoral"/>
+  <rdf:Description rdf:nodeID="A49">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorMusculo">
     <rdfs:comment xml:lang="es">Contiene musculos papilared, pectinados y trabéculas cárneas</rdfs:comment>
@@ -659,6 +479,14 @@
     <rdfs:label xml:lang="en">has Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:nodeID="A50"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:rest rdf:nodeID="A51"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica">
     <rdfs:comment xml:lang="es">Conforman las grandes arterias</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteria"/>
@@ -666,19 +494,13 @@
     <rdfs:label xml:lang="en">Elastic Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A21">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A76">
-    <owl:intersectionOf rdf:nodeID="A82"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="A52">
+    <owl:members rdf:nodeID="A21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide">
     <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las cuatro cavidades del corazón,</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A25"/>
+    <rdfs:subClassOf rdf:nodeID="A53"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
     <rdfs:label xml:lang="es">Válvula atrioventricular Derecha</rdfs:label>
     <rdfs:label xml:lang="es">Válvula Tricuspide</rdfs:label>
@@ -686,21 +508,33 @@
     <rdfs:label xml:lang="en">Right Atrioventricular Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVena">
-    <rdfs:subClassOf rdf:nodeID="A6"/>
-    <owl:equivalentClass rdf:nodeID="A75"/>
-    <rdfs:subClassOf rdf:nodeID="A28"/>
+    <rdfs:subClassOf rdf:nodeID="A54"/>
+    <rdfs:subClassOf rdf:nodeID="A55"/>
+    <owl:equivalentClass rdf:nodeID="A56"/>
+    <rdfs:subClassOf rdf:nodeID="A57"/>
     <rdfs:label xml:lang="es">Vena</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
+    <owl:equivalentClass rdf:nodeID="A58"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="A83"/>
     <rdfs:comment xml:lang="es">vaso sanguíneo que conduce la sangre desde los capilares hasta el corazón</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A57"/>
     <rdfs:label xml:lang="en">Vein</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A84">
-    <rdf:rest rdf:nodeID="A81"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaCarotidaComun"/>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaInferior"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis">
     <rdfs:comment xml:lang="es"> formación intracardíaca consistente en un fino cordón de naturaleza muscular, de aproximadamente 1 cm de longitud, que forma parte del sistema de conducción del corazón, por medio del cual la excitación de las aurículas se trasmite a los ventrículos.</rdfs:comment>
@@ -709,21 +543,23 @@
     <rdfs:label xml:lang="en"> Bundle of His</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A85">
-    <owl:members rdf:nodeID="A27"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:rest rdf:nodeID="A62"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A60">
+  <rdf:Description rdf:nodeID="A63">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A86">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioIzquierdo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:nodeID="A64"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoDerecho">
     <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte inferior y derecha de éste</rdfs:comment>
@@ -741,9 +577,17 @@
     <rdfs:label xml:lang="en">is Organ of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A87">
-    <rdf:rest rdf:nodeID="A88"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePalmar"/>
+  <rdf:Description rdf:nodeID="A65">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPectinado"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarFenestrado">
     <rdfs:comment xml:lang="es">poseen poros (fenestras) en sus paredes que estan recubiertos por diafragma de poros. </rdfs:comment>
@@ -752,10 +596,6 @@
     <rdfs:label xml:lang="en">Fenestrated Capillary</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A89">
-    <rdf:rest rdf:nodeID="A90"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVena"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularAxilar">
     <rdfs:comment xml:lang="es"> constituye la continuación de la subclavia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular"/>
@@ -763,37 +603,24 @@
     <rdfs:label xml:lang="en">Axillary Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A91">
-    <owl:hasValue>Gruesa</owl:hasValue>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A92">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneValvula"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio">
     <rdfs:comment xml:lang="es"> estructura anatómica compuesta por el sistema cardiovascular  y por el sistema linfático </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sistema"/>
-    <owl:equivalentClass rdf:nodeID="A93"/>
-    <owl:equivalentClass rdf:nodeID="A43"/>
-    <owl:equivalentClass rdf:nodeID="A58"/>
+    <owl:equivalentClass rdf:nodeID="A67"/>
+    <owl:equivalentClass rdf:nodeID="A68"/>
+    <owl:equivalentClass rdf:nodeID="A69"/>
     <rdfs:label xml:lang="es">Sistema Circulatorio</rdfs:label>
     <rdfs:label xml:lang="en">Circulatory System</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Corazón">
     <tieneTunica rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio"/>
     <rdf:type rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A94">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreYugular">
     <rdfs:comment xml:lang="es"> Drena la sangre que proviene en su mayor parte del cuero cabelludo y de la cara.</rdfs:comment>
@@ -802,9 +629,25 @@
     <rdfs:label xml:lang="en">Jugular Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A95">
-    <rdf:rest rdf:nodeID="A84"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaAorta"/>
+  <rdf:Description rdf:nodeID="A71">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <owl:members rdf:nodeID="A73"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esCercanoA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica">
     <rdfs:comment xml:lang="es">se encuentran en los conductos de salida de las cuatro cavidades del corazón</rdfs:comment>
@@ -813,27 +656,19 @@
     <rdfs:label xml:lang="en">Aortic Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A96">
+  <rdf:Description rdf:nodeID="A75">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A97">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:rest rdf:nodeID="A76"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A98">
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esCercanoA"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A69">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:rest rdf:nodeID="A78"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaPequeñoCalibre">
     <rdfs:comment xml:lang="es">Venas de menor diametro</rdfs:comment>
@@ -856,10 +691,6 @@
     <rdfs:label xml:lang="es">es Válvula de</rdfs:label>
     <rdfs:label xml:lang="en">is Valve of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A90">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénula"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPopitlea">
     <rdfs:comment xml:lang="es">prolongación de la arteria femoral</rdfs:comment>
@@ -894,39 +725,39 @@
     <rdfs:label xml:lang="en">Adventitia Layer</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A99">
+  <rdf:Description rdf:nodeID="A28">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A88">
-    <rdf:rest rdf:nodeID="A16"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePlantar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A32">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A91"/>
+  <rdf:Description rdf:nodeID="A79">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteria">
-    <rdfs:subClassOf rdf:nodeID="A26"/>
-    <rdfs:subClassOf rdf:nodeID="A100"/>
-    <rdfs:subClassOf rdf:nodeID="A101"/>
-    <rdfs:subClassOf rdf:nodeID="A102"/>
-    <owl:equivalentClass rdf:nodeID="A62"/>
+    <rdfs:subClassOf rdf:nodeID="A79"/>
+    <owl:equivalentClass rdf:nodeID="A80"/>
+    <rdfs:subClassOf rdf:nodeID="A81"/>
+    <rdfs:subClassOf rdf:nodeID="A82"/>
+    <rdfs:subClassOf rdf:nodeID="A83"/>
     <rdfs:comment xml:lang="es">cada uno de los vasos que llevan la sangre oxigenada (exceptuando las arterias pulmonares) desde el corazón hacia las demás partes del cuerpo.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A103"/>
-    <rdfs:subClassOf rdf:nodeID="A104"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
+    <owl:equivalentClass rdf:nodeID="A74"/>
     <rdfs:label xml:lang="es">Arteria</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A105"/>
+    <rdfs:subClassOf rdf:nodeID="A84"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">Artery</rdfs:label>
-    <owl:equivalentClass rdf:nodeID="A98"/>
+    <rdfs:subClassOf rdf:nodeID="A66"/>
+    <rdfs:subClassOf rdf:nodeID="A45"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A106">
-    <owl:members rdf:nodeID="A107"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A82">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#tieneSector">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#esSector"/>
@@ -936,6 +767,16 @@
     <rdfs:label xml:lang="es">tiene Sector</rdfs:label>
     <rdfs:label xml:lang="en">has Sector</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:rest rdf:nodeID="A86"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPopitlea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndotelio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoTipo">
     <rdfs:comment xml:lang="es">Contiene Tubular y Visceral</rdfs:comment>
@@ -957,17 +798,64 @@
     <rdfs:label xml:lang="en">Sinusal Node</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénula"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <owl:hasValue>Gruesa</owl:hasValue>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneValvula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A89"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreFemoral"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreUlnar"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A92"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo">
     <rdfs:comment xml:lang="es">conduce y hace circular la sangre</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
-    <owl:equivalentClass rdf:nodeID="A108"/>
+    <owl:equivalentClass rdf:nodeID="A93"/>
     <rdfs:label xml:lang="es">Sistema Sanguineo</rdfs:label>
     <rdfs:label xml:lang="en">Cardiovascular System</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A109">
-    <rdf:rest rdf:nodeID="A110"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
+  <rdf:Description rdf:nodeID="A94">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A95">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreRadial">
     <rdfs:comment xml:lang="es">su trayectoria a través del dorso de la mano y la cara lateral del antebrazo</rdfs:comment>
@@ -983,32 +871,52 @@
     <rdfs:label xml:lang="en">Tibial Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A111">
-    <owl:members rdf:nodeID="A95"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A97">
+    <rdf:rest rdf:nodeID="A98"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioIzquierdo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <owl:unionOf rdf:nodeID="A99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre">
     <rdfs:comment xml:lang="es">aquellas venas cercanas al corazón</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A96"/>
-    <rdfs:subClassOf rdf:nodeID="A73"/>
-    <rdfs:subClassOf rdf:nodeID="A78"/>
-    <rdfs:subClassOf rdf:nodeID="A44"/>
+    <rdfs:subClassOf rdf:nodeID="A71"/>
+    <rdfs:subClassOf rdf:nodeID="A60"/>
+    <rdfs:subClassOf rdf:nodeID="A49"/>
+    <rdfs:subClassOf rdf:nodeID="A38"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
     <rdfs:label xml:lang="es">Vena de Gran Calibre</rdfs:label>
     <rdfs:label xml:lang="en">Large Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A107">
-    <rdf:rest rdf:nodeID="A112"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteria"/>
+  <rdf:Description rdf:nodeID="A84">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A113">
+  <rdf:Description rdf:nodeID="A32">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <rdf:rest rdf:nodeID="A100"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularRadial"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <owl:members rdf:nodeID="A102"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:rest rdf:nodeID="A103"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreIliaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A114">
-    <rdf:rest rdf:nodeID="A74"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreCavaInferior"/>
+    <rdf:first rdf:nodeID="A87"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio">
     <rdfs:comment xml:lang="es">Membrana fibrosa doble que envuelve el corazón y cuya capa interior está revestida de una membrana serosa.</rdfs:comment>
@@ -1017,14 +925,37 @@
     <rdfs:label xml:lang="en">Pericardium</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A115">
-    <owl:members rdf:nodeID="A19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A104">
+    <rdf:rest rdf:nodeID="A90"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreTibial"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A116">
-    <owl:allValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
+  <rdf:Description rdf:nodeID="A57">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A105">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioIzquierdo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A106">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A107">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <rdf:rest rdf:nodeID="A97"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar">
     <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las 4 cavidades del corazón</rdfs:comment>
@@ -1033,19 +964,9 @@
     <rdfs:label xml:lang="en">Pulmonary Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A63">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A104">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A112">
-    <rdf:rest rdf:nodeID="A117"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"/>
+  <rdf:Description rdf:nodeID="A99">
+    <rdf:rest rdf:nodeID="A61"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteria"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularTibial">
     <rdfs:comment xml:lang="es">Se origina como rama de bifurcación anterior de la arteria poplítea</rdfs:comment>
@@ -1054,9 +975,28 @@
     <rdfs:label xml:lang="en">Tibial Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A82">
-    <rdf:rest rdf:nodeID="A118"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+  <rdf:Description rdf:nodeID="A108">
+    <owl:members rdf:nodeID="A59"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A109">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A110"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A103">
+    <rdf:rest rdf:nodeID="A111"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreSubclavia"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <owl:someValuesFrom rdf:nodeID="A112"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaAorta">
     <rdfs:comment xml:lang="es">principal arteria del cuerpo humano</rdfs:comment>
@@ -1065,60 +1005,97 @@
     <rdfs:label xml:lang="en">Aorta Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A119">
+  <rdf:Description rdf:nodeID="A102">
+    <rdf:rest rdf:nodeID="A113"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A114">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A115">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon">
+    <rdfs:comment xml:lang="es"> órgano muscular principal del aparato circulatorio</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A116"/>
+    <rdfs:subClassOf rdf:nodeID="A105"/>
+    <rdfs:subClassOf rdf:nodeID="A96"/>
+    <rdfs:subClassOf rdf:nodeID="A115"/>
+    <rdfs:subClassOf rdf:nodeID="A39"/>
+    <rdfs:subClassOf rdf:nodeID="A117"/>
+    <rdfs:subClassOf rdf:nodeID="A118"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
+    <rdfs:subClassOf rdf:nodeID="A95"/>
+    <rdfs:label xml:lang="en">Heart</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A119"/>
+    <rdfs:subClassOf rdf:nodeID="A94"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A48"/>
+    <rdfs:subClassOf rdf:nodeID="A114"/>
+    <rdfs:subClassOf rdf:nodeID="A120"/>
+    <rdfs:subClassOf rdf:nodeID="A106"/>
+    <rdfs:label xml:lang="es">Corazón</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A121"/>
+    <rdfs:subClassOf rdf:nodeID="A122"/>
+    <rdfs:subClassOf rdf:nodeID="A123"/>
+    <rdfs:subClassOf rdf:nodeID="A65"/>
+    <rdfs:subClassOf rdf:nodeID="A124"/>
+    <rdfs:subClassOf rdf:nodeID="A125"/>
+    <rdfs:subClassOf rdf:nodeID="A126"/>
+    <rdfs:subClassOf rdf:nodeID="A127"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon">
-    <rdfs:comment xml:lang="es"> órgano muscular principal del aparato circulatorio</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A30"/>
-    <rdfs:subClassOf rdf:nodeID="A56"/>
-    <rdfs:subClassOf rdf:nodeID="A120"/>
-    <rdfs:subClassOf rdf:nodeID="A121"/>
-    <rdfs:subClassOf rdf:nodeID="A4"/>
-    <rdfs:subClassOf rdf:nodeID="A61"/>
-    <rdfs:subClassOf rdf:nodeID="A23"/>
-    <rdfs:subClassOf rdf:nodeID="A64"/>
-    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
-    <rdfs:subClassOf rdf:nodeID="A122"/>
-    <rdfs:subClassOf rdf:nodeID="A94"/>
-    <rdfs:label xml:lang="en">Heart</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="A86"/>
-    <rdfs:subClassOf rdf:nodeID="A123"/>
-    <rdfs:subClassOf rdf:nodeID="A47"/>
-    <rdfs:subClassOf rdf:nodeID="A53"/>
-    <rdfs:label xml:lang="es">Corazón</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A20"/>
-    <rdfs:subClassOf rdf:nodeID="A11"/>
-    <rdfs:subClassOf rdf:nodeID="A77"/>
-    <rdfs:subClassOf rdf:nodeID="A124"/>
-    <rdfs:subClassOf rdf:nodeID="A40"/>
-    <rdfs:subClassOf rdf:nodeID="A97"/>
-    <rdfs:subClassOf rdf:nodeID="A125"/>
-    <rdfs:subClassOf rdf:nodeID="A39"/>
-    <rdfs:subClassOf rdf:nodeID="A126"/>
+  <rdf:Description rdf:nodeID="A128">
+    <rdf:rest rdf:nodeID="A104"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreRadial"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoCapilar">
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
     <rdfs:label xml:lang="es">Capilar</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A127"/>
-    <rdfs:subClassOf rdf:nodeID="A99"/>
-    <rdfs:subClassOf rdf:nodeID="A128"/>
-    <rdfs:subClassOf rdf:nodeID="A119"/>
+    <rdfs:subClassOf rdf:nodeID="A129"/>
+    <rdfs:subClassOf rdf:nodeID="A63"/>
+    <rdfs:subClassOf rdf:nodeID="A130"/>
+    <rdfs:subClassOf rdf:nodeID="A75"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="es"> vasos sanguíneos de menor diámetro</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A129"/>
+    <rdfs:subClassOf rdf:nodeID="A107"/>
     <rdfs:label xml:lang="en">Capillary</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Arteriola">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A130">
-    <owl:intersectionOf rdf:nodeID="A31"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <owl:allValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A119">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A131">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Sector">
     <rdfs:comment xml:lang="es">Sectores anatómicos: partes que se encuentran en una región anatómica.</rdfs:comment>
@@ -1126,15 +1103,25 @@
     <rdfs:label xml:lang="en">Sector</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A117">
-    <rdf:rest rdf:nodeID="A131"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A102">
+  <rdf:Description rdf:nodeID="A33">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A132">
+    <rdf:rest rdf:nodeID="A85"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPlantar"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A112">
+    <owl:intersectionOf rdf:nodeID="A133"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularRadial">
     <rdfs:comment xml:lang="es"> arteria del antebrazo que se origina como rama de bifurcación externa de la arteria humeral</rdfs:comment>
@@ -1142,6 +1129,19 @@
     <rdfs:label xml:lang="es">Arteria Radial</rdfs:label>
     <rdfs:label xml:lang="en">Radial Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A110">
+    <owl:hasValue>Gruesa</owl:hasValue>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A111">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibreYugular"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A113">
+    <rdf:rest rdf:nodeID="A134"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculo"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPalmar">
     <rdfs:comment xml:lang="es">Situada en la mano</rdfs:comment>
@@ -1157,6 +1157,18 @@
     <rdfs:label xml:lang="en">Sinusoide Capillary</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A126">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A125">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénulaColectora">
     <rdfs:comment xml:lang="es">30 - 50 micrones, donde podemos observar una capa muscular continua con gran cantidad de glóbulos rojos</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaVénula"/>
@@ -1164,12 +1176,28 @@
     <rdfs:label xml:lang="en">Collection Venule</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:nodeID="A128"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePopitlea"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima">
     <rdfs:comment xml:lang="es">túnica interna</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineos"/>
     <rdfs:label xml:lang="es">Túnica Intima</rdfs:label>
     <rdfs:label xml:lang="en">Inner Layer</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#esTunicaDe">
     <rdfs:domain rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
@@ -1179,9 +1207,20 @@
     <rdfs:label xml:lang="en">is Layer of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A83">
-    <owl:someValuesFrom rdf:nodeID="A130"/>
+  <rdf:Description rdf:nodeID="A98">
+    <rdf:rest rdf:nodeID="A131"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoDerecho"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A129">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineos"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A122">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Tunica">
@@ -1197,27 +1236,25 @@
     <rdfs:label xml:lang="en">Arteriole</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A132">
-    <rdf:rest rdf:nodeID="A133"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaAortica"/>
+  <rdf:Description rdf:nodeID="A135">
+    <owl:members rdf:nodeID="A136"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A67">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndotelio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A137">
+    <rdf:rest rdf:nodeID="A109"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A124">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A134">
+    <rdf:rest rdf:nodeID="A44"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazón"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A103">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A138">
+    <owl:members rdf:nodeID="A40"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A133">
+    <rdf:rest rdf:nodeID="A91"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#RegionAtrioDerecho">
     <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte superior y derecha de éste</rdfs:comment>
@@ -1226,29 +1263,21 @@
     <rdfs:label xml:lang="en">Right Atrium</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A131">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
+  <rdf:Description rdf:nodeID="A139">
+    <rdf:rest rdf:nodeID="A42"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A93">
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
+  <rdf:Description rdf:nodeID="A140">
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A125">
+  <rdf:Description rdf:nodeID="A117">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoPapilar"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónEndocardio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A42">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularUlnar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A134">
-    <owl:members rdf:nodeID="A135"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#espacio">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1258,9 +1287,9 @@
     <rdfs:label xml:lang="en">Space</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A136">
-    <rdf:rest rdf:nodeID="A137"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreAxilar"/>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#tieneTunica">
     <owl:inverseOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#esTunicaDe"/>
@@ -1273,26 +1302,28 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#Sistema">
     <rdfs:comment xml:lang="es">conjunto de órganos y estructuras que trabajan en conjunto para cumplir algunas funciones especificas</rdfs:comment>
-    <owl:equivalentClass rdf:nodeID="A5"/>
+    <owl:equivalentClass rdf:nodeID="A140"/>
     <rdfs:label xml:lang="es">Sistema</rdfs:label>
     <rdfs:label xml:lang="en">System</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A138">
-    <rdf:rest rdf:nodeID="A139"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarFenestrado"/>
+  <rdf:Description rdf:nodeID="A141">
+    <rdf:rest rdf:nodeID="A132"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPalmar"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A127">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+  <rdf:Description rdf:nodeID="A118">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A65">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A142">
+    <owl:members rdf:nodeID="A34"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A136">
+    <rdf:rest rdf:nodeID="A143"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarContinuo"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePopitlea">
     <rdfs:comment xml:lang="es"> pasa por detrás del rombo poplíteo</rdfs:comment>
@@ -1308,21 +1339,13 @@
     <rdfs:label xml:lang="en">Atrioventricular Node</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A120">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#Tunica"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A140">
-    <owl:members rdf:nodeID="A132"/>
+  <rdf:Description rdf:nodeID="A144">
+    <owl:members rdf:nodeID="A70"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A101">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTubular"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A145">
+    <owl:intersectionOf rdf:nodeID="A137"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreUlnar">
     <rdfs:comment xml:lang="es">Vena ulnar .</rdfs:comment>
@@ -1331,9 +1354,9 @@
     <rdfs:label xml:lang="en">Ulnar Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A141">
-    <owl:members rdf:nodeID="A49"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:nodeID="A29"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreBraquial"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio">
     <rdfs:comment xml:lang="es">Parte muscular del corazón.</rdfs:comment>
@@ -1342,10 +1365,6 @@
     <rdfs:label xml:lang="en">Myocardial</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A139">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarSinusoide"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorCuerdasTendinosas">
     <rdfs:comment xml:lang="es">Fibras tendinosas con forma de salvavidas que atraviesan el corazón y conectan las cúspides de las válvulas AV con el músculo papilar.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sector"/>
@@ -1353,23 +1372,24 @@
     <rdfs:label xml:lang="en">Chordae Tendineae</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A123">
+  <rdf:Description rdf:nodeID="A127">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaTricuspide"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A108">
-    <owl:unionOf rdf:nodeID="A142"/>
+  <rdf:Description rdf:nodeID="A146">
+    <owl:members rdf:nodeID="A139"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A147">
+    <owl:intersectionOf rdf:nodeID="A77"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A135">
-    <rdf:rest rdf:nodeID="A143"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularAxilar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A144">
-    <owl:members rdf:nodeID="A80"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  <rdf:Description rdf:nodeID="A69">
+    <owl:someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/organ#Organo"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrgano"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaSubclavia">
     <rdfs:comment xml:lang="es"> arteria del miembro superior.</rdfs:comment>
@@ -1378,9 +1398,15 @@
     <rdfs:label xml:lang="en">Subclavian Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A137">
-    <rdf:rest rdf:nodeID="A87"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreBraquial"/>
+  <rdf:Description rdf:nodeID="A121">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A148">
+    <rdf:rest rdf:nodeID="A141"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularBraquial"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibreAxilar">
     <rdfs:comment xml:lang="es"> conduce la sangre de la parte lateral del tórax, axila y miembro superior hacia el corazón</rdfs:comment>
@@ -1389,12 +1415,6 @@
     <rdfs:label xml:lang="en">Axillary Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A129">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineos"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibrePlantar">
     <rdfs:comment xml:lang="es">Recogén sangre del pie</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibre"/>
@@ -1402,33 +1422,26 @@
     <rdfs:label xml:lang="en">Plantar Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A145">
-    <owl:members rdf:nodeID="A114"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A110">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A116"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A146">
-    <rdf:rest rdf:nodeID="A113"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaPulmonar"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A121">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoTrabéculasCárneas"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A100">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
+  <rdf:Description rdf:nodeID="A80">
+    <owl:someValuesFrom rdf:nodeID="A145"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A143">
-    <rdf:rest rdf:nodeID="A147"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularBraquial"/>
+    <rdf:rest rdf:nodeID="A149"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarDiscontinuo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A150">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVena"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <rdf:rest rdf:nodeID="A151"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularTibial"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A37"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardioParietal">
     <rdfs:comment xml:lang="es">Cara interna del pericardio</rdfs:comment>
@@ -1436,13 +1449,6 @@
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"/>
     <rdfs:label xml:lang="es">Pericardio Parietal</rdfs:label>
     <rdfs:label xml:lang="en">Parietal Pericardium</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvula">
-    <rdfs:comment xml:lang="es">Mecanismo que regula el flujo de la comunicación entre dos partes del sistema</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sector"/>
-    <rdfs:label xml:lang="es">Válvula</rdfs:label>
-    <rdfs:label xml:lang="en">Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoIzquierdo">
@@ -1459,44 +1465,27 @@
     <rdfs:label xml:lang="en">Palmar Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A126">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoTipo"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneOrganoTipo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvula">
+    <rdfs:comment xml:lang="es">Mecanismo que regula el flujo de la comunicación entre dos partes del sistema</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sector"/>
+    <rdfs:label xml:lang="es">Válvula</rdfs:label>
+    <rdfs:label xml:lang="en">Valve</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A142">
-    <rdf:rest rdf:nodeID="A148"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteria"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A105">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:someValuesFrom rdf:nodeID="A147"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A149">
-    <owl:hasValue>Delgada</owl:hasValue>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorMusculoTrabéculasCárneas"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <rdf:rest rdf:nodeID="A150"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarContinuo"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A151">
-    <owl:members rdf:nodeID="A152"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A122">
+  <rdf:Description rdf:nodeID="A120">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#RegionVentriculoDerecho"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneRegion"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A152">
+    <rdf:rest rdf:nodeID="A148"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularAxilar"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazón">
     <rdfs:comment xml:lang="es">Capas que componen el corazón</rdfs:comment>
@@ -1513,12 +1502,6 @@
     <rdfs:label xml:lang="es">tiene Órgano</rdfs:label>
     <rdfs:label xml:lang="en">has Organ</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A66">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio"/>
-    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#esSector">
     <rdfs:range rdf:resource="http://www.univalle.edu.co/ontologies/organ#Sector"/>
@@ -1537,17 +1520,27 @@
     <rdfs:label xml:lang="en">is Type of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A133">
-    <rdf:rest rdf:nodeID="A146"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral"/>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A150"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A37">
+  <rdf:Description rdf:nodeID="A16">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A18"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElasticaSubclavia"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A147">
-    <rdf:rest rdf:nodeID="A29"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularPalmar"/>
+  <rdf:Description rdf:nodeID="A149">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarFenestrado"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A151">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscularUlnar"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A116">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#OrganoVenaMedianoCalibre">
     <rdfs:comment xml:lang="es">desde 1 hasta 10 mm</rdfs:comment>
@@ -1556,13 +1549,17 @@
     <rdfs:label xml:lang="en">Medium Caliber Vein</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A118">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A149"/>
+  <rdf:Description rdf:nodeID="A53">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneValvula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A148">
-    <rdf:rest rdf:nodeID="A109"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"/>
+  <rdf:Description rdf:nodeID="A123">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio">
     <rdfs:comment xml:lang="es"> tejido conjuntivo delicado con células ramificadas dispuestas en los inter-espacios del tejido.</rdfs:comment>
@@ -1571,9 +1568,18 @@
     <rdfs:label xml:lang="en">Subendotelio</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A128">
+  <rdf:Description rdf:nodeID="A92">
+    <owl:hasValue>Delgada</owl:hasValue>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#grosor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A153">
+    <owl:members rdf:nodeID="A152"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"/>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"/>
     <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneTunica"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
@@ -1584,26 +1590,20 @@
     <rdfs:label xml:lang="en">Ulnar Artery</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A150">
-    <rdf:rest rdf:nodeID="A138"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoCapilarDiscontinuo"/>
+  <rdf:Description rdf:nodeID="A124">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
+    <owl:onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#tieneSector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#SectorValvulaMitral">
     <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las cuatro cavidades del corazón.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A92"/>
+    <rdfs:subClassOf rdf:nodeID="A88"/>
     <rdfs:subClassOf rdf:resource="http://www.univalle.edu.co/ontologies/organ#SectorValvula"/>
     <rdfs:label xml:lang="es">Válvula Mitral</rdfs:label>
     <rdfs:label xml:lang="es">Válvula Atrioventricular Izquierda</rdfs:label>
     <rdfs:label xml:lang="en">Mitral Valve</rdfs:label>
     <rdfs:label xml:lang="en">Left Atrioventricular Valve</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A152">
-    <rdf:rest rdf:nodeID="A89"/>
-    <rdf:first rdf:resource="http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A153">
-    <owl:members rdf:nodeID="A136"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
 </rdf:RDF>
