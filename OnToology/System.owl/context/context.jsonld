@@ -1,0 +1,164 @@
+{
+  "@context" : {
+    "TejidoEpitelialPlanoSimple" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple"
+    },
+    "OrganoArteriaMetarteriola" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola"
+    },
+    "Celula" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Celula"
+    },
+    "SistemaCirculatorio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"
+    },
+    "OrganoArteriaArteriola" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaArteriola"
+    },
+    "EstructuraFibraColagena" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraColagena"
+    },
+    "TunicaCorazónPericardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"
+    },
+    "estaCompuestoPor" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor",
+      "@type" : "@id"
+    },
+    "TunicaCorazónSubendocardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio"
+    },
+    "TunicaVasosSanguineosMedia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"
+    },
+    "EstructuraLaminaElasticaExterna" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaExterna"
+    },
+    "esOrganoDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#esOrganoDe",
+      "@type" : "@id"
+    },
+    "SistemaCirculatorioLinfatico" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico"
+    },
+    "OrganoVenaGranCalibre" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OrganoConducto" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto"
+    },
+    "OrganoArteriaMuscular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular"
+    },
+    "TunicaCorazónSubendotelio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio"
+    },
+    "ConectivoLaxo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo"
+    },
+    "EstructuraRegionLuz" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz"
+    },
+    "tieneEstructura" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura",
+      "@type" : "@id"
+    },
+    "EstructuraLaminaElasticaInterna" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"
+    },
+    "Organo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Organo"
+    },
+    "Estructura" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Estructura"
+    },
+    "TejidoMuscularEstriadoCardiaco" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriadoCardiaco"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "ConectivoDensoIrregular" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoDensoIrregular"
+    },
+    "tieneRegionDeLuz" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz",
+      "@type" : "@id"
+    },
+    "EstructuraVasoVasorum" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum"
+    },
+    "Tunica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#Tunica"
+    },
+    "Tejido" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Tejido"
+    },
+    "TunicaVasosSanguineosAdventicia" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"
+    },
+    "CelulaFibraMuscular" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular"
+    },
+    "esComponenteDe" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe",
+      "@type" : "@id"
+    },
+    "esEstructuraDe" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe",
+      "@type" : "@id"
+    },
+    "OrganoCorazon" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"
+    },
+    "OrganoCapilar" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"
+    },
+    "amplitud" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "esRegionDeLuzDe" : {
+      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe",
+      "@type" : "@id"
+    },
+    "estaCompuestoDe" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe",
+      "@type" : "@id"
+    },
+    "TunicaCorazónMiocardio" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio"
+    },
+    "OrganoVena" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVena"
+    },
+    "TejidoMuscularLiso" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso"
+    },
+    "EstructuraFibraElastica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"
+    },
+    "OrganoArteria" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteria"
+    },
+    "TunicaVasosSanguineosIntima" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"
+    },
+    "EstructuraSenoCoronario" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraSenoCoronario"
+    },
+    "OrganoArteriaElastica" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica"
+    },
+    "SistemaCirculatorioSanguineo" : {
+      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo"
+    }
+  }
+}
