@@ -166,14 +166,14 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
-                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
+                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#esOrganoDe"/>
-                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico"/>
+                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
@@ -217,7 +217,7 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
-                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"/>
+                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
@@ -231,7 +231,7 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
-                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"/>
+                <onClass rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
@@ -413,12 +413,6 @@
     <rdf:Description rdf:about="http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
-                <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
                 <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe"/>
                 <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple"/>
             </Restriction>
@@ -427,6 +421,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
                 <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
+                <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"/>
             </Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -439,6 +439,12 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
+                <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
                 <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -446,12 +452,6 @@
             <Restriction>
                 <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
                 <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraColagena"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe"/>
-                <someValuesFrom rdf:resource="http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso"/>
             </Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
