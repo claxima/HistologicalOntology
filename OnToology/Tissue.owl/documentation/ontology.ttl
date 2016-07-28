@@ -50,17 +50,17 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaCardiomiocito>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
                 owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaFibraDePurkinje>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
                 owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaMiocitoLiso>
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
-                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaCardiomiocito>
               ] .
 
 <http://www.univalle.edu.co/ontologies/Tissue#MecanismoDeSecrecionApocrina>
@@ -110,6 +110,9 @@
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoDistribucionAnatomica> ;
       owl:disjointWith <http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoPeriferico> .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivo> <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelial> <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscular> <http://www.univalle.edu.co/ontologies/Tissue#TejidoNervioso>) .
+
 <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialRevestimiento>
       a       owl:Class ;
       rdfs:comment "Recubren la superficie corporal externa y los órganos internos."@es ;
@@ -117,15 +120,15 @@
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelial> ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasSimple> ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneNumeroCapas> ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularPlana> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneMorfologia> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularPlana> ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneMorfologia> ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasSimple> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneNumeroCapas> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
@@ -183,9 +186,6 @@
       rdfs:comment "formados por un número variable de capas celulares."@es ;
       rdfs:label "Stratified Layer"@en , "Capa Estratificado"@es ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#NumeroCapas> .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#ConectivoDenso> <http://www.univalle.edu.co/ontologies/Tissue#ConectivoEspecializado> <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>) .
 
 <http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasSeudoestratificado>
       a       owl:Class ;
@@ -290,6 +290,9 @@
       rdfs:comment "Conjunto de relaciones que mantienen entre sí las partes de un todo"@es ;
       rdfs:label "Estructura"@es , "Structure"@en .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCilindrica> <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCubica> <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularPlana>) .
+
 <http://www.univalle.edu.co/ontologies/Tissue#CelulaCardiomiocito>
       a       owl:Class ;
       rdfs:comment "Células del miocardio o músculo cardíaco capaces de contraerse de forma espontánea e individual"@es ;
@@ -316,7 +319,7 @@
       rdfs:label "Cell Morphology"@en , "Morfología Celular"@es .
 
 []    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivo> <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelial> <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscular> <http://www.univalle.edu.co/ontologies/Tissue#TejidoNervioso>) .
+      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#ConectivoDenso> <http://www.univalle.edu.co/ontologies/Tissue#ConectivoEspecializado> <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>) .
 
 <http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz>
       a       owl:Class ;
@@ -380,9 +383,6 @@
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscular> ;
       owl:disjointWith <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso> .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMixta> <http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMucosa> <http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionSerosa>) .
-
 <http://www.univalle.edu.co/ontologies/Tissue#CelulaAdipocito>
       a       owl:Class ;
       rdfs:comment "Células que forman el tejido adiposo"@es ;
@@ -408,6 +408,8 @@
       rdfs:label "Serous"@en , "Serosa"@es ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecion> .
 
+[]    rdfs:label "Epithelium Tissue"^^xsd:Name .
+
 <http://www.univalle.edu.co/ontologies/Tissue#Oseo>
       a       owl:Class ;
       rdfs:comment "constituyente principal de los huesos en los vertebrados."@es ;
@@ -430,8 +432,15 @@
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#Tejido> ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
-                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaEndotelial>
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelular> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneMorfologia> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#esCercanoA> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoDenso>
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
@@ -447,20 +456,13 @@
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelular> ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#TieneMorfologia> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Restriction ;
                 owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#esCercanoA> ;
                 owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz>
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#esCercanoA> ;
-                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoDenso>
+                owl:onProperty <http://www.univalle.edu.co/ontologies/Tissue#tieneCelula> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#CelulaEndotelial>
               ] .
 
 <http://www.univalle.edu.co/ontologies/Tissue#Celula>
@@ -486,8 +488,6 @@
       rdfs:comment "formado por un número variable de capas con una transición entre el epitelio plano estratificado y el cilíndrico estratificado"@es ;
       rdfs:label "Capa Transicional"@es , "Transitional Layer"@en ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#NumeroCapas> .
-
-[]    rdfs:label "Epithelium Tissue"^^xsd:Name .
 
 <http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoPeriferico>
       a       owl:Class ;
@@ -573,6 +573,9 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:label "Fibra Colagena"@es , "Collagen Fiber"@en ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#Estructura> .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMixta> <http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMucosa> <http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionSerosa>) .
+
 <http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEspecializado>
       a       owl:Class ;
       rdfs:comment "Contiene el cartilago, oseo y sanguineo"@es ;
@@ -627,7 +630,7 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#Estructura> .
 
 []    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCilindrica> <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCubica> <http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularPlana>) .
+      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEmbrionario> <http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEspecializado>) .
 
 <http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApicalEstereocilios>
       a       owl:Class ;
@@ -685,9 +688,6 @@ adenómero"""@es ;
       rdfs:comment "Un único conducto no ramificado"@es ;
       rdfs:label "Simple Ducts"@en , "Conductos Simple"@es ;
       rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#NumeroConductos> .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEmbrionario> <http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEspecializado>) .
 
 <http://www.univalle.edu.co/ontologies/Tissue#ConectivoEspecializado>
       a       owl:Class ;

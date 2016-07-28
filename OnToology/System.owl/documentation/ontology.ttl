@@ -1,0 +1,279 @@
+@prefix :        <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoArteria>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz> ;
+                owl:someValuesFrom
+                        [ a       owl:Class ;
+                          owl:intersectionOf (<http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz> [ a       owl:Restriction ;
+                                      owl:hasValue "Angosta" ;
+                                      owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
+                                    ])
+                        ]
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz>
+      a       owl:ObjectProperty ;
+      rdfs:comment "tiene región de luz"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/organ#Organo> ;
+      rdfs:label "has light region"@en , "tiene Región de Luz"@es ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz> ;
+      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe> .
+
+<https://w3id.org/def/System>
+      a       owl:Ontology ;
+      owl:imports <https://w3id.org/def/Organ> , <https://w3id.org/def/Tissue> .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraColagena>
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe>
+      a       owl:ObjectProperty ;
+      rdfs:comment "Es región de luz de un órgano"@en ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz> ;
+      rdfs:label "is light region of"@en , "es región de luz"@es ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/organ#Organo> .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/organ#Organo> ;
+      rdfs:label "is Structure of"@en , "es Estructura de"@es ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/Tissue#Estructura> ;
+      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum>
+              ] .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriadoCardiaco>
+              ] .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple>
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Amplitud de una región de luz"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz> ;
+      rdfs:label "Amplitude"@en , "Amplitud"@es ;
+      rdfs:range xsd:string .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoVena>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz> ;
+                owl:someValuesFrom
+                        [ a       owl:Class ;
+                          owl:intersectionOf (<http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz> [ a       owl:Restriction ;
+                                      owl:hasValue "Amplia" ;
+                                      owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
+                                    ])
+                        ]
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/Tissue#Estructura> ;
+      rdfs:label "has Structure"@en , "tiene Estructura"@es ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/organ#Organo> .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/organ#Tunica> ;
+      rdfs:label "es Componente de"@es , "is Component of"@en ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/Tissue#Tejido> ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor> .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoDensoIrregular>
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.univalle.edu.co/ontologies/Tissue#Celula> .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <http://www.univalle.edu.co/ontologies/Tissue#Tejido> ;
+      rdfs:label "esta Compuesto por"@es , "is Composed by"@en ;
+      rdfs:range <http://www.univalle.edu.co/ontologies/organ#Tunica> .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoCorazon>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#EstructuraSenoCoronario> ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoCapilar>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.univalle.edu.co/ontologies/organ#OrganoArteria> .
+
+<http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum> ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna> ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica> ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaExterna> ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.univalle.edu.co/ontologies/organ#Organo> ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico> ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>
+              ] .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>
+              ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola> <http://www.univalle.edu.co/ontologies/organ#OrganoArteriaArteriola> <http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica> <http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular>) .
+
+<http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe> ;
+                owl:someValuesFrom <http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo>
+              ] .
