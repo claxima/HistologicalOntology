@@ -1,48 +1,41 @@
 {
   "@context" : {
+    "Error4" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error4"
+    },
     "TejidoEpitelialPlanoSimple" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple"
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"
     },
     "OrganoArteriaMetarteriola" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola"
     },
     "Celula" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Celula"
-    },
-    "SistemaCirculatorio" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorio"
+      "@id" : "https://w3id.org/def/Tissue#Celula"
     },
     "OrganoArteriaArteriola" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaArteriola"
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaArteriola"
     },
     "EstructuraFibraColagena" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraColagena"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraColagena"
     },
     "TunicaCorazónPericardio" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónPericardio"
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardio"
     },
     "estaCompuestoPor" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor",
       "@type" : "@id"
     },
     "TunicaCorazónSubendocardio" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendocardio"
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónSubendocardio"
     },
     "TunicaVasosSanguineosMedia" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosMedia"
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"
     },
     "EstructuraLaminaElasticaExterna" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaExterna"
-    },
-    "esOrganoDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#esOrganoDe",
-      "@type" : "@id"
-    },
-    "SistemaCirculatorioLinfatico" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioLinfatico"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"
     },
     "OrganoVenaGranCalibre" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVenaGranCalibre"
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibre"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -51,55 +44,67 @@
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto"
     },
     "OrganoArteriaMuscular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaMuscular"
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscular"
     },
     "TunicaCorazónSubendotelio" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónSubendotelio"
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónSubendotelio"
     },
     "ConectivoLaxo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoLaxo"
     },
     "EstructuraRegionLuz" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraRegionLuz"
     },
     "tieneEstructura" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura",
       "@type" : "@id"
     },
+    "Error3" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error3"
+    },
     "EstructuraLaminaElasticaInterna" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"
     },
     "Organo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#Organo"
+      "@id" : "https://w3id.org/def/Organ#Organo"
     },
     "Estructura" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Estructura"
+      "@id" : "https://w3id.org/def/Tissue#Estructura"
     },
     "TejidoMuscularEstriadoCardiaco" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriadoCardiaco"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
     },
     "ConectivoDensoIrregular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoDensoIrregular"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDensoIrregular"
+    },
+    "Error5" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error5"
+    },
+    "Error7" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error7"
     },
     "tieneRegionDeLuz" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz",
       "@type" : "@id"
     },
+    "Error1" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error1"
+    },
     "EstructuraVasoVasorum" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraVasoVasorum"
     },
     "Tunica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#Tunica"
+      "@id" : "https://w3id.org/def/Organ#Tunica"
     },
     "Tejido" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Tejido"
+      "@id" : "https://w3id.org/def/Tissue#Tejido"
     },
     "TunicaVasosSanguineosAdventicia" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosAdventicia"
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"
     },
     "CelulaFibraMuscular" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular"
@@ -112,15 +117,24 @@
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe",
       "@type" : "@id"
     },
+    "Error6" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error6"
+    },
     "OrganoCorazon" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCorazon"
+      "@id" : "https://w3id.org/def/Organ#OrganoCorazon"
     },
     "OrganoCapilar" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoCapilar"
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilar"
+    },
+    "Error2" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error2"
     },
     "amplitud" : {
       "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
@@ -130,35 +144,32 @@
       "@type" : "@id"
     },
     "estaCompuestoDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#estaCompuestoDe",
+      "@id" : "https://w3id.org/def/Organ#estaCompuestoDe",
       "@type" : "@id"
     },
     "TunicaCorazónMiocardio" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaCorazónMiocardio"
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónMiocardio"
     },
     "OrganoVena" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoVena"
+      "@id" : "https://w3id.org/def/Organ#OrganoVena"
     },
     "TejidoMuscularLiso" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularLiso"
     },
     "EstructuraFibraElastica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraElastica"
     },
     "OrganoArteria" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteria"
+      "@id" : "https://w3id.org/def/Organ#OrganoArteria"
     },
     "TunicaVasosSanguineosIntima" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#TunicaVasosSanguineosIntima"
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"
     },
     "EstructuraSenoCoronario" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraSenoCoronario"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraSenoCoronario"
     },
     "OrganoArteriaElastica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#OrganoArteriaElastica"
-    },
-    "SistemaCirculatorioSanguineo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/organ#SistemaCirculatorioSanguineo"
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElastica"
     }
   }
 }

@@ -1,315 +1,315 @@
 {
   "@context" : {
     "MecanismoDeSecrecion" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MecanismoDeSecrecion"
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecion"
     },
     "SistemaNerviosoPeriferico" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoPeriferico"
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPeriferico"
     },
     "TieneNumeroCapas" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TieneNumeroCapas",
+      "@id" : "https://w3id.org/def/Tissue#TieneNumeroCapas",
       "@type" : "@id"
     },
     "TejidoEpitelialPlanoSimple" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialPlanoSimple"
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"
     },
     "NumeroConductos" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroConductos"
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductos"
     },
     "Celula" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Celula"
+      "@id" : "https://w3id.org/def/Tissue#Celula"
     },
     "SistemaNerviosoPerifericoAutonomo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoPerifericoAutonomo"
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo"
     },
     "NumeroCapasEstratificado" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasEstratificado"
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasEstratificado"
     },
     "CelulaFibroblasto" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaFibroblasto"
+      "@id" : "https://w3id.org/def/Tissue#CelulaFibroblasto"
     },
     "TejidoNerviosoComponenteNeurona" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoComponenteNeurona"
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona"
     },
     "MorfologiaFolicular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaFolicular"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaFolicular"
     },
     "EstructuraFibraColagena" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraColagena"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraColagena"
     },
     "MorfologiaAdenomeroTubuloAcinar" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaAdenomeroTubuloAcinar"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar"
     },
     "NumeroCapas" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroCapas"
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapas"
     },
     "GlandulaExocrina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#GlandulaExocrina"
+      "@id" : "https://w3id.org/def/Tissue#GlandulaExocrina"
     },
     "ConectivoMucoide" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoMucoide"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoMucoide"
     },
     "TejidoEpitelial" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelial"
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelial"
     },
     "NumeroCapasTransicional" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasTransicional"
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasTransicional"
     },
     "EstructuraLaminaElasticaExterna" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaExterna"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"
     },
     "CelulaFibraDePurkinje" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaFibraDePurkinje"
+      "@id" : "https://w3id.org/def/Tissue#CelulaFibraDePurkinje"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "MorfologiaCelularCubica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCubica"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularCubica"
     },
     "esCelulaDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#esCelulaDe",
+      "@id" : "https://w3id.org/def/Tissue#esCelulaDe",
       "@type" : "@id"
     },
     "TejidoConectivoAdultoPropiamenteDicho" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoAdultoPropiamenteDicho"
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"
     },
     "ConectivoLaxo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoLaxo"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoLaxo"
     },
     "MorfologiaAdenomero" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaAdenomero"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomero"
     },
     "MorfologiaCelularPlana" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularPlana"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularPlana"
     },
     "CelulaCardiomiocito" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaCardiomiocito"
+      "@id" : "https://w3id.org/def/Tissue#CelulaCardiomiocito"
     },
     "esMorfologiaDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#esMorfologiaDe",
+      "@id" : "https://w3id.org/def/Tissue#esMorfologiaDe",
       "@type" : "@id"
     },
     "NumeroCapasSeudoestratificado" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasSeudoestratificado"
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado"
     },
     "EstructuraRegionLuz" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraRegionLuz"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraRegionLuz"
     },
     "GlandulaEndocrina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#GlandulaEndocrina"
+      "@id" : "https://w3id.org/def/Tissue#GlandulaEndocrina"
     },
     "MorfologiaAdenomeroTubular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaAdenomeroTubular"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular"
     },
     "CelulaMiocitoLiso" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaMiocitoLiso"
+      "@id" : "https://w3id.org/def/Tissue#CelulaMiocitoLiso"
     },
     "EstructuraLaminaElasticaInterna" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraLaminaElasticaInterna"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"
     },
     "CelulaMesotelial" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaMesotelial"
+      "@id" : "https://w3id.org/def/Tissue#CelulaMesotelial"
     },
     "ConectivoEpecializadoReticular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoEpecializadoReticular"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEpecializadoReticular"
     },
     "esNumeroCapasDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#esNumeroCapasDe",
+      "@id" : "https://w3id.org/def/Tissue#esNumeroCapasDe",
       "@type" : "@id"
     },
     "TieneMorfologia" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TieneMorfologia",
+      "@id" : "https://w3id.org/def/Tissue#TieneMorfologia",
       "@type" : "@id"
     },
     "Estructura" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Estructura"
+      "@id" : "https://w3id.org/def/Tissue#Estructura"
     },
     "TejidoMuscularEstriadoCardiaco" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriadoCardiaco"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"
     },
     "MorfologiaAdenomeroAcinar" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaAdenomeroAcinar"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar"
     },
     "EspecializacionApicalEstereocilios" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApicalEstereocilios"
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
     },
     "ConectivoDensoIrregular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoDensoIrregular"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDensoIrregular"
     },
     "MecanismoDeSecrecionApocrina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MecanismoDeSecrecionApocrina"
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina"
     },
     "NaturalezaSecrecionMixta" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMixta"
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionMixta"
     },
     "EstructuraVasoVasorum" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraVasoVasorum"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraVasoVasorum"
     },
     "SistemaNerviosoPerifericoSomatico" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoPerifericoSomatico"
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico"
     },
     "Sanguineo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Sanguineo"
+      "@id" : "https://w3id.org/def/Tissue#Sanguineo"
     },
     "TejidoNerviosoComponente" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoComponente"
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponente"
     },
     "Tejido" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Tejido"
+      "@id" : "https://w3id.org/def/Tissue#Tejido"
     },
     "MorfologiaCordonal" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCordonal"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCordonal"
     },
     "NaturalezaSecrecionMucosa" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionMucosa"
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa"
     },
     "NaturalezaSecrecionSerosa" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecionSerosa"
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa"
     },
     "NumeroCapasSimple" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroCapasSimple"
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasSimple"
     },
     "TejidoNerviosoComponenteGlias" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoComponenteGlias"
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias"
     },
     "esComponenteDe" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#esComponenteDe",
+      "@id" : "https://w3id.org/def/Tissue#esComponenteDe",
       "@type" : "@id"
     },
     "MorfologiaCelular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelular"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelular"
     },
     "MorfologiaCelularCilindrica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MorfologiaCelularCilindrica"
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularCilindrica"
     },
     "NumeroConductosSimple" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroConductosSimple"
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductosSimple"
     },
     "EspecializacionApicalCilios" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApicalCilios"
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalCilios"
     },
     "ConectivoEspecializado" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoEspecializado"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEspecializado"
     },
     "ConectivoEspecializadoAdiposo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoEspecializadoAdiposo"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo"
     },
     "ConectivoDenso" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoDenso"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDenso"
     },
     "esCercanoA" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#esCercanoA",
+      "@id" : "https://w3id.org/def/Tissue#esCercanoA",
       "@type" : "@id"
     },
     "ConectivoDensoRegular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#ConectivoDensoRegular"
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDensoRegular"
     },
     "TejidoNerviosoDistribucionAnatomica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoDistribucionAnatomica"
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica"
     },
     "tieneCelula" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#tieneCelula",
+      "@id" : "https://w3id.org/def/Tissue#tieneCelula",
       "@type" : "@id"
     },
     "TejidoMuscularEstriado" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriado"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriado"
     },
     "MecanismoDeSecrecionHolocrina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MecanismoDeSecrecionHolocrina"
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "MecanismoDeSecrecionMerocrina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#MecanismoDeSecrecionMerocrina"
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina"
     },
     "TejidoConectivoEmbrionario" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEmbrionario"
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoEmbrionario"
     },
     "TejidoNervioso" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNervioso"
+      "@id" : "https://w3id.org/def/Tissue#TejidoNervioso"
     },
     "EspecializacionApical" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApical"
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApical"
     },
     "TejidoMuscular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscular"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscular"
     },
     "Mesenquimatico" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Mesenquimatico"
+      "@id" : "https://w3id.org/def/Tissue#Mesenquimatico"
     },
     "TejidoMuscularEstriadoEsqueletico" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularEstriadoEsqueletico"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico"
     },
     "TejidoEpitelialGlandular" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialGlandular"
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialGlandular"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Morfologia" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Morfologia"
+      "@id" : "https://w3id.org/def/Tissue#Morfologia"
     },
     "Cercano" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Cercano",
+      "@id" : "https://w3id.org/def/Tissue#Cercano",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "NumeroConductosCompuesto" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NumeroConductosCompuesto"
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductosCompuesto"
     },
     "TejidoMuscularLiso" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoMuscularLiso"
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularLiso"
     },
     "estaCompuestaPor" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#estaCompuestaPor",
+      "@id" : "https://w3id.org/def/Tissue#estaCompuestaPor",
       "@type" : "@id"
     },
     "Oseo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Oseo"
+      "@id" : "https://w3id.org/def/Tissue#Oseo"
     },
     "SistemaNerviosoCentral" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#SistemaNerviosoCentral"
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoCentral"
     },
     "EstructuraFibraElastica" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraElastica"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraElastica"
     },
     "TejidoConectivo" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivo"
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivo"
     },
     "CelulaEndotelial" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaEndotelial"
+      "@id" : "https://w3id.org/def/Tissue#CelulaEndotelial"
     },
     "EstructuraFibraNerviosa" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraFibraNerviosa"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraNerviosa"
     },
     "CelulaAdipocito" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#CelulaAdipocito"
+      "@id" : "https://w3id.org/def/Tissue#CelulaAdipocito"
     },
     "Cartilago" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#Cartilago"
+      "@id" : "https://w3id.org/def/Tissue#Cartilago"
     },
     "EspecializacionApicalQueratina" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApicalQueratina"
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalQueratina"
     },
     "EstructuraSenoCoronario" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EstructuraSenoCoronario"
+      "@id" : "https://w3id.org/def/Tissue#EstructuraSenoCoronario"
     },
     "EspecializacionApicalMicrovellosidades" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#EspecializacionApicalMicrovellosidades"
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades"
     },
     "NaturalezaSecrecion" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#NaturalezaSecrecion"
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecion"
     },
     "TejidoConectivoEspecializado" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoConectivoEspecializado"
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoEspecializado"
     },
     "TejidoEpitelialRevestimiento" : {
-      "@id" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoEpitelialRevestimiento"
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento"
     }
   }
 }
