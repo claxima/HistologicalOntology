@@ -18,19 +18,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_http://www.univalle.edu.co/ontologies/Tissue#Celula">
+      <node id="nid_https://w3id.org/def/Tissue#Celula">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="340.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.univalle.edu.co/ontologies/Tissue#Celula</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/Tissue#Celula</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf0" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular" target="nid_http://www.univalle.edu.co/ontologies/Tissue#Celula">
+    <edge id="eid_rdfs:subClassOf0" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular" target="nid_https://w3id.org/def/Tissue#Celula">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -53,19 +53,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_http://www.univalle.edu.co/ontologies/organ#OrganoArteria">
+      <node id="nid_https://w3id.org/def/Organ#OrganoArteria">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="570.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="400.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.univalle.edu.co/ontologies/organ#OrganoArteria</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/Organ#OrganoArteria</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf1" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola" target="nid_http://www.univalle.edu.co/ontologies/organ#OrganoArteria">
+    <edge id="eid_rdfs:subClassOf1" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola" target="nid_https://w3id.org/def/Organ#OrganoArteria">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -88,19 +88,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_http://www.univalle.edu.co/ontologies/organ#Organo">
+      <node id="nid_https://w3id.org/def/Organ#Organo">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="500.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="330.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.univalle.edu.co/ontologies/organ#Organo</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/Organ#Organo</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto" target="nid_http://www.univalle.edu.co/ontologies/organ#Organo">
+    <edge id="eid_rdfs:subClassOf2" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto" target="nid_https://w3id.org/def/Organ#Organo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
