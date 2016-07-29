@@ -2,8 +2,8 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1000"
 node [shape = rectangle, color="black"]; "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto" "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola" "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular" ; /*classes style*/
-	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular" -> "http://www.univalle.edu.co/ontologies/Tissue#Celula" [ label = "rdfs:subClassOf" ];
-	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola" -> "http://www.univalle.edu.co/ontologies/organ#OrganoArteria" [ label = "rdfs:subClassOf" ];
-	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto" -> "http://www.univalle.edu.co/ontologies/organ#Organo" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular" -> "https://w3id.org/def/Tissue#Celula" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola" -> "https://w3id.org/def/Organ#OrganoArteria" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto" -> "https://w3id.org/def/Organ#Organo" [ label = "rdfs:subClassOf" ];
 
 }
