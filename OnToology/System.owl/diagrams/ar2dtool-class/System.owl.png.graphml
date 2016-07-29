@@ -64,13 +64,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe">
+      <node id="nid_https://w3id.org/def/System#esComponenteDe">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="730.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/System#esComponenteDe</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -88,7 +88,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf2" source="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf2" source="nid_https://w3id.org/def/System#esComponenteDe" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -134,17 +134,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty4" source="nid_NULL" target="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_https://w3id.org/def/Organ#OrganoArteriaElastica">
          <data key="d0">
             <y:ShapeNode>
@@ -157,7 +146,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first5" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaElastica">
+    <edge id="eid_rdf:first4" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaElastica">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -168,24 +157,47 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7ff8">
+      <node id="nid_2bf32d86:15637bd0535:-7fea">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7ff8</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fea</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:intersectionOf6" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7ff8">
+    <edge id="eid_owl:intersectionOf5" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:intersectionOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_2bf32d86:15637bd0535:-7fd6">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fd6</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest6" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fd6">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -214,24 +226,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fd6">
+      <node id="nid_https://w3id.org/def/System#OrganoArteriaMetarteriola">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="530.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fd6</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/System#OrganoArteriaMetarteriola</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest8" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fd6">
+    <edge id="eid_rdf:first8" source="nid_NULL" target="nid_https://w3id.org/def/System#OrganoArteriaMetarteriola">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -306,29 +318,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="740.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty12" source="nid_NULL" target="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_https://w3id.org/def/Organ#SistemaCirculatorioLinfatico">
          <data key="d0">
             <y:ShapeNode>
@@ -341,7 +330,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass13" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorioLinfatico">
+    <edge id="eid_owl:onClass12" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorioLinfatico">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -352,116 +341,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7ff9">
+      <node id="nid_2bf32d86:15637bd0535:-7ff6">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7ff9</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7ff6</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom14" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7ff9">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-46e6558f:156318b3913:-7ff6">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7ff6</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest15" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7ff6">
+    <edge id="eid_rdf:rest13" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7ff6">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="840.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:first16" source="nid_NULL" target="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fea">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fea</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:intersectionOf17" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fea">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:intersectionOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="670.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty18" source="nid_NULL" target="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -479,7 +376,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first19" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaMuscular">
+    <edge id="eid_rdf:first14" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaMuscular">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -502,7 +399,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass20" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorioSanguineo">
+    <edge id="eid_owl:onClass15" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorioSanguineo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -513,19 +410,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fd5">
+      <node id="nid_2bf32d86:15637bd0535:-7fd5">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fd5</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fd5</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest21" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fd5">
+    <edge id="eid_rdf:rest16" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fd5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -536,24 +433,47 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fe8">
+      <node id="nid_2bf32d86:15637bd0535:-7fe8">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fe8</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fe8</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest22" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fe8">
+    <edge id="eid_rdf:rest17" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fe8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/System#amplitud">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="360.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/System#amplitud</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty18" source="nid_NULL" target="nid_https://w3id.org/def/System#amplitud">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -571,7 +491,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest23" source="nid_NULL" target="nid_rdf:nil">
+    <edge id="eid_rdf:rest19" source="nid_NULL" target="nid_rdf:nil">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -582,53 +502,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="750.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty24" source="nid_NULL" target="nid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-46e6558f:156318b3913:-7feb">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7feb</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom25" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7feb">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_owl:onClass26" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraFibraElastica">
+    <edge id="eid_owl:onClass20" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraFibraElastica">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -651,7 +525,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first27" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz">
+    <edge id="eid_rdf:first21" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -674,7 +548,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom28" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco">
+    <edge id="eid_owl:someValuesFrom22" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -685,7 +559,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom29" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna">
+      <node id="nid_2bf32d86:15637bd0535:-7ff8">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7ff8</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:intersectionOf23" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7ff8">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:intersectionOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:someValuesFrom24" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -708,12 +605,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass30" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna">
+    <edge id="eid_owl:onClass25" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_2bf32d86:15637bd0535:-7feb">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7feb</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom26" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7feb">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -731,7 +651,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty31" source="nid_NULL" target="nid_https://w3id.org/def/Organ#estaCompuestoDe">
+    <edge id="eid_owl:onProperty27" source="nid_NULL" target="nid_https://w3id.org/def/Organ#estaCompuestoDe">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -754,7 +674,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom32" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraFibraColagena">
+    <edge id="eid_owl:someValuesFrom28" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraFibraColagena">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -765,42 +685,30 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fd7">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fd7</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:members33" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fd7">
+    <edge id="eid_owl:onProperty29" source="nid_NULL" target="nid_https://w3id.org/def/System#esComponenteDe">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:members</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-46e6558f:156318b3913:-7fd4">
+      <node id="nid_2bf32d86:15637bd0535:-7fd4">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-46e6558f:156318b3913:-7fd4</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fd4</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest34" source="nid_NULL" target="nid_-46e6558f:156318b3913:-7fd4">
+    <edge id="eid_rdf:rest30" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fd4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -823,7 +731,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty35" source="nid_NULL" target="nid_https://w3id.org/def/Organ#esOrganoDe">
+    <edge id="eid_owl:onProperty31" source="nid_NULL" target="nid_https://w3id.org/def/Organ#esOrganoDe">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -846,7 +754,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first36" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaArteriola">
+    <edge id="eid_rdf:first32" source="nid_NULL" target="nid_https://w3id.org/def/Organ#OrganoArteriaArteriola">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -869,7 +777,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom37" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#ConectivoDensoIrregular">
+    <edge id="eid_owl:someValuesFrom33" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#ConectivoDensoIrregular">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -892,12 +800,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom38" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraVasoVasorum">
+    <edge id="eid_owl:someValuesFrom34" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#EstructuraVasoVasorum">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/System#tieneEstructura">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="430.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/System#tieneEstructura</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty35" source="nid_NULL" target="nid_https://w3id.org/def/System#tieneEstructura">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -915,7 +846,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom39" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#ConectivoLaxo">
+    <edge id="eid_owl:someValuesFrom36" source="nid_NULL" target="nid_https://w3id.org/def/Tissue#ConectivoLaxo">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_2bf32d86:15637bd0535:-7ff9">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7ff9</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom37" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7ff9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -938,12 +892,58 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass40" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorio">
+    <edge id="eid_owl:onClass38" source="nid_NULL" target="nid_https://w3id.org/def/Organ#SistemaCirculatorio">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_2bf32d86:15637bd0535:-7fd7">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2bf32d86:15637bd0535:-7fd7</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:members39" source="nid_NULL" target="nid_2bf32d86:15637bd0535:-7fd7">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:members</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/System#tieneRegionDeLuz">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="440.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/System#tieneRegionDeLuz</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty40" source="nid_NULL" target="nid_https://w3id.org/def/System#tieneRegionDeLuz">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -984,12 +984,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe42" source="nid_https://w3id.org/def/Organ#Tunica" target="nid_https://w3id.org/def/Tissue#Tejido">
+    <edge id="eid_https://w3id.org/def/System#esComponenteDe42" source="nid_https://w3id.org/def/Organ#Tunica" target="nid_https://w3id.org/def/Tissue#Tejido">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#esComponenteDe</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1007,12 +1007,46 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud43" source="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz" target="nid_xsd:string">
+    <edge id="eid_https://w3id.org/def/System#amplitud43" source="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#amplitud</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/Organ#Organo">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="330.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/Organ#Organo</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_https://w3id.org/def/System#esRegionDeLuzDe44" source="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz" target="nid_https://w3id.org/def/Organ#Organo">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#esRegionDeLuzDe</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_https://w3id.org/def/System#estaCompuestoPor45" source="nid_https://w3id.org/def/Tissue#Tejido" target="nid_https://w3id.org/def/Organ#Tunica">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#estaCompuestoPor</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1030,68 +1064,34 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_https://w3id.org/def/Organ#Organo">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="330.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/Organ#Organo</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura44" source="nid_https://w3id.org/def/Tissue#Estructura" target="nid_https://w3id.org/def/Organ#Organo">
+    <edge id="eid_https://w3id.org/def/System#esEstructuraDe46" source="nid_https://w3id.org/def/Organ#Organo" target="nid_https://w3id.org/def/Tissue#Estructura">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#esEstructuraDe</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor45" source="nid_https://w3id.org/def/Tissue#Tejido" target="nid_https://w3id.org/def/Organ#Tunica">
+    <edge id="eid_https://w3id.org/def/System#tieneRegionDeLuz47" source="nid_https://w3id.org/def/Organ#Organo" target="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#tieneRegionDeLuz</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe46" source="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz" target="nid_https://w3id.org/def/Organ#Organo">
+    <edge id="eid_https://w3id.org/def/System#tieneEstructura48" source="nid_https://w3id.org/def/Tissue#Estructura" target="nid_https://w3id.org/def/Organ#Organo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz47" source="nid_https://w3id.org/def/Organ#Organo" target="nid_https://w3id.org/def/Tissue#EstructuraRegionLuz">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe48" source="nid_https://w3id.org/def/Organ#Organo" target="nid_https://w3id.org/def/Tissue#Estructura">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/System#tieneEstructura</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

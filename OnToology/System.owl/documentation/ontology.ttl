@@ -4,19 +4,20 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz>
-      a       owl:ObjectProperty ;
-      rdfs:comment "tiene región de luz"@es ;
-      rdfs:domain <https://w3id.org/def/Organ#Organo> ;
-      rdfs:label "has light region"@en , "tiene Región de Luz"@es ;
-      rdfs:range <https://w3id.org/def/Tissue#EstructuraRegionLuz> ;
-      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe> .
-
 <https://w3id.org/def/System>
       a       owl:Ontology ;
       owl:imports <https://w3id.org/def/Organ> , <https://w3id.org/def/Tissue> .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe>
+<https://w3id.org/def/System#esComponenteDe>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <https://w3id.org/def/Organ#Tunica> ;
+      rdfs:label "es Componente de"@es , "is Component of"@en ;
+      rdfs:range <https://w3id.org/def/Tissue#Tejido> ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      owl:inverseOf <https://w3id.org/def/System#estaCompuestoPor> .
+
+<https://w3id.org/def/System#esRegionDeLuzDe>
       a       owl:ObjectProperty ;
       rdfs:comment "Es región de luz de un órgano"@en ;
       rdfs:domain <https://w3id.org/def/Tissue#EstructuraRegionLuz> ;
@@ -30,29 +31,21 @@
                 owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco>
               ] .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe>
-      a       owl:ObjectProperty ;
-      rdfs:comment "relación de composición o formación"@es ;
-      rdfs:domain <https://w3id.org/def/Organ#Organo> ;
-      rdfs:label "is Structure of"@en , "es Estructura de"@es ;
-      rdfs:range <https://w3id.org/def/Tissue#Estructura> ;
-      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> .
-
 <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima>
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe> ;
+                owl:onProperty <https://w3id.org/def/System#esComponenteDe> ;
                 owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoLaxo>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoLaxo>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna>
               ] .
 
 <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia>
@@ -64,40 +57,40 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraFibraColagena>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraFibraColagena>
               ] .
 
 <https://w3id.org/def/Organ#OrganoArteriaMuscular>
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraVasoVasorum> ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraFibraElastica> ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
@@ -106,12 +99,12 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoLaxo>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoLaxo>
               ] .
 
 <https://w3id.org/def/Organ#OrganoArteria>
@@ -124,29 +117,23 @@
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz> ;
+                owl:onProperty <https://w3id.org/def/System#tieneRegionDeLuz> ;
                 owl:someValuesFrom
                         [ a       owl:Class ;
                           owl:intersectionOf (<https://w3id.org/def/Tissue#EstructuraRegionLuz> [ a       owl:Restriction ;
                                       owl:hasValue "Angosta" ;
-                                      owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
+                                      owl:onProperty <https://w3id.org/def/System#amplitud>
                                     ])
                         ]
               ] .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
-      a       owl:DatatypeProperty ;
-      rdfs:comment "Amplitud de una región de luz"@es ;
-      rdfs:domain <https://w3id.org/def/Tissue#EstructuraRegionLuz> ;
-      rdfs:label "Amplitude"@en , "Amplitud"@es ;
-      rdfs:range xsd:string .
-
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura>
+<https://w3id.org/def/System#tieneRegionDeLuz>
       a       owl:ObjectProperty ;
-      rdfs:comment "relación de composición o formación"@es ;
-      rdfs:domain <https://w3id.org/def/Tissue#Estructura> ;
-      rdfs:label "has Structure"@en , "tiene Estructura"@es ;
-      rdfs:range <https://w3id.org/def/Organ#Organo> .
+      rdfs:comment "tiene región de luz"@es ;
+      rdfs:domain <https://w3id.org/def/Organ#Organo> ;
+      rdfs:label "has light region"@en , "tiene Región de Luz"@es ;
+      rdfs:range <https://w3id.org/def/Tissue#EstructuraRegionLuz> ;
+      owl:inverseOf <https://w3id.org/def/System#esRegionDeLuzDe> .
 
 <https://w3id.org/def/Organ#OrganoCapilar>
       rdfs:subClassOf
@@ -164,6 +151,16 @@
                         "1"^^xsd:nonNegativeInteger
               ] .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/System#OrganoArteriaMetarteriola> <https://w3id.org/def/Organ#OrganoArteriaArteriola> <https://w3id.org/def/Organ#OrganoArteriaElastica> <https://w3id.org/def/Organ#OrganoArteriaMuscular>) .
+
+<https://w3id.org/def/System#estaCompuestoPor>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <https://w3id.org/def/Tissue#Tejido> ;
+      rdfs:label "esta Compuesto por"@es , "is Composed by"@en ;
+      rdfs:range <https://w3id.org/def/Organ#Tunica> .
+
 <https://w3id.org/def/Organ#TunicaCorazónSubendocardio>
       rdfs:subClassOf
               [ a       owl:Restriction ;
@@ -171,20 +168,26 @@
                 owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoDensoIrregular>
               ] .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe>
+<https://w3id.org/def/System#tieneEstructura>
       a       owl:ObjectProperty ;
       rdfs:comment "relación de composición o formación"@es ;
-      rdfs:domain <https://w3id.org/def/Organ#Tunica> ;
-      rdfs:label "es Componente de"@es , "is Component of"@en ;
-      rdfs:range <https://w3id.org/def/Tissue#Tejido> ;
-      rdfs:subPropertyOf owl:topObjectProperty ;
-      owl:inverseOf <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor> .
+      rdfs:domain <https://w3id.org/def/Tissue#Estructura> ;
+      rdfs:label "has Structure"@en , "tiene Estructura"@es ;
+      rdfs:range <https://w3id.org/def/Organ#Organo> .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular>
-      a       owl:Class ;
-      rdfs:subClassOf <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/System#amplitud>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Amplitud de una región de luz"@es ;
+      rdfs:domain <https://w3id.org/def/Tissue#EstructuraRegionLuz> ;
+      rdfs:label "Amplitude"@en , "Amplitud"@es ;
+      rdfs:range xsd:string .
 
 <https://w3id.org/def/Organ#OrganoVena>
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraVasoVasorum>
+              ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> ;
@@ -192,61 +195,36 @@
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraVasoVasorum>
-              ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz> ;
+                owl:onProperty <https://w3id.org/def/System#tieneRegionDeLuz> ;
                 owl:someValuesFrom
                         [ a       owl:Class ;
                           owl:intersectionOf (<https://w3id.org/def/Tissue#EstructuraRegionLuz> [ a       owl:Restriction ;
                                       owl:hasValue "Amplia" ;
-                                      owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud>
+                                      owl:onProperty <https://w3id.org/def/System#amplitud>
                                     ])
                         ]
               ] .
 
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor>
-      a       owl:ObjectProperty ;
-      rdfs:comment "relación de composición o formación"@es ;
-      rdfs:domain <https://w3id.org/def/Tissue#Tejido> ;
-      rdfs:label "esta Compuesto por"@es , "is Composed by"@en ;
-      rdfs:range <https://w3id.org/def/Organ#Tunica> .
-
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola>
-      a       owl:Class ;
-      rdfs:subClassOf <https://w3id.org/def/Organ#OrganoArteria> .
-
 <https://w3id.org/def/Organ#OrganoVenaGranCalibre>
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraVasoVasorum>
               ] .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola> <https://w3id.org/def/Organ#OrganoArteriaArteriola> <https://w3id.org/def/Organ#OrganoArteriaElastica> <https://w3id.org/def/Organ#OrganoArteriaMuscular>) .
-
-<http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto>
+<https://w3id.org/def/System#CelulaFibraMuscular>
       a       owl:Class ;
-      rdfs:subClassOf <https://w3id.org/def/Organ#Organo> ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorio> ;
-                owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> ;
-                owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] .
+      rdfs:subClassOf <https://w3id.org/def/Tissue#Celula> .
+
+<https://w3id.org/def/System#esEstructuraDe>
+      a       owl:ObjectProperty ;
+      rdfs:comment "relación de composición o formación"@es ;
+      rdfs:domain <https://w3id.org/def/Organ#Organo> ;
+      rdfs:label "is Structure of"@en , "es Estructura de"@es ;
+      rdfs:range <https://w3id.org/def/Tissue#Estructura> ;
+      owl:inverseOf <https://w3id.org/def/System#tieneEstructura> .
 
 <https://w3id.org/def/Organ#OrganoCorazon>
       rdfs:subClassOf
@@ -259,10 +237,14 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraSenoCoronario> ;
-                owl:onProperty <http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
+
+<https://w3id.org/def/System#OrganoArteriaMetarteriola>
+      a       owl:Class ;
+      rdfs:subClassOf <https://w3id.org/def/Organ#OrganoArteria> .
 
 <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia>
       rdfs:subClassOf
@@ -280,3 +262,21 @@
 
 <https://w3id.org/def/Organ#SistemaCirculatorio>
       rdfs:seeAlso "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12686"^^xsd:anyURI .
+
+<https://w3id.org/def/System#OrganoConducto>
+      a       owl:Class ;
+      rdfs:subClassOf <https://w3id.org/def/Organ#Organo> ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> ;
+                owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorio> ;
+                owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .

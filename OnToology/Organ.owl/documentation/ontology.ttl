@@ -23,7 +23,7 @@
       rdfs:subClassOf :OrganoVenaVena .
 
 []    a       owl:AllDisjointClasses ;
-      owl:members (:SectorValvulaAortica :SectorValvulaMitral :SectorValvulaPulmonar :SectorValvulaTricuspide) .
+      owl:members (:OrganoArteria :OrganoCapilar :OrganoCorazon :OrganoVena) .
 
 :OrganoVenaGranCalibreSubclavia
       a       owl:Class ;
@@ -96,9 +96,6 @@
                         "1"^^xsd:nonNegativeInteger
               ] .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:SectorCuerdasTendinosas :SectorMusculo :SectorSistemaConducenteDelCorazón :SectorValvula) .
-
 :SectorSistemaConducenteDelCorazónFibraDePurkinje
       a       owl:Class ;
       rdfs:comment "forman parte del músculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio."@es ;
@@ -111,21 +108,18 @@
       rdfs:label "Órgano"@es , "Organ"@en ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onClass :Sistema ;
-                owl:onProperty :esOrganoDe ;
+                owl:onClass :OrganoTipo ;
+                owl:onProperty :tieneTipo ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onClass :OrganoTipo ;
-                owl:onProperty :tieneTipo ;
+                owl:onClass :Sistema ;
+                owl:onProperty :esOrganoDe ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoArteriaMuscularAxilar :OrganoArteriaMuscularBraquial :OrganoArteriaMuscularPalmar :OrganoArteriaMuscularPlantar :OrganoArteriaMuscularPopitlea :OrganoArteriaMuscularRadial :OrganoArteriaMuscularTibial :OrganoArteriaMuscularUlnar) .
 
 :OrganoCapilar
       a       owl:Class ;
@@ -134,8 +128,22 @@
       rdfs:subClassOf :Organo ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :OrganoTubular ;
-                owl:onProperty :tieneTipo ;
+                owl:onClass :SistemaCirculatorio ;
+                owl:onProperty :esOrganoDe ;
+                owl:qualifiedCardinality
+                        "2"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :OrganoTipo ;
+                owl:onProperty :tieneOrganoTipo ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :TunicaVasosSanguineosIntima ;
+                owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
@@ -148,22 +156,8 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :OrganoTipo ;
-                owl:onProperty :tieneOrganoTipo ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SistemaCirculatorio ;
-                owl:onProperty :esOrganoDe ;
-                owl:qualifiedCardinality
-                        "2"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosIntima ;
-                owl:onProperty :tieneTunica ;
+                owl:onClass :OrganoTubular ;
+                owl:onProperty :tieneTipo ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
@@ -281,20 +275,6 @@
       rdfs:subClassOf :Organo ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SectorValvula ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "4"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorMusculoTrabéculasCárneas ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
                 owl:onClass :OrganoTipo ;
                 owl:onProperty :tieneOrganoTipo ;
                 owl:qualifiedCardinality
@@ -302,77 +282,7 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SistemaCirculatorio ;
-                owl:onProperty :esOrganoDe ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorMusculoPapilar ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorSistemaConducenteDelCorazónHazDeHis ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorMusculoPectinado ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :TunicaCorazónPericardio ;
-                owl:onProperty :tieneTunica ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :Tunica ;
-                owl:onProperty :tieneTunica ;
-                owl:qualifiedCardinality
-                        "3"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorValvulaMitral ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorSistemaConducenteDelCorazónNodoAtrioVentricular ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorValvulaTricuspide ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorValvulaAortica ;
-                owl:onProperty :tieneSector ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :SectorValvulaPulmonar ;
+                owl:onClass :SectorMusculoTrabéculasCárneas ;
                 owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -393,8 +303,22 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :TunicaCorazónMiocardio ;
-                owl:onProperty :tieneTunica ;
+                owl:onClass :SectorMusculoPapilar ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorMusculoPectinado ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorSistemaConducenteDelCorazónHazDeHis ;
+                owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
@@ -407,22 +331,64 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SectorSistemaConducenteDelCorazónFibraDePurkinje ;
+                owl:onClass :SectorValvula ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "4"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :TunicaCorazónMiocardio ;
+                owl:onProperty :tieneTunica ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :Tunica ;
+                owl:onProperty :tieneTunica ;
+                owl:qualifiedCardinality
+                        "3"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SistemaCirculatorio ;
+                owl:onProperty :esOrganoDe ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorValvulaMitral ;
                 owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SectorSistemaConducenteDelCorazónNodoSinusal ;
+                owl:onClass :TunicaCorazónPericardio ;
+                owl:onProperty :tieneTunica ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorCuerdasTendinosas ;
                 owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :RegionAtrioIzquierdo ;
-                owl:onProperty :tieneRegion ;
+                owl:onClass :SectorValvulaPulmonar ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorValvulaTricuspide ;
+                owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
@@ -435,14 +401,39 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SectorCuerdasTendinosas ;
+                owl:onClass :RegionAtrioIzquierdo ;
+                owl:onProperty :tieneRegion ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorSistemaConducenteDelCorazónNodoSinusal ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorValvulaAortica ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorSistemaConducenteDelCorazónNodoAtrioVentricular ;
+                owl:onProperty :tieneSector ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :SectorSistemaConducenteDelCorazónFibraDePurkinje ;
                 owl:onProperty :tieneSector ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoVenaMedianoCalibreAxilar :OrganoVenaMedianoCalibreBraquial :OrganoVenaMedianoCalibrePalmar :OrganoVenaMedianoCalibrePlantar :OrganoVenaMedianoCalibrePopitlea :OrganoVenaMedianoCalibreRadial :OrganoVenaMedianoCalibreTibial :OrganoVenaMedianoCalibreUlnar) .
 
 :SectorMusculo
       a       owl:Class ;
@@ -466,6 +457,9 @@
       rdfs:comment "Vena ulnar ."@es ;
       rdfs:label "Ulnar Vein"@en , "Vena Ulnar"@es ;
       rdfs:subClassOf :OrganoVenaMedianoCalibre .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoVenaMedianoCalibreAxilar :OrganoVenaMedianoCalibreBraquial :OrganoVenaMedianoCalibrePalmar :OrganoVenaMedianoCalibrePlantar :OrganoVenaMedianoCalibrePopitlea :OrganoVenaMedianoCalibreRadial :OrganoVenaMedianoCalibreTibial :OrganoVenaMedianoCalibreUlnar) .
 
 :tieneRegion
       a       owl:ObjectProperty ;
@@ -518,9 +512,6 @@
       rdfs:label "Muscular Artery"@en , "Arteria Muscular"@es ;
       rdfs:subClassOf :OrganoArteria .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:SectorMusculoPapilar :SectorMusculoPectinado :SectorMusculoTrabéculasCárneas) .
-
 :esTunicaDe
       a       owl:ObjectProperty ;
       rdfs:comment "relación de composición o formación"@es ;
@@ -540,6 +531,9 @@
       rdfs:label "Blood Vessels' Layers"@en , "Túnica Vasos Sanguineos"@es ;
       rdfs:subClassOf :Tunica .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:SectorValvulaAortica :SectorValvulaMitral :SectorValvulaPulmonar :SectorValvulaTricuspide) .
+
 :Corazón
       a       :OrganoCorazon , owl:NamedIndividual ;
       :tieneTunica :TunicaCorazónEndocardio .
@@ -557,13 +551,20 @@
       rdfs:subClassOf :OrganoCapilar .
 
 []    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoArteria :OrganoCapilar :OrganoCorazon :OrganoVena) .
+      owl:members (:SectorCuerdasTendinosas :SectorMusculo :SectorSistemaConducenteDelCorazón :SectorValvula) .
 
 :TunicaCorazónEndocardio
       a       owl:NamedIndividual , owl:Class , :TunicaCorazónEndocardio ;
       rdfs:comment "Membrana que recubre el interior de las cavidades del corazón."@es ;
       rdfs:label "Endocardio"@es , "Endocardium"@en ;
       rdfs:subClassOf :TunicaCorazón ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :TunicaCorazónSubendotelio ;
+                owl:onProperty :estaCompuestoDe ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass :TunicaCorazónEndotelio ;
@@ -574,13 +575,6 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass :TunicaCorazónSubendocardio ;
-                owl:onProperty :estaCompuestoDe ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :TunicaCorazónSubendotelio ;
                 owl:onProperty :estaCompuestoDe ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -629,6 +623,9 @@
       rdfs:label "Elastic Artery"@en , "Arteria Elástica"@es ;
       rdfs:subClassOf :OrganoArteria .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:SectorSistemaConducenteDelCorazónFibraDePurkinje :SectorSistemaConducenteDelCorazónHazDeHis :SectorSistemaConducenteDelCorazónNodoAtrioVentricular :SectorSistemaConducenteDelCorazónNodoSinusal) .
+
 :OrganoArteriaMuscularBraquial
       a       owl:Class ;
       rdfs:comment "arteria del brazo"@es ;
@@ -661,7 +658,14 @@
       rdfs:subClassOf :OrganoVena ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosAdventicia ;
+                owl:onClass :Tunica ;
+                owl:onProperty :tieneTunica ;
+                owl:qualifiedCardinality
+                        "3"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :TunicaVasosSanguineosMedia ;
                 owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -675,14 +679,7 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :Tunica ;
-                owl:onProperty :tieneTunica ;
-                owl:qualifiedCardinality
-                        "3"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosMedia ;
+                owl:onClass :TunicaVasosSanguineosAdventicia ;
                 owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -713,9 +710,6 @@
       rdfs:label "Espacio"@es , "Space"@en ;
       rdfs:range xsd:string .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoCapilarContinuo :OrganoCapilarDiscontinuo :OrganoCapilarFenestrado :OrganoCapilarSinusoide) .
-
 :SectorMusculoTrabéculasCárneas
       a       owl:Class ;
       rdfs:comment "bandas y fascículos musculares irregulares que se proyectan desde la pared muscular de los ventrículos cardíacos"@es ;
@@ -729,10 +723,10 @@
       rdfs:subClassOf :Organo ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SistemaCirculatorio ;
-                owl:onProperty :esOrganoDe ;
+                owl:onClass :Tunica ;
+                owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
+                        "3"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
@@ -750,15 +744,22 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :OrganoTubular ;
-                owl:onProperty :tieneTipo ;
+                owl:onClass :TunicaVasosSanguineosAdventicia ;
+                owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosAdventicia ;
-                owl:onProperty :tieneTunica ;
+                owl:onClass :SistemaCirculatorio ;
+                owl:onProperty :esOrganoDe ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :OrganoTubular ;
+                owl:onProperty :tieneTipo ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
@@ -768,13 +769,6 @@
                 owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :Tunica ;
-                owl:onProperty :tieneTunica ;
-                owl:qualifiedCardinality
-                        "3"^^xsd:nonNegativeInteger
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
@@ -807,17 +801,17 @@
       rdfs:label "Right Ventricle"@en , "Ventriculo Derecho"@es ;
       rdfs:subClassOf :Region .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoArteriaMuscularAxilar :OrganoArteriaMuscularBraquial :OrganoArteriaMuscularPalmar :OrganoArteriaMuscularPlantar :OrganoArteriaMuscularPopitlea :OrganoArteriaMuscularRadial :OrganoArteriaMuscularTibial :OrganoArteriaMuscularUlnar) .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:TunicaVasosSanguineosAdventicia :TunicaVasosSanguineosIntima :TunicaVasosSanguineosMedia) .
+
 :OrganoVenaGranCalibreCavaSuperior
       a       owl:Class ;
       rdfs:comment " recoge la sangre de la cabeza, el cuello, los miembros superiores y el tórax"@es ;
       rdfs:label "Superior Vein Cava"@en , "Vena Cava Superior"@es ;
       rdfs:subClassOf :OrganoVenaGranCalibre .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoArteriaElasticaAorta :OrganoArteriaElasticaCarotidaComun :OrganoArteriaElasticaFemoral :OrganoArteriaElasticaIliaca :OrganoArteriaElasticaSubclavia) .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoVenaGranCalibreCavaInferior :OrganoVenaGranCalibreCavaSuperior :OrganoVenaGranCalibreFemoral :OrganoVenaGranCalibreIliaca :OrganoVenaGranCalibreSubclavia :OrganoVenaGranCalibreYugular) .
 
 :Tunica
       a       owl:Class ;
@@ -838,15 +832,15 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :SistemaCirculatorio ;
-                owl:onProperty :esOrganoDe ;
+                owl:onClass :OrganoTubular ;
+                owl:onProperty :tieneTipo ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :OrganoTubular ;
-                owl:onProperty :tieneTipo ;
+                owl:onClass :SistemaCirculatorio ;
+                owl:onProperty :esOrganoDe ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
@@ -855,8 +849,8 @@
                 owl:onProperty :tieneTunica ;
                 owl:someValuesFrom
                         [ a       owl:Class ;
-                          owl:intersectionOf (:TunicaVasosSanguineosAdventicia [ a       owl:Restriction ;
-                                      owl:hasValue "Gruesa" ;
+                          owl:intersectionOf (:TunicaVasosSanguineosMedia [ a       owl:Restriction ;
+                                      owl:hasValue "Delgada" ;
                                       owl:onProperty :grosor
                                     ])
                         ]
@@ -866,8 +860,8 @@
                 owl:onProperty :tieneTunica ;
                 owl:someValuesFrom
                         [ a       owl:Class ;
-                          owl:intersectionOf (:TunicaVasosSanguineosMedia [ a       owl:Restriction ;
-                                      owl:hasValue "Delgada" ;
+                          owl:intersectionOf (:TunicaVasosSanguineosAdventicia [ a       owl:Restriction ;
+                                      owl:hasValue "Gruesa" ;
                                       owl:onProperty :grosor
                                     ])
                         ]
@@ -898,9 +892,6 @@
                 owl:qualifiedCardinality
                         "2"^^xsd:nonNegativeInteger
               ] .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:TunicaVasosSanguineosAdventicia :TunicaVasosSanguineosIntima :TunicaVasosSanguineosMedia) .
 
 :OrganoVenaVénulaPostcapilar
       a       owl:Class ;
@@ -994,11 +985,6 @@
       rdfs:subClassOf :Sistema ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:allValuesFrom :OrganoTubular ;
-                owl:onProperty :tieneOrganoTipo
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Restriction ;
                 owl:maxQualifiedCardinality
                         "3"^^xsd:nonNegativeInteger ;
                 owl:onClass :OrganoTubular ;
@@ -1008,7 +994,15 @@
               [ a       owl:Restriction ;
                 owl:onProperty :tieneOrgano ;
                 owl:someValuesFrom :Organo
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:allValuesFrom :OrganoTubular ;
+                owl:onProperty :tieneOrganoTipo
               ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoVenaGranCalibre :OrganoVenaVena :OrganoVenaVénula) .
 
 :tieneTunica
       a       owl:ObjectProperty ;
@@ -1065,6 +1059,12 @@
       rdfs:label "Heart's Layers"@en , "Túnica del corazón"@es ;
       rdfs:subClassOf :Tunica .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:RegionAtrioDerecho :RegionAtrioIzquierdo :RegionVentriculoDerecho :RegionVentriculoIzquierdo) .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoVenaGranCalibreCavaInferior :OrganoVenaGranCalibreCavaSuperior :OrganoVenaGranCalibreFemoral :OrganoVenaGranCalibreIliaca :OrganoVenaGranCalibreSubclavia :OrganoVenaGranCalibreYugular) .
+
 :SectorMusculoPapilar
       a       owl:Class ;
       rdfs:comment "proyecciones musculares con forma de cono,sus bases se unen a la pared ventricular,por lo tanto los músculos papilares se encuentran situados en en el interior de los ventrículos cardíacos."@es ;
@@ -1077,15 +1077,18 @@
       rdfs:label "Pericardium"@en , "Pericardio"@es ;
       rdfs:subClassOf :TunicaCorazón .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:RegionAtrioDerecho :RegionAtrioIzquierdo :RegionVentriculoDerecho :RegionVentriculoIzquierdo) .
-
 :SectorValvulaPulmonar
       a       owl:Class ;
       rdfs:comment "Se encuentran en los conductos de salida de las 4 cavidades del corazón"@es ;
       rdfs:label "Válvula Pulmonar"@es , "Pulmonary Valve"@en ;
       rdfs:seeAlso "http://purl.obolibrary.org/obo/MA_0000089"^^xsd:anyURI ;
       rdfs:subClassOf :SectorValvula .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoCapilarContinuo :OrganoCapilarDiscontinuo :OrganoCapilarFenestrado :OrganoCapilarSinusoide) .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:SectorMusculoPapilar :SectorMusculoPectinado :SectorMusculoTrabéculasCárneas) .
 
 :OrganoArteriaElasticaCarotidaComun
       a       owl:Class ;
@@ -1111,6 +1114,9 @@
       rdfs:label "Subendocardial"@en , "Subendocardio"@es ;
       rdfs:subClassOf :TunicaCorazón .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (:OrganoArteriaElasticaAorta :OrganoArteriaElasticaCarotidaComun :OrganoArteriaElasticaFemoral :OrganoArteriaElasticaIliaca :OrganoArteriaElasticaSubclavia) .
+
 :Arteriola
       a       owl:NamedIndividual .
 
@@ -1121,14 +1127,18 @@
       rdfs:subClassOf :SistemaCirculatorio ;
       owl:disjointWith :SistemaCirculatorioSanguineo .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:SectorSistemaConducenteDelCorazónFibraDePurkinje :SectorSistemaConducenteDelCorazónHazDeHis :SectorSistemaConducenteDelCorazónNodoAtrioVentricular :SectorSistemaConducenteDelCorazónNodoSinusal) .
-
 :OrganoVenaGranCalibre
       a       owl:Class ;
       rdfs:comment "aquellas venas cercanas al corazón"@es ;
       rdfs:label "Vena de Gran Calibre"@es , "Large Vein"@en ;
       rdfs:subClassOf :OrganoVena ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass :TunicaVasosSanguineosMedia ;
+                owl:onProperty :tieneTunica ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass :Tunica ;
@@ -1138,7 +1148,7 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosMedia ;
+                owl:onClass :TunicaVasosSanguineosAdventicia ;
                 owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -1149,17 +1159,7 @@
                 owl:onProperty :tieneTunica ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass :TunicaVasosSanguineosAdventicia ;
-                owl:onProperty :tieneTunica ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
               ] .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (:OrganoVenaGranCalibre :OrganoVenaVena :OrganoVenaVénula) .
 
 :esCercanoA
       a       owl:ObjectProperty ;

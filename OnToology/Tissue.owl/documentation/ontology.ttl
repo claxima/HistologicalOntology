@@ -37,9 +37,6 @@
       rdfs:subClassOf <https://w3id.org/def/Tissue#Morfologia> ;
       owl:disjointWith <https://w3id.org/def/Tissue#MorfologiaFolicular> .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado>) .
-
 <https://w3id.org/def/Tissue#CelulaEndotelial>
       a       owl:Class ;
       rdfs:comment "Célula aplanada que recubre el interior de los vasos sanguíneos"@es ;
@@ -93,6 +90,9 @@
       rdfs:label "Sistema Nervioso Central"@es , "Central Nervous System"@en ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> ;
       owl:disjointWith <https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado>) .
 
 <https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico>
       a       owl:Class ;
@@ -158,8 +158,6 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:label "Fibra Colagena"@es , "Collagen Fiber"@en ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#Estructura> .
 
-[]    rdfs:label "Epithelium Tissue"^^xsd:Name .
-
 <https://w3id.org/def/Tissue#esCelulaDe>
       a       owl:ObjectProperty ;
       rdfs:comment "relación de composición o formación"@es ;
@@ -167,9 +165,6 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:label "es Célula de"@es , "is Cell of"@en ;
       rdfs:range <https://w3id.org/def/Tissue#Tejido> ;
       owl:inverseOf <https://w3id.org/def/Tissue#tieneCelula> .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/Tissue#TejidoConectivo> <https://w3id.org/def/Tissue#TejidoEpitelial> <https://w3id.org/def/Tissue#TejidoMuscular> <https://w3id.org/def/Tissue#TejidoNervioso>) .
 
 <https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina>
       a       owl:Class ;
@@ -239,6 +234,9 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:label "Cylindrical"@en , "Cilindrica"@es ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#MorfologiaCelular> .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa>) .
+
 <https://w3id.org/def/Tissue#CelulaFibraDePurkinje>
       a       owl:Class ;
       rdfs:comment "Forman parte del músculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio"@es ;
@@ -291,12 +289,12 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaFibroblasto>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaAdipocito>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaAdipocito>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaFibroblasto>
               ] .
 
 <https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades>
@@ -330,15 +328,15 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:seeAlso "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13002"^^xsd:anyURI ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#Celula> .
 
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/Tissue#ConectivoDenso> <https://w3id.org/def/Tissue#ConectivoEspecializado> <https://w3id.org/def/Tissue#ConectivoLaxo>) .
+
 <https://w3id.org/def/Tissue#CelulaAdipocito>
       a       owl:Class ;
       rdfs:comment "Células que forman el tejido adiposo"@es ;
       rdfs:label "Adipocyte"@en , "Adipocito"@es ;
       rdfs:seeAlso "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12556"^^xsd:anyURI ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#Celula> .
-
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/Tissue#ConectivoDenso> <https://w3id.org/def/Tissue#ConectivoEspecializado> <https://w3id.org/def/Tissue#ConectivoLaxo>) .
 
 <https://w3id.org/def/Tissue#MorfologiaAdenomero>
       a       owl:Class ;
@@ -445,12 +443,12 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo."""@es ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaFibraDePurkinje>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaCardiomiocito>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaCardiomiocito>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaFibraDePurkinje>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
@@ -503,6 +501,9 @@ adenómero"""@es ;
       a       owl:Class ;
       rdfs:comment "Conjunto de relaciones que mantienen entre sí las partes de un todo"@es ;
       rdfs:label "Estructura"@es , "Structure"@en .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <https://w3id.org/def/Tissue#MorfologiaCelularCubica> <https://w3id.org/def/Tissue#MorfologiaCelularPlana>) .
 
 <https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias>
       a       owl:Class ;
@@ -572,9 +573,6 @@ adenómero"""@es ;
       rdfs:range <https://w3id.org/def/Tissue#MorfologiaCelular> ;
       owl:inverseOf <https://w3id.org/def/Tissue#esMorfologiaDe> .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <https://w3id.org/def/Tissue#MorfologiaCelularCubica> <https://w3id.org/def/Tissue#MorfologiaCelularPlana>) .
-
 <https://w3id.org/def/Tissue#CelulaFibroblasto>
       a       owl:Class ;
       rdfs:comment "Célula residente del tejido conectivo propiamente dicho"@es ;
@@ -611,15 +609,15 @@ adenómero"""@es ;
       rdfs:label "Flat"@en , "Plana"@es ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#MorfologiaCelular> .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa>) .
-
 <https://w3id.org/def/Tissue#Cartilago>
       a       owl:Class ;
       rdfs:comment "elástico, carente de vasos sanguíneos, formados principalmente por matriz extracelular y por células dispersas denominadas condrocitos. "@es ;
       rdfs:label "Cartilago"@es , "Cartilage"@en ;
       rdfs:seeAlso "http://bioonto.de/mesh.owl#A10.165.382"^^xsd:anyURI ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#TejidoConectivoEspecializado> .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/Tissue#TejidoConectivo> <https://w3id.org/def/Tissue#TejidoEpitelial> <https://w3id.org/def/Tissue#TejidoMuscular> <https://w3id.org/def/Tissue#TejidoNervioso>) .
 
 <https://w3id.org/def/Tissue#TejidoMuscularEstriado>
       a       owl:Class ;
@@ -666,6 +664,8 @@ adenómero"""@es ;
       rdfs:label "Tejido Conectivo Adulto Propiamente Dicho"@es , "Connective Proper  Tissue"@en ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#TejidoConectivo> .
 
+[]    rdfs:label "Epithelium Tissue"^^xsd:Name .
+
 <https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar>
       a       owl:Class ;
       rdfs:comment "constan de dos elementos: los acinos glandulares, donde encontramos las célula productoras de la secreción glandular, y un conjunto de estructuras tubulares huecas, como ramas de un árbol, donde los estrechos canalículos confluyen progresivamente a conductos finales más y más gruesos."@es ;
@@ -688,18 +688,20 @@ adenómero"""@es ;
       rdfs:subClassOf <https://w3id.org/def/Tissue#Tejido> ;
       owl:equivalentClass
               [ a       owl:Restriction ;
+                owl:onClass <https://w3id.org/def/Tissue#MorfologiaCelular> ;
+                owl:onProperty <https://w3id.org/def/Tissue#TieneMorfologia> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <https://w3id.org/def/Tissue#esCercanoA> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#esCercanoA> ;
                 owl:someValuesFrom <https://w3id.org/def/Tissue#ConectivoDenso>
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/Tissue#esCercanoA> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraRegionLuz>
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaEndotelial>
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
@@ -711,14 +713,12 @@ adenómero"""@es ;
       owl:equivalentClass
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Tissue#esCercanoA> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
+                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraRegionLuz>
               ] ;
       owl:equivalentClass
               [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Tissue#MorfologiaCelular> ;
-                owl:onProperty <https://w3id.org/def/Tissue#TieneMorfologia> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
+                owl:onProperty <https://w3id.org/def/Tissue#tieneCelula> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#CelulaEndotelial>
               ] .
 
 <https://w3id.org/def/Tissue#NumeroConductosCompuesto>
