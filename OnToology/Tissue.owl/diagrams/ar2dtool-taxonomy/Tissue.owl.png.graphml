@@ -1541,19 +1541,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-4d69f5b3:15637cb6595:-7ffa">
+      <node id="nid_e05fdd7:15638074db9:-7ffa">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4d69f5b3:15637cb6595:-7ffa</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">e05fdd7:15638074db9:-7ffa</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_https://w3id.org/def/Tissue#Tejido" target="nid_-4d69f5b3:15637cb6595:-7ffa">
+    <edge id="eid_rdfs:subClassOf61" source="nid_https://w3id.org/def/Tissue#Tejido" target="nid_e05fdd7:15638074db9:-7ffa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
