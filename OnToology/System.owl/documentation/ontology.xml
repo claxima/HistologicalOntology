@@ -3,15 +3,23 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaArteriola"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:intersectionOf rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System">
     <owl:imports rdf:resource="https://w3id.org/def/Tissue"/>
     <owl:imports rdf:resource="https://w3id.org/def/Organ"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoLaxo"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#esComponenteDe">
     <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
@@ -23,15 +31,10 @@
     <rdfs:label xml:lang="en">is Component of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
+  <rdf:Description rdf:nodeID="A5">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraSenoCoronario"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#esComponenteDe"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioLinfatico"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#esRegionDeLuzDe">
@@ -42,105 +45,115 @@
     <rdfs:label xml:lang="en">is light region of</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <owl:intersectionOf rdf:nodeID="A4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
+  <rdf:Description rdf:nodeID="A6">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
+  <rdf:Description rdf:nodeID="A7">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraVasoVasorum"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónMiocardio">
-    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <owl:members rdf:nodeID="A9"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+  <rdf:Description rdf:nodeID="A9">
+    <owl:hasValue>Angosta</owl:hasValue>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A10">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#esComponenteDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A11">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A12"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioLinfatico"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:hasValue>Amplia</owl:hasValue>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="A14">
+    <owl:someValuesFrom rdf:nodeID="A3"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
     <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoLaxo"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima">
-    <rdfs:subClassOf rdf:nodeID="A14"/>
-    <rdfs:subClassOf rdf:nodeID="A2"/>
-    <rdfs:subClassOf rdf:nodeID="A15"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A16">
-    <owl:someValuesFrom rdf:nodeID="A17"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia">
-    <rdfs:subClassOf rdf:nodeID="A18"/>
-    <rdfs:subClassOf rdf:nodeID="A19"/>
-    <rdfs:subClassOf rdf:nodeID="A20"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A21">
+  <rdf:Description rdf:nodeID="A17">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima">
+    <rdfs:subClassOf rdf:nodeID="A18"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdfs:subClassOf rdf:nodeID="A19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia">
+    <rdfs:subClassOf rdf:nodeID="A20"/>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:nodeID="A21"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscular">
     <rdfs:subClassOf rdf:nodeID="A22"/>
-    <rdfs:subClassOf rdf:nodeID="A6"/>
-    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
     <rdfs:subClassOf rdf:nodeID="A23"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <rdf:rest rdf:nodeID="A24"/>
-    <rdf:first rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónPericardio">
-    <rdfs:subClassOf rdf:nodeID="A13"/>
-    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A24"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A25">
     <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraVasoVasorum"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A22">
+  <rdf:Description rdf:nodeID="A23">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularLiso"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónPericardio">
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A16"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteria">
     <rdfs:subClassOf rdf:nodeID="A26"/>
     <owl:equivalentClass rdf:nodeID="A27"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A28">
-    <rdf:rest rdf:nodeID="A10"/>
-    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+    <rdf:rest rdf:nodeID="A29"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#tieneRegionDeLuz">
     <rdfs:range rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
@@ -151,28 +164,25 @@
     <rdfs:label xml:lang="en">has light region</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A18">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularLiso"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A29">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoDensoIrregular"/>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilar">
+    <rdfs:subClassOf rdf:nodeID="A12"/>
     <rdfs:subClassOf rdf:nodeID="A30"/>
-    <rdfs:subClassOf rdf:nodeID="A31"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <owl:hasValue>Amplia</owl:hasValue>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
+  <rdf:Description rdf:nodeID="A18">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoLaxo"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A17">
-    <owl:intersectionOf rdf:nodeID="A32"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#estaCompuestoPor">
     <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
@@ -182,13 +192,13 @@
     <rdfs:label xml:lang="en">is Composed by</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A33">
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónSubendocardio">
+    <rdfs:subClassOf rdf:nodeID="A31"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
     <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoLaxo"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónSubendocardio">
-    <rdfs:subClassOf rdf:nodeID="A29"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#tieneEstructura">
     <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
@@ -198,11 +208,19 @@
     <rdfs:label xml:lang="en">has Structure</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A26">
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <owl:members rdf:nodeID="A34"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#amplitud">
     <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
@@ -212,30 +230,29 @@
     <rdfs:label xml:lang="en">Amplitude</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A34">
-    <owl:hasValue>Angosta</owl:hasValue>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVena">
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <rdfs:subClassOf rdf:nodeID="A36"/>
+    <owl:equivalentClass rdf:nodeID="A14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVena">
-    <rdfs:subClassOf rdf:nodeID="A35"/>
-    <rdfs:subClassOf rdf:nodeID="A36"/>
-    <owl:equivalentClass rdf:nodeID="A16"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="A37">
-    <rdf:rest rdf:nodeID="A28"/>
-    <rdf:first rdf:resource="https://w3id.org/def/Organ#OrganoArteriaArteriola"/>
+    <owl:intersectionOf rdf:nodeID="A28"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A38">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioLinfatico"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraSenoCoronario"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A39">
@@ -243,28 +260,22 @@
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A40">
+  <rdf:Description rdf:nodeID="A22">
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A19">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A31">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:someValuesFrom rdf:nodeID="A37"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibre">
     <rdfs:subClassOf rdf:nodeID="A25"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"/>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoDensoIrregular"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
@@ -272,15 +283,9 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A23">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A24">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="A34"/>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="https://w3id.org/def/System#OrganoArteriaMetarteriola"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#esEstructuraDe">
     <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
@@ -296,50 +301,45 @@
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCorazon">
-    <rdfs:subClassOf rdf:nodeID="A1"/>
-    <rdfs:subClassOf rdf:nodeID="A40"/>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A35"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:rest rdf:nodeID="A37"/>
-    <rdf:first rdf:resource="https://w3id.org/def/System#OrganoArteriaMetarteriola"/>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCorazon">
+    <rdfs:subClassOf rdf:nodeID="A38"/>
+    <rdfs:subClassOf rdf:nodeID="A40"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#OrganoArteriaMetarteriola">
     <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteria"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia">
-    <rdfs:subClassOf rdf:nodeID="A33"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A30">
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioLinfatico"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdfs:subClassOf rdf:nodeID="A39"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaCorazónSubendotelio">
-    <rdfs:subClassOf rdf:nodeID="A39"/>
+    <rdfs:subClassOf rdf:nodeID="A32"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/Organ#SistemaCirculatorio">
     <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12686</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A27">
-    <owl:someValuesFrom rdf:nodeID="A3"/>
-    <owl:onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
+  <rdf:Description rdf:nodeID="A40">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A20">
+  <rdf:Description rdf:nodeID="A21">
     <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraColagena"/>
     <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A32">
-    <rdf:rest rdf:nodeID="A11"/>
-    <rdf:first rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/def/System#OrganoConducto">
-    <rdfs:subClassOf rdf:nodeID="A38"/>
-    <rdfs:subClassOf rdf:nodeID="A21"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>

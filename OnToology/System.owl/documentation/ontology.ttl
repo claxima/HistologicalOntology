@@ -31,9 +31,6 @@
                 owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco>
               ] .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (<https://w3id.org/def/System#OrganoArteriaMetarteriola> <https://w3id.org/def/Organ#OrganoArteriaArteriola> <https://w3id.org/def/Organ#OrganoArteriaElastica> <https://w3id.org/def/Organ#OrganoArteriaMuscular>) .
-
 <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima>
       rdfs:subClassOf
               [ a       owl:Restriction ;
@@ -42,21 +39,16 @@
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna>
+                owl:onProperty <https://w3id.org/def/System#esComponenteDe> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple>
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/System#esComponenteDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple>
+                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna>
               ] .
 
 <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia>
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
-                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
-              ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
@@ -66,16 +58,14 @@
               [ a       owl:Restriction ;
                 owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
                 owl:someValuesFrom <https://w3id.org/def/Tissue#EstructuraFibraColagena>
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <https://w3id.org/def/Organ#estaCompuestoDe> ;
+                owl:someValuesFrom <https://w3id.org/def/Tissue#TejidoMuscularLiso>
               ] .
 
 <https://w3id.org/def/Organ#OrganoArteriaMuscular>
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Tissue#EstructuraVasoVasorum> ;
-                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
-                owl:qualifiedCardinality
-                        "1"^^xsd:nonNegativeInteger
-              ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> ;
@@ -93,6 +83,13 @@
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass <https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> ;
+                owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass <https://w3id.org/def/Tissue#EstructuraVasoVasorum> ;
                 owl:onProperty <https://w3id.org/def/System#tieneEstructura> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
@@ -174,6 +171,9 @@
       rdfs:domain <https://w3id.org/def/Tissue#Estructura> ;
       rdfs:label "has Structure"@en , "tiene Estructura"@es ;
       rdfs:range <https://w3id.org/def/Organ#Organo> .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (<https://w3id.org/def/System#OrganoArteriaMetarteriola> <https://w3id.org/def/Organ#OrganoArteriaArteriola> <https://w3id.org/def/Organ#OrganoArteriaElastica> <https://w3id.org/def/Organ#OrganoArteriaMuscular>) .
 
 <https://w3id.org/def/System#amplitud>
       a       owl:DatatypeProperty ;
@@ -268,14 +268,14 @@
       rdfs:subClassOf <https://w3id.org/def/Organ#Organo> ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorio> ;
+                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> ;
                 owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> ;
+                owl:onClass <https://w3id.org/def/Organ#SistemaCirculatorio> ;
                 owl:onProperty <https://w3id.org/def/Organ#esOrganoDe> ;
                 owl:qualifiedCardinality
                         "1"^^xsd:nonNegativeInteger
