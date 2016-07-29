@@ -1,0 +1,315 @@
+{
+  "@context" : {
+    "MecanismoDeSecrecion" : {
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecion"
+    },
+    "SistemaNerviosoPeriferico" : {
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPeriferico"
+    },
+    "TieneNumeroCapas" : {
+      "@id" : "https://w3id.org/def/Tissue#TieneNumeroCapas",
+      "@type" : "@id"
+    },
+    "TejidoEpitelialPlanoSimple" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"
+    },
+    "NumeroConductos" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductos"
+    },
+    "Celula" : {
+      "@id" : "https://w3id.org/def/Tissue#Celula"
+    },
+    "SistemaNerviosoPerifericoAutonomo" : {
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo"
+    },
+    "NumeroCapasEstratificado" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasEstratificado"
+    },
+    "CelulaFibroblasto" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaFibroblasto"
+    },
+    "TejidoNerviosoComponenteNeurona" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona"
+    },
+    "MorfologiaFolicular" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaFolicular"
+    },
+    "EstructuraFibraColagena" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraColagena"
+    },
+    "MorfologiaAdenomeroTubuloAcinar" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar"
+    },
+    "NumeroCapas" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapas"
+    },
+    "GlandulaExocrina" : {
+      "@id" : "https://w3id.org/def/Tissue#GlandulaExocrina"
+    },
+    "ConectivoMucoide" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoMucoide"
+    },
+    "TejidoEpitelial" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelial"
+    },
+    "NumeroCapasTransicional" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasTransicional"
+    },
+    "EstructuraLaminaElasticaExterna" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"
+    },
+    "CelulaFibraDePurkinje" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaFibraDePurkinje"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "MorfologiaCelularCubica" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularCubica"
+    },
+    "esCelulaDe" : {
+      "@id" : "https://w3id.org/def/Tissue#esCelulaDe",
+      "@type" : "@id"
+    },
+    "TejidoConectivoAdultoPropiamenteDicho" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"
+    },
+    "ConectivoLaxo" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoLaxo"
+    },
+    "MorfologiaAdenomero" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomero"
+    },
+    "MorfologiaCelularPlana" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularPlana"
+    },
+    "CelulaCardiomiocito" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaCardiomiocito"
+    },
+    "esMorfologiaDe" : {
+      "@id" : "https://w3id.org/def/Tissue#esMorfologiaDe",
+      "@type" : "@id"
+    },
+    "NumeroCapasSeudoestratificado" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado"
+    },
+    "EstructuraRegionLuz" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraRegionLuz"
+    },
+    "GlandulaEndocrina" : {
+      "@id" : "https://w3id.org/def/Tissue#GlandulaEndocrina"
+    },
+    "MorfologiaAdenomeroTubular" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular"
+    },
+    "CelulaMiocitoLiso" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaMiocitoLiso"
+    },
+    "EstructuraLaminaElasticaInterna" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"
+    },
+    "CelulaMesotelial" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaMesotelial"
+    },
+    "ConectivoEpecializadoReticular" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEpecializadoReticular"
+    },
+    "esNumeroCapasDe" : {
+      "@id" : "https://w3id.org/def/Tissue#esNumeroCapasDe",
+      "@type" : "@id"
+    },
+    "TieneMorfologia" : {
+      "@id" : "https://w3id.org/def/Tissue#TieneMorfologia",
+      "@type" : "@id"
+    },
+    "Estructura" : {
+      "@id" : "https://w3id.org/def/Tissue#Estructura"
+    },
+    "TejidoMuscularEstriadoCardiaco" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"
+    },
+    "MorfologiaAdenomeroAcinar" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar"
+    },
+    "EspecializacionApicalEstereocilios" : {
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "ConectivoDensoIrregular" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDensoIrregular"
+    },
+    "MecanismoDeSecrecionApocrina" : {
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina"
+    },
+    "NaturalezaSecrecionMixta" : {
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionMixta"
+    },
+    "EstructuraVasoVasorum" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraVasoVasorum"
+    },
+    "SistemaNerviosoPerifericoSomatico" : {
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico"
+    },
+    "Sanguineo" : {
+      "@id" : "https://w3id.org/def/Tissue#Sanguineo"
+    },
+    "TejidoNerviosoComponente" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponente"
+    },
+    "Tejido" : {
+      "@id" : "https://w3id.org/def/Tissue#Tejido"
+    },
+    "MorfologiaCordonal" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCordonal"
+    },
+    "NaturalezaSecrecionMucosa" : {
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa"
+    },
+    "NaturalezaSecrecionSerosa" : {
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa"
+    },
+    "NumeroCapasSimple" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroCapasSimple"
+    },
+    "TejidoNerviosoComponenteGlias" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias"
+    },
+    "esComponenteDe" : {
+      "@id" : "https://w3id.org/def/Tissue#esComponenteDe",
+      "@type" : "@id"
+    },
+    "MorfologiaCelular" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelular"
+    },
+    "MorfologiaCelularCilindrica" : {
+      "@id" : "https://w3id.org/def/Tissue#MorfologiaCelularCilindrica"
+    },
+    "NumeroConductosSimple" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductosSimple"
+    },
+    "EspecializacionApicalCilios" : {
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalCilios"
+    },
+    "ConectivoEspecializado" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEspecializado"
+    },
+    "ConectivoEspecializadoAdiposo" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo"
+    },
+    "ConectivoDenso" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDenso"
+    },
+    "esCercanoA" : {
+      "@id" : "https://w3id.org/def/Tissue#esCercanoA",
+      "@type" : "@id"
+    },
+    "ConectivoDensoRegular" : {
+      "@id" : "https://w3id.org/def/Tissue#ConectivoDensoRegular"
+    },
+    "TejidoNerviosoDistribucionAnatomica" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica"
+    },
+    "tieneCelula" : {
+      "@id" : "https://w3id.org/def/Tissue#tieneCelula",
+      "@type" : "@id"
+    },
+    "TejidoMuscularEstriado" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriado"
+    },
+    "MecanismoDeSecrecionHolocrina" : {
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "MecanismoDeSecrecionMerocrina" : {
+      "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina"
+    },
+    "TejidoConectivoEmbrionario" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoEmbrionario"
+    },
+    "TejidoNervioso" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoNervioso"
+    },
+    "EspecializacionApical" : {
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApical"
+    },
+    "TejidoMuscular" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscular"
+    },
+    "Mesenquimatico" : {
+      "@id" : "https://w3id.org/def/Tissue#Mesenquimatico"
+    },
+    "TejidoMuscularEstriadoEsqueletico" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico"
+    },
+    "TejidoEpitelialGlandular" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialGlandular"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Morfologia" : {
+      "@id" : "https://w3id.org/def/Tissue#Morfologia"
+    },
+    "Cercano" : {
+      "@id" : "https://w3id.org/def/Tissue#Cercano",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "NumeroConductosCompuesto" : {
+      "@id" : "https://w3id.org/def/Tissue#NumeroConductosCompuesto"
+    },
+    "TejidoMuscularLiso" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoMuscularLiso"
+    },
+    "estaCompuestaPor" : {
+      "@id" : "https://w3id.org/def/Tissue#estaCompuestaPor",
+      "@type" : "@id"
+    },
+    "Oseo" : {
+      "@id" : "https://w3id.org/def/Tissue#Oseo"
+    },
+    "SistemaNerviosoCentral" : {
+      "@id" : "https://w3id.org/def/Tissue#SistemaNerviosoCentral"
+    },
+    "EstructuraFibraElastica" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraElastica"
+    },
+    "TejidoConectivo" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivo"
+    },
+    "CelulaEndotelial" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaEndotelial"
+    },
+    "EstructuraFibraNerviosa" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraFibraNerviosa"
+    },
+    "CelulaAdipocito" : {
+      "@id" : "https://w3id.org/def/Tissue#CelulaAdipocito"
+    },
+    "Cartilago" : {
+      "@id" : "https://w3id.org/def/Tissue#Cartilago"
+    },
+    "EspecializacionApicalQueratina" : {
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalQueratina"
+    },
+    "EstructuraSenoCoronario" : {
+      "@id" : "https://w3id.org/def/Tissue#EstructuraSenoCoronario"
+    },
+    "EspecializacionApicalMicrovellosidades" : {
+      "@id" : "https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades"
+    },
+    "NaturalezaSecrecion" : {
+      "@id" : "https://w3id.org/def/Tissue#NaturalezaSecrecion"
+    },
+    "TejidoConectivoEspecializado" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoConectivoEspecializado"
+    },
+    "TejidoEpitelialRevestimiento" : {
+      "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento"
+    }
+  }
+}

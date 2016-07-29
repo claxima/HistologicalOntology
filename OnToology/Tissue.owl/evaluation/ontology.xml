@@ -1,0 +1,930 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica">
+    <rdfs:comment xml:lang="es">Contiene Central y periferico</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNervioso"/>
+    <rdfs:label xml:lang="es">Distribución Anatomica</rdfs:label>
+    <rdfs:label xml:lang="en">Anatomic Distribution</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Cercano">
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="es">Propiedad de cercania</rdfs:comment>
+    <rdfs:label xml:lang="es">Cercano</rdfs:label>
+    <rdfs:label xml:lang="en">Near</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoNervioso">
+    <rdfs:comment xml:lang="es">produce y transmite impulsos nerviosos y está formado por neuronas y células de apoyo.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.755</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:label xml:lang="es">Tejido Nervioso</rdfs:label>
+    <rdfs:label xml:lang="en">Nervous Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelularPlana"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#TieneMorfologia"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaFibraDePurkinje"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaCelularCubica">
+    <rdfs:comment xml:lang="es">Circulares</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <rdfs:label xml:lang="es">Cubica</rdfs:label>
+    <rdfs:label xml:lang="en">Cubic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaCordonal">
+    <rdfs:comment xml:lang="es">Células dispuestas formando cordones</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#MorfologiaFolicular"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Morfologia"/>
+    <rdfs:label xml:lang="es">Morfología Cordonal</rdfs:label>
+    <rdfs:label xml:lang="en">Cordonal Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaEndotelial">
+    <rdfs:comment xml:lang="es">Célula aplanada que recubre el interior de los vasos sanguíneos</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12865</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Endotelial</rdfs:label>
+    <rdfs:label xml:lang="en">Endothelial</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelularCubica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento">
+    <rdfs:comment xml:lang="es">Recubren la superficie corporal externa y los órganos internos.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:label xml:lang="en">Epithelial Coating Tissue</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#Name">Tejido Epitelial de Revestimiento</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoNerviosoComponente">
+    <rdfs:comment xml:lang="es">Contiene Glias y Neuronas</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNervioso"/>
+    <rdfs:label xml:lang="es">Componentes</rdfs:label>
+    <rdfs:label xml:lang="en">Component</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico">
+    <rdfs:comment xml:lang="es">Nervios espinales, que son los que envían información sensorial (tacto, dolor) del tronco y las extremidades hacia el sistema nervioso central a través de la médula espinal. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#SistemaNerviosoPeriferico"/>
+    <rdfs:label xml:lang="es">Sistema Nervioso Periferico Somatico</rdfs:label>
+    <rdfs:label xml:lang="en">Somatic Peripheral Nervous System</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaFibroblasto"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#esCercanoA">
+    <owl:inverseOf rdf:resource="https://w3id.org/def/Tissue#esCercanoA"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
+    <rdfs:comment xml:lang="es">Relación de cercania entre la región de luz y el tejido</rdfs:comment>
+    <rdfs:label xml:lang="es">es Cercano a</rdfs:label>
+    <rdfs:label xml:lang="en">in Near to</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#SistemaNerviosoCentral">
+    <rdfs:comment xml:lang="es">constituido por el encéfalo y la médula espinal.</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#SistemaNerviosoPeriferico"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica"/>
+    <rdfs:label xml:lang="es">Sistema Nervioso Central</rdfs:label>
+    <rdfs:label xml:lang="en">Central Nervous System</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico">
+    <rdfs:comment xml:lang="es">Insertado en cartílagos o aponeurosis. Está compuesto por células "multinucleadas" largas (hasta 30 cm) y cilíndricas que se contraen para facilitar el movimiento del cuerpo y de sus partes.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0002439</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularEstriado"/>
+    <rdfs:label xml:lang="es">Tejido Muscular Estriado Esquelético</rdfs:label>
+    <rdfs:label xml:lang="en">Skeletal Striated Muscle Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios">
+    <rdfs:comment xml:lang="es">Son microvellosidades largas que se agrupan en forma de manojos piriformes. Son inmóviles, estarían relacionados con la absorción y transporte de líquidos.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#EspecializacionApical"/>
+    <rdfs:label xml:lang="es">Estereocilios</rdfs:label>
+    <rdfs:label xml:lang="en">Stereocilia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraFibraNerviosa">
+    <rdfs:comment xml:lang="es">Prolongación de las neuronas o cilindroejes, de forma alargada y delgada, que pueden transmitir el impulso nervioso.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Fibra Nerviosa</rdfs:label>
+    <rdfs:label xml:lang="en">Nerve Fiber</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#NumeroCapasSimple"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#TieneNumeroCapas"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoMuscularLiso">
+    <rdfs:comment xml:lang="es">Se encuentra en las paredes de las vísceras huecas y en la mayor parte de los vasos sanguíneos. Sus células son fusiformes y no presentan estriaciones, ni un sistema de túbulos.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0000166</rdfs:seeAlso>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.690.467</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoMuscular"/>
+    <rdfs:label xml:lang="es">Tejido Muscular Liso</rdfs:label>
+    <rdfs:label xml:lang="en">Smooth Muscle Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#Name">Epithelium Tissue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoEpecializadoReticular">
+    <rdfs:comment xml:lang="es">forma una malla tridimensional estable, que otorga un soporte estructural a las células migratorias de órganos relacionados directamente con los leucocitos de la sangre como son el bazo, los ganglios linfáticos y la médula ósea hematopoyética.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#ConectivoEspecializado"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Especializado Reticular</rdfs:label>
+    <rdfs:label xml:lang="en">Reticular Specialised Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaMiocitoLiso">
+    <rdfs:comment xml:lang="es">La fibra muscular o miocito liso</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Miocito Liso</rdfs:label>
+    <rdfs:label xml:lang="en">Smooth Muscle</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Oseo">
+    <rdfs:comment xml:lang="es">constituyente principal de los huesos en los vertebrados.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.165.265</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEspecializado"/>
+    <rdfs:label xml:lang="es">Oseo</rdfs:label>
+    <rdfs:label xml:lang="en">Osseous</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelularCilindrica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar">
+    <rdfs:comment xml:lang="es">El adenómero también esférico, presenta un lumen pequeño</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaAdenomero"/>
+    <rdfs:label xml:lang="es">Morfología Acinar</rdfs:label>
+    <rdfs:label xml:lang="en">Acinar Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa">
+    <rdfs:comment xml:lang="es">que secretan mucopolisacáridos y dan lugar a una secreción viscosa (el mucus o moco).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecion"/>
+    <rdfs:label xml:lang="es">Mucosa</rdfs:label>
+    <rdfs:label xml:lang="en">Mucous</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraFibraColagena">
+    <rdfs:comment xml:lang="es">El colágeno constituye una familia de proteínas que se diferencian durante la evolución y adoptan una morfología y patología características.
+Las fibras de colágeno son las más frecuentes en el tejido conjuntivo.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Fibra Colagena</rdfs:label>
+    <rdfs:label xml:lang="en">Collagen Fiber</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#esCelulaDe">
+    <owl:inverseOf rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">es Célula de</rdfs:label>
+    <rdfs:label xml:lang="en">is Cell of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina">
+    <rdfs:comment xml:lang="es">El producto es liberado por la ruptura y desintegración de la célula, lisis celular.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MecanismoDeSecrecion"/>
+    <rdfs:label xml:lang="es">Holocrina</rdfs:label>
+    <rdfs:label xml:lang="en">Holocrina</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Sanguineo">
+    <rdfs:comment xml:lang="es">compuesto de células, fragmentos celulares y una matriz extracelular líquida denominada plasma sanguíneo.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEspecializado"/>
+    <rdfs:label xml:lang="es">Sanguíneo</rdfs:label>
+    <rdfs:label xml:lang="en">Bloodstone</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado">
+    <rdfs:comment xml:lang="es">Formado por un número variable de capas, al menos por dos tipos celulares</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:label xml:lang="es">Capa Seudoestratificado</rdfs:label>
+    <rdfs:label xml:lang="en">Pseudostratified Layer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaAdipocito"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna">
+    <rdfs:comment xml:lang="es">lámina elástica externa que separa la media de la adventicia</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Lamina Elastica Externa</rdfs:label>
+    <rdfs:label xml:lang="en">External Elastic Lamina</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#SistemaNerviosoPeriferico">
+    <rdfs:comment xml:lang="es">formado por nervios y neuronas que residen o se extienden fuera del sistema nervioso central (SNC), hacia los miembros y órganos.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica"/>
+    <rdfs:label xml:lang="es">Sistema Nervioso Periferico</rdfs:label>
+    <rdfs:label xml:lang="en">Peripheral Nervous System</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecionMixta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoDensoIrregular">
+    <rdfs:comment xml:lang="es">En este tejido conectivo denso irregular se observan fibras de colágeno dispuestas en forma aleatoria y muy poca sustancia fundamental.</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#ConectivoDensoRegular"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#ConectivoDenso"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Denso Irregular</rdfs:label>
+    <rdfs:label xml:lang="en">Irregular Dense Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#esNumeroCapasDe">
+    <owl:inverseOf rdf:resource="https://w3id.org/def/Tissue#TieneNumeroCapas"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">es Número de Capas de</rdfs:label>
+    <rdfs:label xml:lang="en">is Number of Layer of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaMiocitoLiso"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoDensoRegular">
+    <rdfs:comment xml:lang="es">compuesto de fibras colágenas dispuestas en una forma ordenada, paralela una respecto a la otra, lo que proporciona la máxima fortaleza.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#ConectivoDenso"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Denso Regular</rdfs:label>
+    <rdfs:label xml:lang="en">Regular Dense Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroConductosSimple">
+    <rdfs:comment xml:lang="es">Un único conducto no ramificado</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroConductos"/>
+    <rdfs:label xml:lang="es">Conductos Simple</rdfs:label>
+    <rdfs:label xml:lang="en">Simple Ducts</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaCelularCilindrica">
+    <rdfs:comment xml:lang="es">Alargadas perpendiculares a las regiones de luz</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <rdfs:label xml:lang="es">Cilindrica</rdfs:label>
+    <rdfs:label xml:lang="en">Cylindrical</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEspecializado"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#TieneNumeroCapas"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:members rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaFibraDePurkinje">
+    <rdfs:comment xml:lang="es">Forman parte del músculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12651</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Fibra de Purkinje</rdfs:label>
+    <rdfs:label xml:lang="en">Purkinje Fiber</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#estaCompuestaPor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaCardiomiocito"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Morfologia">
+    <rdfs:comment xml:lang="es">Contiene morfología cordonal y folicular</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#GlandulaEndocrina"/>
+    <rdfs:label xml:lang="es">Morfología</rdfs:label>
+    <rdfs:label xml:lang="en">Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona">
+    <rdfs:comment xml:lang="es">especializadas en la recepción de estímulos y conducción del impulso nervioso</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNerviosoComponente"/>
+    <rdfs:label xml:lang="es">Neurona</rdfs:label>
+    <rdfs:label xml:lang="en">Neuron</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelularPlana"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroConductos">
+    <rdfs:comment xml:lang="es">Contiene Compuesto y simple</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#GlandulaExocrina"/>
+    <rdfs:label xml:lang="es">Número de Conductos</rdfs:label>
+    <rdfs:label xml:lang="en">Number of Ducts</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EspecializacionApical">
+    <rdfs:comment xml:lang="es">Especializaciones de la superficie celular en los epitelios.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento"/>
+    <rdfs:label xml:lang="es">Especialización Apical</rdfs:label>
+    <rdfs:label xml:lang="en">Apical Specialization</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <owl:members rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NaturalezaSecrecion">
+    <rdfs:comment xml:lang="es">Contiene Secreción mixta, mucosa y serosa.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#GlandulaExocrina"/>
+    <rdfs:label xml:lang="es">Naturaleza de la Secreción</rdfs:label>
+    <rdfs:label xml:lang="en">Nature of Secretion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroCapasSimple">
+    <rdfs:comment xml:lang="es">Una unica capa celular</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:label xml:lang="es">Capa Simple</rdfs:label>
+    <rdfs:label xml:lang="en">Simple Layer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoConectivo">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.165</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Tejido Conjuntivo</rdfs:label>
+    <rdfs:comment xml:lang="es">Tejido que establece conexión con los otros tejidos y sirve de soporte a diferentes estructuras del cuerpo; es un tejido rico en fibras y de abundante sustancia intercelular.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0000011</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">Connective Tissue</rdfs:label>
+    <rdfs:label xml:lang="es">Tejido Conectivo</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades">
+    <rdfs:comment xml:lang="es">Son expansiones citoplasmáticas cilíndricas limitadas por la unidad de membrana cuya principal función es aumentar la superficie de absorción.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#EspecializacionApical"/>
+    <rdfs:label xml:lang="es">Microvellosidades</rdfs:label>
+    <rdfs:label xml:lang="en">Microvilli</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina">
+    <rdfs:comment xml:lang="es">Pequeñas vesículas llenas de la sustancia se funden con la membrana (exocitosis). En este proceso, las células no pierden ninguna parte de la membrana celular y ningún o muy poco citoplasma.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MecanismoDeSecrecion"/>
+    <rdfs:label xml:lang="es">Merocrina</rdfs:label>
+    <rdfs:label xml:lang="en">Merocrine</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#ConectivoDenso"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#esCercanoA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaFolicular">
+    <rdfs:comment xml:lang="es">Células dispuestas formando esferas denominadas folículos </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Morfologia"/>
+    <rdfs:label xml:lang="es">Morfología Folicular</rdfs:label>
+    <rdfs:label xml:lang="en">Follicular Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoLaxo">
+    <rdfs:comment xml:lang="es">tejido muy abundante en el organismo, cuyo origen proviene del mesénquima.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Laxo</rdfs:label>
+    <rdfs:label xml:lang="en">Loose Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaCardiomiocito">
+    <rdfs:comment xml:lang="es">Células del miocardio o músculo cardíaco capaces de contraerse de forma espontánea e individual</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13002</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Cardiomiocito</rdfs:label>
+    <rdfs:label xml:lang="en">Cardiomyocyte</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoNervioso"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <owl:unionOf rdf:nodeID="A23"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaAdipocito">
+    <rdfs:comment xml:lang="es">Células que forman el tejido adiposo</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12556</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Adipocito</rdfs:label>
+    <rdfs:label xml:lang="en">Adipocyte</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A25"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaAdenomero">
+    <rdfs:comment xml:lang="es">Contiene Acinar, Tubular y Tubulo-Acinar</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#GlandulaExocrina"/>
+    <rdfs:label xml:lang="es">Morfología del Adenomero</rdfs:label>
+    <rdfs:label xml:lang="en">Morphology of Adenomere</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoDenso">
+    <rdfs:comment xml:lang="es">Se caracteriza por la ausencia casi completa de otros tipos de células que no sean fibroblastos y por la escasa cantidad de sustancia intercelular amorfa, siendo rica en sustancia intercelular forme, tales como fibras colágenas o elásticas.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Denso</rdfs:label>
+    <rdfs:label xml:lang="en">Dense Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#esCercanoA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroCapasEstratificado">
+    <rdfs:comment xml:lang="es">formados por un número variable de capas celulares.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:label xml:lang="es">Capa Estratificado</rdfs:label>
+    <rdfs:label xml:lang="en">Stratified Layer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna">
+    <rdfs:comment xml:lang="es"> lámina elástica interna separando la íntima de la media</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A27"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="en">Lamina Elastica Interna</rdfs:label>
+    <rdfs:label xml:lang="en">Internal Elastic Lamina</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#estaCompuestaPor">
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">esta Compuesta por</rdfs:label>
+    <rdfs:label xml:lang="en">is Composed for</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:nodeID="A21"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoMuscular"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraRegionLuz">
+    <rdfs:comment xml:lang="es">Regiones de luz</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Región de Luz</rdfs:label>
+    <rdfs:label xml:lang="en">Light Region</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina">
+    <rdfs:comment xml:lang="es">Vesículas llenas de la sustancia se unen al citoplasma que rodea la membrana celular de las glándulas. En el proceso, las células pierden parte de la membrana celular y el citoplasma</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MecanismoDeSecrecion"/>
+    <rdfs:label xml:lang="es">Apocrina</rdfs:label>
+    <rdfs:label xml:lang="en">Apocrina</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoEspecializado">
+    <rdfs:comment xml:lang="es">Contiene el tejido reticular y adiposo</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho"/>
+    <rdfs:label xml:lang="es">Conectivo Especializado</rdfs:label>
+    <rdfs:label xml:lang="en">Specialised Connective</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TieneNumeroCapas">
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">tiene Número de Capas</rdfs:label>
+    <rdfs:label xml:lang="en">has Number of Layers</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoConectivoEspecializado">
+    <rdfs:comment xml:lang="es">Contiene el cartilago, oseo y sanguineo</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivo"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Especializado</rdfs:label>
+    <rdfs:label xml:lang="en">Connective Specialised Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo">
+    <rdfs:comment xml:lang="es">Regula todas las funciones corporales, controla la musculatura lisa, la cardíaca, las vísceras y las glándulas por orden del sistema nervioso central.</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#SistemaNerviosoPeriferico"/>
+    <rdfs:label xml:lang="es">Sistema Nervioso Periferico Autonomo</rdfs:label>
+    <rdfs:label xml:lang="en">Peripheral Autonomic Nervous System</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroCapas">
+    <rdfs:comment xml:lang="es">Cantidad de capas o túnicas</rdfs:comment>
+    <rdfs:label xml:lang="es">Número de Capas</rdfs:label>
+    <rdfs:label xml:lang="en">Number of Layers</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A31"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#ConectivoDenso"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#esComponenteDe">
+    <owl:inverseOf rdf:resource="https://w3id.org/def/Tissue#estaCompuestaPor"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">es Componente de</rdfs:label>
+    <rdfs:label xml:lang="en">in Component of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#estaCompuestaPor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroCapasTransicional">
+    <rdfs:comment xml:lang="es">formado por un número variable de capas con una transición entre el epitelio plano estratificado y el cilíndrico estratificado</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroCapas"/>
+    <rdfs:label xml:lang="es">Capa Transicional</rdfs:label>
+    <rdfs:label xml:lang="en">Transitional Layer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoMuscular">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.690</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:label xml:lang="en">Muscle Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdfs:comment xml:lang="es">formado por células contráctiles (miocitos) que se han especializado al máximo para conseguir trabajo mecánico</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0002437</rdfs:seeAlso>
+    <rdfs:label xml:lang="es">Tejido Muscular</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEmbrionario"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EspecializacionApicalCilios">
+    <rdfs:comment xml:lang="es">Formaciones celulares alargadas dotadas de movimiento pendular u ondulante. Son más largas que las microvellosidades.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#EspecializacionApical"/>
+    <rdfs:label xml:lang="es">Cilios</rdfs:label>
+    <rdfs:label xml:lang="en">Cilia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#CelulaEndotelial"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#tieneCelula"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraSenoCoronario">
+    <rdfs:comment xml:lang="es">conjunto de venas que se unen para formar un gran vaso que recoge la sangre del miocardio</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Seno Coronario</rdfs:label>
+    <rdfs:label xml:lang="en">Coronary Sinus</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular">
+    <rdfs:comment xml:lang="es">el lumen posee un diámetro similar entre el excretómero y el
+adenómero</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaAdenomero"/>
+    <rdfs:label xml:lang="es">Morfología Tubular</rdfs:label>
+    <rdfs:label xml:lang="en">Tubular Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Tejido">
+    <rdfs:comment xml:lang="es">estructuras constituidas por un conjunto organizado de células</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A22"/>
+    <rdfs:label xml:lang="es">Tejido</rdfs:label>
+    <rdfs:label xml:lang="en">Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraVasoVasorum">
+    <rdfs:comment xml:lang="es">Son pequeños vasos que están en las paredes de las grandes arterias y venas que le ayudan a nutrirse a las mismas</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Vasa Vasorum</rdfs:label>
+    <rdfs:label xml:lang="en">Vasa Vasorum</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo">
+    <rdfs:comment xml:lang="es">predominan las células conjuntivas llamadas adipocitos.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.165.114</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#ConectivoEspecializado"/>
+    <rdfs:label xml:lang="es">Adiposo</rdfs:label>
+    <rdfs:label xml:lang="en">Adipose Specialised Connective Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A29"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoConectivo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Estructura">
+    <rdfs:comment xml:lang="es">Conjunto de relaciones que mantienen entre sí las partes de un todo</rdfs:comment>
+    <rdfs:label xml:lang="es">Estructura</rdfs:label>
+    <rdfs:label xml:lang="en">Structure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias">
+    <rdfs:comment xml:lang="es">Son soporte de las neuronas; además intervienen activamente en el procesamiento cerebral de la información en el organismo.</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoNerviosoComponente"/>
+    <rdfs:label xml:lang="es">Glia</rdfs:label>
+    <rdfs:label xml:lang="en">Glia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#esMorfologiaDe">
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">es Morfología de </rdfs:label>
+    <rdfs:label xml:lang="en">is Morphology of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco">
+    <rdfs:comment xml:lang="es">está compuesto por células musculares cardíacas o cardiomiocitos. Forman parte de la pared del corazón.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0002441</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularEstriado"/>
+    <rdfs:label xml:lang="es">Tejido Muscular Estriado Cardiaco</rdfs:label>
+    <rdfs:label xml:lang="en">Cardiac Striated Muscle Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaCelular">
+    <rdfs:comment xml:lang="es">Establece forma y tamaño de las células</rdfs:comment>
+    <rdfs:label xml:lang="es">Morfología Celular</rdfs:label>
+    <rdfs:label xml:lang="en">Cell Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#ConectivoEspecializado"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple">
+    <rdfs:comment xml:lang="es">formado por una sola capa de células aplanadas de contorno poligonal o irregular</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento"/>
+    <rdfs:label xml:lang="es">Tejido Epitelial Plano Simple</rdfs:label>
+    <rdfs:label xml:lang="en">Simple Flat Epithelial Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MecanismoDeSecrecion">
+    <rdfs:comment xml:lang="es">Pueden tener diferentes tipos de secreción</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#GlandulaExocrina"/>
+    <rdfs:label xml:lang="es">Mecanismo de Secreción</rdfs:label>
+    <rdfs:label xml:lang="en">Secretion Mechanism</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#GlandulaExocrina">
+    <rdfs:comment xml:lang="es">conjunto de glándulas que se distribuyen por todo el organismo, formando parte de distintos órganos y aparatos que producen diferentes sustancias no hormonales.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialGlandular"/>
+    <rdfs:label xml:lang="es">Glandula Exocrina</rdfs:label>
+    <rdfs:label xml:lang="en">Exocrine Gland</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EspecializacionApicalQueratina">
+    <rdfs:comment xml:lang="es">forma una capa fuerte y resistente a la fricción, impermeable al agua y casi impenetrable por bacterias, adaptándose a funciones de protección.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#EspecializacionApical"/>
+    <rdfs:label xml:lang="es">Queratina</rdfs:label>
+    <rdfs:label xml:lang="en">Keratin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#tieneCelula">
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">tiene Célula</rdfs:label>
+    <rdfs:label xml:lang="en">has Cell</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TieneMorfologia">
+    <owl:inverseOf rdf:resource="https://w3id.org/def/Tissue#esMorfologiaDe"/>
+    <rdfs:domain rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:range rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+    <rdfs:label xml:lang="es">tiene Morfología</rdfs:label>
+    <rdfs:label xml:lang="en">has Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaFibroblasto">
+    <rdfs:comment xml:lang="es">Célula residente del tejido conectivo propiamente dicho</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12482</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Fibroblasto</rdfs:label>
+    <rdfs:label xml:lang="en">Fibroblast</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#TieneMorfologia"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Mesenquimatico">
+    <rdfs:comment xml:lang="es"> tejido del organismo embrionario, de conjuntivo laxo.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEmbrionario"/>
+    <rdfs:label xml:lang="es">Mesenquimatico</rdfs:label>
+    <rdfs:label xml:lang="en">Mesenchymal</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:rest rdf:nodeID="A33"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoConectivo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Celula">
+    <rdfs:comment xml:lang="es"> Unidad morfológica y funcional de todo ser vivo</rdfs:comment>
+    <rdfs:label xml:lang="es">Célula</rdfs:label>
+    <rdfs:label xml:lang="en">Cell</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#ConectivoMucoide">
+    <rdfs:comment xml:lang="es">Tejido conectivo embrionario que se localiza alrededor de los vasos sanguíneos del cordón umbilical, cerca de su inserción con la placa coriónica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEmbrionario"/>
+    <rdfs:label xml:lang="es">Conectivo Mucoide</rdfs:label>
+    <rdfs:label xml:lang="en">Mucoid Connective</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#GlandulaEndocrina">
+    <rdfs:comment xml:lang="es">conjunto de glándulas que producen sustancias mensajeras llamadas hormonas</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialGlandular"/>
+    <rdfs:label xml:lang="es">Glandula Endrocrina</rdfs:label>
+    <rdfs:label xml:lang="en">Endocrine Gland</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#ConectivoLaxo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoNervioso"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaCelularPlana">
+    <rdfs:comment xml:lang="es">Alargadas paralelas a las regiones de luz</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaCelular"/>
+    <rdfs:label xml:lang="es">Plana</rdfs:label>
+    <rdfs:label xml:lang="en">Flat</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#Cartilago">
+    <rdfs:comment xml:lang="es">elástico, carente de vasos sanguíneos, formados principalmente por matriz extracelular y por células dispersas denominadas condrocitos. </rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.165.382</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivoEspecializado"/>
+    <rdfs:label xml:lang="es">Cartilago</rdfs:label>
+    <rdfs:label xml:lang="en">Cartilage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:members rdf:nodeID="A24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoMuscularEstriado">
+    <rdfs:comment xml:lang="es">compuesto por fibras largas rodeadas de una membrana celular, el sarcolema.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0002438</rdfs:seeAlso>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.690.552</rdfs:seeAlso>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularLiso"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoMuscular"/>
+    <rdfs:label xml:lang="es">Tejido Muscular Estriado</rdfs:label>
+    <rdfs:label xml:lang="en">Striated Muscle Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoMuscularLiso"/>
+    <owl:onProperty rdf:resource="https://w3id.org/def/Tissue#esCercanoA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraFibraElastica">
+    <rdfs:comment xml:lang="es">Las fibras elásticas son paquetes de proteínas (elastina) que se encuentran en la matriz extracelular del tejido conectivo.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
+    <rdfs:label xml:lang="es">Fibra Elastica</rdfs:label>
+    <rdfs:label xml:lang="es">Elastic Fiber</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoConectivoEmbrionario">
+    <rdfs:comment xml:lang="es">Contiene el conectivo mucoide y mesenquimatico.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivo"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Embrionario</rdfs:label>
+    <rdfs:label xml:lang="en">Connective Embryonic Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#CelulaMesotelial">
+    <rdfs:comment xml:lang="es">Células que forman el mesotelio</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C33104</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
+    <rdfs:label xml:lang="es">Mesotelial</rdfs:label>
+    <rdfs:label xml:lang="en">Mesothelial</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa">
+    <rdfs:comment xml:lang="es">cuya secreción está formada por proteínas o glicoproteínas, que se acumulan en gránulos basófilos o acidófilos, dependiendo de la naturaleza de la(s) proteína(s) que contienen. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecion"/>
+    <rdfs:label xml:lang="es">Serosa</rdfs:label>
+    <rdfs:label xml:lang="en">Serous</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:resource="https://w3id.org/def/Tissue#TejidoMuscular"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <owl:members rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <owl:members rdf:nodeID="A36"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NaturalezaSecrecionMixta">
+    <rdfs:comment xml:lang="es"> tienen secreción interna y externa</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NaturalezaSecrecion"/>
+    <rdfs:label xml:lang="es">Mixta</rdfs:label>
+    <rdfs:label xml:lang="en">Mixed</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho">
+    <rdfs:comment xml:lang="es">tipo de tejido conectivo ubicuo, de función más general, menos diferenciado desde el punto de vista histofisiológico.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoConectivo"/>
+    <rdfs:label xml:lang="es">Tejido Conectivo Adulto Propiamente Dicho</rdfs:label>
+    <rdfs:label xml:lang="en">Connective Proper  Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar">
+    <rdfs:comment xml:lang="es">constan de dos elementos: los acinos glandulares, donde encontramos las célula productoras de la secreción glandular, y un conjunto de estructuras tubulares huecas, como ramas de un árbol, donde los estrechos canalículos confluyen progresivamente a conductos finales más y más gruesos.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#MorfologiaAdenomero"/>
+    <rdfs:label xml:lang="es">Morfología Túbulo-Acinar</rdfs:label>
+    <rdfs:label xml:lang="en">Tubule-Acinar Morphology</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoEpitelialGlandular">
+    <rdfs:comment xml:lang="es">conjunto de células cuya función es sintetizar sustancias químicas, como las hormonas, para liberarlas, a menudo en la corriente sanguínea y en el interior de una cavidad corporal o su superficie exterior.</rdfs:comment>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45715</rdfs:seeAlso>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelial"/>
+    <rdfs:label xml:lang="es">Tejido Epitelial Glandular</rdfs:label>
+    <rdfs:label xml:lang="en">Glandular Epithelium Tissue</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#TejidoEpitelial">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MA_0003060</rdfs:seeAlso>
+    <owl:equivalentClass rdf:nodeID="A35"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Epithelium Tissue</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="A39"/>
+    <owl:equivalentClass rdf:nodeID="A32"/>
+    <rdfs:comment xml:lang="es">formado por una o varias capas de células unidas entre sí, que puestas recubren todas las superficies libres del organismo, y constituyen el revestimiento interno de las cavidades, órganos huecos, conductos del cuerpo, así como forman las mucosas y las glándulas.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="A20"/>
+    <owl:equivalentClass rdf:nodeID="A26"/>
+    <owl:equivalentClass rdf:nodeID="A15"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://bioonto.de/mesh.owl#A10.272</rdfs:seeAlso>
+    <rdfs:label xml:lang="es">Tejido Epitelial</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/def/Tissue#NumeroConductosCompuesto">
+    <rdfs:comment xml:lang="es">Sistema ductal ramificado</rdfs:comment>
+    <owl:disjointWith rdf:resource="https://w3id.org/def/Tissue#NumeroConductosSimple"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#NumeroConductos"/>
+    <rdfs:label xml:lang="es">Conductos Compuesto</rdfs:label>
+    <rdfs:label xml:lang="en">Composed Ducts</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,360 @@
+{
+  "@context" : {
+    "OrganoVenaMedianoCalibreRadial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial"
+    },
+    "OrganoArteriaElasticaFemoral" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral"
+    },
+    "SectorSistemaConducenteDelCorazón" : {
+      "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"
+    },
+    "OrganoArteriaMuscularTibial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularTibial"
+    },
+    "OrganoArteriaMuscularUlnar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar"
+    },
+    "OrganoArteriaElasticaCarotidaComun" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun"
+    },
+    "OrganoArteriaMuscularPlantar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar"
+    },
+    "SistemaCirculatorio" : {
+      "@id" : "https://w3id.org/def/Organ#SistemaCirculatorio"
+    },
+    "OrganoVenaMedianoCalibre" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"
+    },
+    "OrganoVenaMedianoCalibreAxilar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar"
+    },
+    "SectorValvulaPulmonar" : {
+      "@id" : "https://w3id.org/def/Organ#SectorValvulaPulmonar"
+    },
+    "SectorMusculoPectinado" : {
+      "@id" : "https://w3id.org/def/Organ#SectorMusculoPectinado"
+    },
+    "TunicaCorazónPericardioParietal" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardioParietal"
+    },
+    "OrganoArteriaArteriola" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaArteriola"
+    },
+    "OrganoVenaMedianoCalibreUlnar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar"
+    },
+    "espacio" : {
+      "@id" : "https://w3id.org/def/Organ#espacio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TunicaCorazónPericardio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardio"
+    },
+    "RegionVentriculoDerecho" : {
+      "@id" : "https://w3id.org/def/Organ#RegionVentriculoDerecho"
+    },
+    "SectorMusculoTrabéculasCárneas" : {
+      "@id" : "https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas"
+    },
+    "OrganoVenaGranCalibreIliaca" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca"
+    },
+    "SectorSistemaConducenteDelCorazónNodoSinusal" : {
+      "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal"
+    },
+    "SectorMusculoPapilar" : {
+      "@id" : "https://w3id.org/def/Organ#SectorMusculoPapilar"
+    },
+    "Sector" : {
+      "@id" : "https://w3id.org/def/Organ#Sector"
+    },
+    "SectorSistemaConducenteDelCorazónNodoAtrioVentricular" : {
+      "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"
+    },
+    "TunicaCorazónSubendocardio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónSubendocardio"
+    },
+    "TunicaVasosSanguineosMedia" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"
+    },
+    "OrganoArteriaMuscularRadial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularRadial"
+    },
+    "tieneOrganoTipo" : {
+      "@id" : "https://w3id.org/def/Organ#tieneOrganoTipo",
+      "@type" : "@id"
+    },
+    "esOrganoDe" : {
+      "@id" : "https://w3id.org/def/Organ#esOrganoDe",
+      "@type" : "@id"
+    },
+    "SistemaCirculatorioLinfatico" : {
+      "@id" : "https://w3id.org/def/Organ#SistemaCirculatorioLinfatico"
+    },
+    "SectorValvulaMitral" : {
+      "@id" : "https://w3id.org/def/Organ#SectorValvulaMitral"
+    },
+    "OrganoVenaGranCalibre" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibre"
+    },
+    "SectorValvulaTricuspide" : {
+      "@id" : "https://w3id.org/def/Organ#SectorValvulaTricuspide"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OrganoArteriaMuscular" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscular"
+    },
+    "OrganoVenaMedianoCalibrePalmar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar"
+    },
+    "OrganoVenaGranCalibreYugular" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular"
+    },
+    "TunicaCorazónSubendotelio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónSubendotelio"
+    },
+    "tieneSector" : {
+      "@id" : "https://w3id.org/def/Organ#tieneSector",
+      "@type" : "@id"
+    },
+    "OrganoCapilarContinuo" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilarContinuo"
+    },
+    "OrganoVenaPequeñoCalibre" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaPequeñoCalibre"
+    },
+    "OrganoVenaMedianoCalibrePopitlea" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea"
+    },
+    "RegionAtrioIzquierdo" : {
+      "@id" : "https://w3id.org/def/Organ#RegionAtrioIzquierdo"
+    },
+    "tieneRegion" : {
+      "@id" : "https://w3id.org/def/Organ#tieneRegion",
+      "@type" : "@id"
+    },
+    "tieneValvula" : {
+      "@id" : "https://w3id.org/def/Organ#tieneValvula",
+      "@type" : "@id"
+    },
+    "OrganoVisceral" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVisceral"
+    },
+    "OrganoVenaVénulaMuscular" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaVénulaMuscular"
+    },
+    "OrganoArteriaMuscularAxilar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar"
+    },
+    "esSector" : {
+      "@id" : "https://w3id.org/def/Organ#esSector",
+      "@type" : "@id"
+    },
+    "Organo" : {
+      "@id" : "https://w3id.org/def/Organ#Organo"
+    },
+    "esTunicaDe" : {
+      "@id" : "https://w3id.org/def/Organ#esTunicaDe",
+      "@type" : "@id"
+    },
+    "OrganoVenaVénulaPostcapilar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaVénulaPostcapilar"
+    },
+    "TunicaCorazónEndotelio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónEndotelio"
+    },
+    "esRegionDe" : {
+      "@id" : "https://w3id.org/def/Organ#esRegionDe",
+      "@type" : "@id"
+    },
+    "SectorSistemaConducenteDelCorazónHazDeHis" : {
+      "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis"
+    },
+    "OrganoVenaVena" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaVena"
+    },
+    "OrganoVenaMedianoCalibreTibial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "OrganoArteriaMuscularBraquial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial"
+    },
+    "OrganoCapilarFenestrado" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilarFenestrado"
+    },
+    "esTipoDe" : {
+      "@id" : "https://w3id.org/def/Organ#esTipoDe",
+      "@type" : "@id"
+    },
+    "OrganoCapilarSinusoide" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilarSinusoide"
+    },
+    "OrganoVenaVénulaColectora" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaVénulaColectora"
+    },
+    "Tunica" : {
+      "@id" : "https://w3id.org/def/Organ#Tunica"
+    },
+    "TunicaCorazónPericardioVisceral" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardioVisceral"
+    },
+    "esOrganoTipo" : {
+      "@id" : "https://w3id.org/def/Organ#esOrganoTipo",
+      "@type" : "@id"
+    },
+    "OrganoArteriaElasticaSubclavia" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia"
+    },
+    "OrganoTipo" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoTipo"
+    },
+    "OrganoArteriaElasticaIliaca" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca"
+    },
+    "OrganoVenaMedianoCalibreBraquial" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial"
+    },
+    "TunicaVasosSanguineosAdventicia" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"
+    },
+    "esComponenteDe" : {
+      "@id" : "https://w3id.org/def/Organ#esComponenteDe",
+      "@type" : "@id"
+    },
+    "SectorValvula" : {
+      "@id" : "https://w3id.org/def/Organ#SectorValvula"
+    },
+    "Sistema" : {
+      "@id" : "https://w3id.org/def/Organ#Sistema"
+    },
+    "TunicaCorazónEndocardio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónEndocardio"
+    },
+    "OrganoCorazon" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCorazon"
+    },
+    "OrganoCapilarDiscontinuo" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilarDiscontinuo"
+    },
+    "OrganoCapilar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoCapilar"
+    },
+    "OrganoVenaGranCalibreFemoral" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral"
+    },
+    "esCercanoA" : {
+      "@id" : "https://w3id.org/def/Organ#esCercanoA",
+      "@type" : "@id"
+    },
+    "tieneTipo" : {
+      "@id" : "https://w3id.org/def/Organ#tieneTipo",
+      "@type" : "@id"
+    },
+    "RegionAtrioDerecho" : {
+      "@id" : "https://w3id.org/def/Organ#RegionAtrioDerecho"
+    },
+    "TunicaCorazón" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazón"
+    },
+    "RegionVentriculoIzquierdo" : {
+      "@id" : "https://w3id.org/def/Organ#RegionVentriculoIzquierdo"
+    },
+    "SectorCuerdasTendinosas" : {
+      "@id" : "https://w3id.org/def/Organ#SectorCuerdasTendinosas"
+    },
+    "OrganoArteriaElasticaAorta" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaAorta"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "SectorMusculo" : {
+      "@id" : "https://w3id.org/def/Organ#SectorMusculo"
+    },
+    "esValvulaDe" : {
+      "@id" : "https://w3id.org/def/Organ#esValvulaDe",
+      "@type" : "@id"
+    },
+    "grosor" : {
+      "@id" : "https://w3id.org/def/Organ#grosor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrganoVenaVénula" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaVénula"
+    },
+    "TunicaVasosSanguineos" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineos"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "estaCompuestoDe" : {
+      "@id" : "https://w3id.org/def/Organ#estaCompuestoDe",
+      "@type" : "@id"
+    },
+    "tieneOrgano" : {
+      "@id" : "https://w3id.org/def/Organ#tieneOrgano",
+      "@type" : "@id"
+    },
+    "TunicaCorazónMiocardio" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaCorazónMiocardio"
+    },
+    "OrganoArteriaMuscularPalmar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar"
+    },
+    "OrganoTubular" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoTubular"
+    },
+    "SectorValvulaAortica" : {
+      "@id" : "https://w3id.org/def/Organ#SectorValvulaAortica"
+    },
+    "OrganoVenaMedianoCalibrePlantar" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar"
+    },
+    "tieneTunica" : {
+      "@id" : "https://w3id.org/def/Organ#tieneTunica",
+      "@type" : "@id"
+    },
+    "OrganoVena" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVena"
+    },
+    "OrganoVenaGranCalibreSubclavia" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia"
+    },
+    "OrganoVenaGranCalibreCavaSuperior" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior"
+    },
+    "Region" : {
+      "@id" : "https://w3id.org/def/Organ#Region"
+    },
+    "OrganoArteria" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteria"
+    },
+    "OrganoVenaGranCalibreCavaInferior" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior"
+    },
+    "TunicaVasosSanguineosIntima" : {
+      "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"
+    },
+    "SectorSistemaConducenteDelCorazónFibraDePurkinje" : {
+      "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"
+    },
+    "OrganoArteriaMuscularPopitlea" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea"
+    },
+    "OrganoArteriaElastica" : {
+      "@id" : "https://w3id.org/def/Organ#OrganoArteriaElastica"
+    },
+    "SistemaCirculatorioSanguineo" : {
+      "@id" : "https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"
+    }
+  }
+}
