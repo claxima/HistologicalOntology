@@ -33,13 +33,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe -->
+    <!-- https://w3id.org/def/System#esComponenteDe -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#esComponenteDe">
         <rdfs:label xml:lang="en">is Component of</rdfs:label>
         <rdfs:label xml:lang="es">es Componente de</rdfs:label>
         <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
-        <inverseOf rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor"/>
+        <inverseOf rdf:resource="https://w3id.org/def/System#estaCompuestoPor"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
         <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Tejido"/>
@@ -47,22 +47,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe -->
+    <!-- https://w3id.org/def/System#esEstructuraDe -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#esEstructuraDe">
         <rdfs:label xml:lang="en">is Structure of</rdfs:label>
         <rdfs:label xml:lang="es">es Estructura de</rdfs:label>
         <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
-        <inverseOf rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+        <inverseOf rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
         <rdfs:range rdf:resource="https://w3id.org/def/Tissue#Estructura"/>
     </ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe -->
+    <!-- https://w3id.org/def/System#esRegionDeLuzDe -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#esRegionDeLuzDe">
         <rdfs:label xml:lang="en">is light region of</rdfs:label>
         <rdfs:label xml:lang="es">es región de luz</rdfs:label>
         <rdfs:comment xml:lang="en">Es región de luz de un órgano</rdfs:comment>
@@ -72,9 +72,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor -->
+    <!-- https://w3id.org/def/System#estaCompuestoPor -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#estaCompuestoPor">
         <rdfs:label xml:lang="en">is Composed by</rdfs:label>
         <rdfs:label xml:lang="es">esta Compuesto por</rdfs:label>
         <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
@@ -84,9 +84,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura -->
+    <!-- https://w3id.org/def/System#tieneEstructura -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#tieneEstructura">
         <rdfs:label xml:lang="en">has Structure</rdfs:label>
         <rdfs:label xml:lang="es">tiene Estructura</rdfs:label>
         <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
@@ -96,13 +96,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz -->
+    <!-- https://w3id.org/def/System#tieneRegionDeLuz -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz">
+    <ObjectProperty rdf:about="https://w3id.org/def/System#tieneRegionDeLuz">
         <rdfs:label xml:lang="en">has light region</rdfs:label>
         <rdfs:label xml:lang="es">tiene Región de Luz</rdfs:label>
         <rdfs:comment xml:lang="es">tiene región de luz</rdfs:comment>
-        <inverseOf rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe"/>
+        <inverseOf rdf:resource="https://w3id.org/def/System#esRegionDeLuzDe"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
         <rdfs:range rdf:resource="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
     </ObjectProperty>
@@ -120,9 +120,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud -->
+    <!-- https://w3id.org/def/System#amplitud -->
 
-    <DatatypeProperty rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud">
+    <DatatypeProperty rdf:about="https://w3id.org/def/System#amplitud">
         <rdfs:label xml:lang="en">Amplitude</rdfs:label>
         <rdfs:label xml:lang="es">Amplitud</rdfs:label>
         <rdfs:comment xml:lang="es">Amplitud de una región de luz</rdfs:comment>
@@ -143,25 +143,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular -->
+    <!-- https://w3id.org/def/System#CelulaFibraMuscular -->
 
-    <Class rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular">
+    <Class rdf:about="https://w3id.org/def/System#CelulaFibraMuscular">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/Tissue#Celula"/>
     </Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola -->
+    <!-- https://w3id.org/def/System#OrganoArteriaMetarteriola -->
 
-    <Class rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola">
+    <Class rdf:about="https://w3id.org/def/System#OrganoArteriaMetarteriola">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteria"/>
     </Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto -->
+    <!-- https://w3id.org/def/System#OrganoConducto -->
 
-    <Class rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto">
+    <Class rdf:about="https://w3id.org/def/System#OrganoConducto">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
         <rdfs:subClassOf>
             <Restriction>
@@ -186,13 +186,13 @@
     <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteria">
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
                 <someValuesFrom>
                     <Class>
                         <intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
                             <Restriction>
-                                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud"/>
+                                <onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
                                 <hasValue>Angosta</hasValue>
                             </Restriction>
                         </intersectionOf>
@@ -216,28 +216,28 @@
     <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscular">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraFibraElastica"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraVasoVasorum"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
@@ -279,7 +279,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <onClass rdf:resource="https://w3id.org/def/Tissue#EstructuraSenoCoronario"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
             </Restriction>
@@ -293,13 +293,13 @@
     <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVena">
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneRegionDeLuz"/>
                 <someValuesFrom>
                     <Class>
                         <intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/def/Tissue#EstructuraRegionLuz"/>
                             <Restriction>
-                                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud"/>
+                                <onProperty rdf:resource="https://w3id.org/def/System#amplitud"/>
                                 <hasValue>Amplia</hasValue>
                             </Restriction>
                         </intersectionOf>
@@ -329,7 +329,7 @@
     <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibre">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#tieneEstructura"/>
                 <someValuesFrom rdf:resource="https://w3id.org/def/Tissue#EstructuraVasoVasorum"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -427,7 +427,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe"/>
+                <onProperty rdf:resource="https://w3id.org/def/System#esComponenteDe"/>
                 <someValuesFrom rdf:resource="https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -477,7 +477,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola"/>
+            <rdf:Description rdf:about="https://w3id.org/def/System#OrganoArteriaMetarteriola"/>
             <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaArteriola"/>
             <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
             <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
