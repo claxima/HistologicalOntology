@@ -7,7 +7,7 @@
       "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple"
     },
     "OrganoArteriaMetarteriola" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoArteriaMetarteriola"
+      "@id" : "https://w3id.org/def/System#OrganoArteriaMetarteriola"
     },
     "Celula" : {
       "@id" : "https://w3id.org/def/Tissue#Celula"
@@ -22,7 +22,7 @@
       "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardio"
     },
     "estaCompuestoPor" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#estaCompuestoPor",
+      "@id" : "https://w3id.org/def/System#estaCompuestoPor",
       "@type" : "@id"
     },
     "TunicaCorazónSubendocardio" : {
@@ -41,7 +41,7 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "OrganoConducto" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#OrganoConducto"
+      "@id" : "https://w3id.org/def/System#OrganoConducto"
     },
     "OrganoArteriaMuscular" : {
       "@id" : "https://w3id.org/def/Organ#OrganoArteriaMuscular"
@@ -56,7 +56,7 @@
       "@id" : "https://w3id.org/def/Tissue#EstructuraRegionLuz"
     },
     "tieneEstructura" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneEstructura",
+      "@id" : "https://w3id.org/def/System#tieneEstructura",
       "@type" : "@id"
     },
     "Error3" : {
@@ -88,7 +88,7 @@
       "@id" : "http://org.semanticweb.owlapi/error#Error7"
     },
     "tieneRegionDeLuz" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#tieneRegionDeLuz",
+      "@id" : "https://w3id.org/def/System#tieneRegionDeLuz",
       "@type" : "@id"
     },
     "Error1" : {
@@ -107,14 +107,14 @@
       "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"
     },
     "CelulaFibraMuscular" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#CelulaFibraMuscular"
+      "@id" : "https://w3id.org/def/System#CelulaFibraMuscular"
     },
     "esComponenteDe" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esComponenteDe",
+      "@id" : "https://w3id.org/def/System#esComponenteDe",
       "@type" : "@id"
     },
     "esEstructuraDe" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esEstructuraDe",
+      "@id" : "https://w3id.org/def/System#esEstructuraDe",
       "@type" : "@id"
     },
     "Error6" : {
@@ -130,7 +130,7 @@
       "@id" : "http://org.semanticweb.owlapi/error#Error2"
     },
     "amplitud" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#amplitud",
+      "@id" : "https://w3id.org/def/System#amplitud",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "seeAlso" : {
@@ -140,7 +140,7 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "esRegionDeLuzDe" : {
-      "@id" : "http://www.semanticweb.org/mmvlab/ontologies/2015/2/System#esRegionDeLuzDe",
+      "@id" : "https://w3id.org/def/System#esRegionDeLuzDe",
       "@type" : "@id"
     },
     "estaCompuestoDe" : {
