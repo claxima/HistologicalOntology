@@ -1,0 +1,644 @@
+<https://w3id.org/def/Tissue#Estructura> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de relaciones que mantienen entre s\u00ED las partes de un todo"@es .
+<https://w3id.org/def/Tissue#Estructura> <http://www.w3.org/2000/01/rdf-schema#label> "Estructura"@es .
+<https://w3id.org/def/Tissue#Estructura> <http://www.w3.org/2000/01/rdf-schema#label> "Structure"@en .
+<https://w3id.org/def/Tissue#Estructura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lula residente del tejido conectivo propiamente dicho"@es .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12482"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/2000/01/rdf-schema#label> "Fibroblasto"@es .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/2000/01/rdf-schema#label> "Fibroblast"@en .
+<https://w3id.org/def/Tissue#CelulaFibroblasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd3 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#MorfologiaCelularCubica> .
+<https://w3id.org/def/Tissue#Sanguineo> <http://www.w3.org/2000/01/rdf-schema#comment> "compuesto de c\u00E9lulas, fragmentos celulares y una matriz extracelular l\u00EDquida denominada plasma sangu\u00EDneo."@es .
+<https://w3id.org/def/Tissue#Sanguineo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado> .
+<https://w3id.org/def/Tissue#Sanguineo> <http://www.w3.org/2000/01/rdf-schema#label> "Sangu\u00EDneo"@es .
+<https://w3id.org/def/Tissue#Sanguineo> <http://www.w3.org/2000/01/rdf-schema#label> "Bloodstone"@en .
+<https://w3id.org/def/Tissue#Sanguineo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffb <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffb <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraFibraElastica> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffb <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#estaCompuestaPor> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Tissue#esMorfologiaDe> .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Morfolog\u00EDa"@es .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/2000/01/rdf-schema#label> "has Morphology"@en .
+<https://w3id.org/def/Tissue#TieneMorfologia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe7 <http://www.w3.org/2002/07/owl#members> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe6 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Tissue#estaCompuestaPor> .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Componente de"@es .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "in Component of"@en .
+<https://w3id.org/def/Tissue#esComponenteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#NumeroCapasSimple> <http://www.w3.org/2000/01/rdf-schema#comment> "Una unica capa celular"@es .
+<https://w3id.org/def/Tissue#NumeroCapasSimple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#NumeroCapasSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Capa Simple"@es .
+<https://w3id.org/def/Tissue#NumeroCapasSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Layer"@en .
+<https://w3id.org/def/Tissue#NumeroCapasSimple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe0 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fda <http://www.w3.org/2002/07/owl#members> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd9 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaFibroblasto> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fed <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fed <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#MorfologiaCelularPlana> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fed <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#TieneMorfologia> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#MorfologiaCelular> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece forma y tama\u00F1o de las c\u00E9lulas"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelular> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa Celular"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelular> <http://www.w3.org/2000/01/rdf-schema#label> "Cell Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaCelular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd8 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#ConectivoDenso> .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/2000/01/rdf-schema#comment> "tejido muy abundante en el organismo, cuyo origen proviene del mes\u00E9nquima."@es .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Laxo"@es .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/2000/01/rdf-schema#label> "Loose Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#MorfologiaCelularPlana> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecion> <http://www.w3.org/2000/01/rdf-schema#comment> "Pueden tener diferentes tipos de secreci\u00F3n"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#GlandulaExocrina> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecion> <http://www.w3.org/2000/01/rdf-schema#label> "Mecanismo de Secreci\u00F3n"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecion> <http://www.w3.org/2000/01/rdf-schema#label> "Secretion Mechanism"@en .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffa <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff9 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe5 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoConectivo> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> .
+<https://w3id.org/def/Tissue#EstructuraFibraNerviosa> <http://www.w3.org/2000/01/rdf-schema#comment> "Prolongaci\u00F3n de las neuronas o cilindroejes, de forma alargada y delgada, que pueden transmitir el impulso nervioso."@es .
+<https://w3id.org/def/Tissue#EstructuraFibraNerviosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraFibraNerviosa> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra Nerviosa"@es .
+<https://w3id.org/def/Tissue#EstructuraFibraNerviosa> <http://www.w3.org/2000/01/rdf-schema#label> "Nerve Fiber"@en .
+<https://w3id.org/def/Tissue#EstructuraFibraNerviosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff8 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoConectivo> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/2000/01/rdf-schema#comment> "est\u00E1 compuesto por c\u00E9lulas musculares card\u00EDacas o cardiomiocitos. Forman parte de la pared del coraz\u00F3n."@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0002441"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoMuscularEstriado> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Muscular Estriado Cardiaco"@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiac Striated Muscle Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> <http://www.w3.org/2000/01/rdf-schema#comment> "formado por nervios y neuronas que residen o se extienden fuera del sistema nervioso central (SNC), hacia los miembros y \u00F3rganos."@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Nervioso Periferico"@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> <http://www.w3.org/2000/01/rdf-schema#label> "Peripheral Nervous System"@en .
+<https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lulas que forman el tejido adiposo"@es .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12556"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/2000/01/rdf-schema#label> "Adipocito"@es .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/2000/01/rdf-schema#label> "Adipocyte"@en .
+<https://w3id.org/def/Tissue#CelulaAdipocito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MorfologiaCelularPlana> <http://www.w3.org/2000/01/rdf-schema#comment> "Alargadas paralelas a las regiones de luz"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularPlana> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+<https://w3id.org/def/Tissue#MorfologiaCelularPlana> <http://www.w3.org/2000/01/rdf-schema#label> "Plana"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularPlana> <http://www.w3.org/2000/01/rdf-schema#label> "Flat"@en .
+<https://w3id.org/def/Tissue#MorfologiaCelularPlana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdf .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <http://www.w3.org/2000/01/rdf-schema#comment> "que secretan mucopolisac\u00E1ridos y dan lugar a una secreci\u00F3n viscosa (el mucus o moco)."@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NaturalezaSecrecion> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <http://www.w3.org/2000/01/rdf-schema#label> "Mucosa"@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <http://www.w3.org/2000/01/rdf-schema#label> "Mucous"@en .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMucosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoDenso> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#esCercanoA> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <http://www.w3.org/2000/01/rdf-schema#comment> "Alargadas perpendiculares a las regiones de luz"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <http://www.w3.org/2000/01/rdf-schema#label> "Cilindrica"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <http://www.w3.org/2000/01/rdf-schema#label> "Cylindrical"@en .
+<https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/2000/01/rdf-schema#comment> "Son peque\u00F1os vasos que est\u00E1n en las paredes de las grandes arterias y venas que le ayudan a nutrirse a las mismas"@es .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/2000/01/rdf-schema#label> "Vasa Vasorum"@es .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/2000/01/rdf-schema#label> "Vasa Vasorum"@en .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fec <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fec <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#NumeroCapasSimple> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fec <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#TieneNumeroCapas> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/2000/01/rdf-schema#comment> "Regiones de luz"@es .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/2000/01/rdf-schema#label> "Regi\u00F3n de Luz"@es .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/2000/01/rdf-schema#label> "Light Region"@en .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd7 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#ConectivoEspecializado> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> <http://www.w3.org/2000/01/rdf-schema#comment> "Nervios espinales, que son los que env\u00EDan informaci\u00F3n sensorial (tacto, dolor) del tronco y las extremidades hacia el sistema nervioso central a trav\u00E9s de la m\u00E9dula espinal. "@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Nervioso Periferico Somatico"@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> <http://www.w3.org/2000/01/rdf-schema#label> "Somatic Peripheral Nervous System"@en .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> <http://www.w3.org/2000/01/rdf-schema#comment> "cuya secreci\u00F3n est\u00E1 formada por prote\u00EDnas o glicoprote\u00EDnas, que se acumulan en gr\u00E1nulos bas\u00F3filos o acid\u00F3filos, dependiendo de la naturaleza de la(s) prote\u00EDna(s) que contienen. "@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NaturalezaSecrecion> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> <http://www.w3.org/2000/01/rdf-schema#label> "Serosa"@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> <http://www.w3.org/2000/01/rdf-schema#label> "Serous"@en .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionSerosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NumeroConductos> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Compuesto y simple"@es .
+<https://w3id.org/def/Tissue#NumeroConductos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#GlandulaExocrina> .
+<https://w3id.org/def/Tissue#NumeroConductos> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero de Conductos"@es .
+<https://w3id.org/def/Tissue#NumeroConductos> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Ducts"@en .
+<https://w3id.org/def/Tissue#NumeroConductos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/2000/01/rdf-schema#comment> "constituyente principal de los huesos en los vertebrados."@es .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.165.265"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado> .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/2000/01/rdf-schema#label> "Oseo"@es .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/2000/01/rdf-schema#label> "Osseous"@en .
+<https://w3id.org/def/Tissue#Oseo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Tissue#TieneNumeroCapas> .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2000/01/rdf-schema#label> "es N\u00FAmero de Capas de"@es .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Number of Layer of"@en .
+<https://w3id.org/def/Tissue#esNumeroCapasDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios> <http://www.w3.org/2000/01/rdf-schema#comment> "Son microvellosidades largas que se agrupan en forma de manojos piriformes. Son inm\u00F3viles, estar\u00EDan relacionados con la absorci\u00F3n y transporte de l\u00EDquidos."@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#EspecializacionApical> .
+<https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios> <http://www.w3.org/2000/01/rdf-schema#label> "Estereocilios"@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios> <http://www.w3.org/2000/01/rdf-schema#label> "Stereocilia"@en .
+<https://w3id.org/def/Tissue#EspecializacionApicalEstereocilios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#comment> "compuesto por fibras largas rodeadas de una membrana celular, el sarcolema."@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0002438"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.690.552"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#TejidoMuscularLiso> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoMuscular> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Muscular Estriado"@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/2000/01/rdf-schema#label> "Striated Muscle Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad de cercania"@es .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/2000/01/rdf-schema#label> "Cercano"@es .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/2000/01/rdf-schema#label> "Near"@en .
+<https://w3id.org/def/Tissue#Cercano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular> <http://www.w3.org/2000/01/rdf-schema#comment> "el lumen posee un di\u00E1metro similar entre el excret\u00F3mero y el\naden\u00F3mero"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaAdenomero> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa Tubular"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular> <http://www.w3.org/2000/01/rdf-schema#label> "Tubular Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe4 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fde <http://www.w3.org/2002/07/owl#members> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdd .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/2000/01/rdf-schema#comment> "Regula todas las funciones corporales, controla la musculatura lisa, la card\u00EDaca, las v\u00EDsceras y las gl\u00E1ndulas por orden del sistema nervioso central."@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#SistemaNerviosoPerifericoSomatico> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Nervioso Periferico Autonomo"@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/2000/01/rdf-schema#label> "Peripheral Autonomic Nervous System"@en .
+<https://w3id.org/def/Tissue#SistemaNerviosoPerifericoAutonomo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff7 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0003060"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fef .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#label> "Epithelium Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fee .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff1 .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#comment> "formado por una o varias capas de c\u00E9lulas unidas entre s\u00ED, que puestas recubren todas las superficies libres del organismo, y constituyen el revestimiento interno de las cavidades, \u00F3rganos huecos, conductos del cuerpo, as\u00ED como forman las mucosas y las gl\u00E1ndulas."@es .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff3 .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff0 .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff2 .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.272"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoEpitelial> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Epitelial"@es .
+<https://w3id.org/def/Tissue#NumeroCapasEstratificado> <http://www.w3.org/2000/01/rdf-schema#comment> "formados por un n\u00FAmero variable de capas celulares."@es .
+<https://w3id.org/def/Tissue#NumeroCapasEstratificado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#NumeroCapasEstratificado> <http://www.w3.org/2000/01/rdf-schema#label> "Capa Estratificado"@es .
+<https://w3id.org/def/Tissue#NumeroCapasEstratificado> <http://www.w3.org/2000/01/rdf-schema#label> "Stratified Layer"@en .
+<https://w3id.org/def/Tissue#NumeroCapasEstratificado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina> <http://www.w3.org/2000/01/rdf-schema#comment> "Ves\u00EDculas llenas de la sustancia se unen al citoplasma que rodea la membrana celular de las gl\u00E1ndulas. En el proceso, las c\u00E9lulas pierden parte de la membrana celular y el citoplasma"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MecanismoDeSecrecion> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Apocrina"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Apocrina"@en .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionApocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/2000/01/rdf-schema#comment> "En este tejido conectivo denso irregular se observan fibras de col\u00E1geno dispuestas en forma aleatoria y muy poca sustancia fundamental."@es .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#ConectivoDensoRegular> .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#ConectivoDenso> .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Denso Irregular"@es .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/2000/01/rdf-schema#label> "Irregular Dense Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/2000/01/rdf-schema#comment> "el\u00E1stico, carente de vasos sangu\u00EDneos, formados principalmente por matriz extracelular y por c\u00E9lulas dispersas denominadas condrocitos. "@es .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.165.382"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado> .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/2000/01/rdf-schema#label> "Cartilago"@es .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/2000/01/rdf-schema#label> "Cartilage"@en .
+<https://w3id.org/def/Tissue#Cartilago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <http://www.w3.org/2000/01/rdf-schema#comment> " tienen secreci\u00F3n interna y externa"@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NaturalezaSecrecion> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <http://www.w3.org/2000/01/rdf-schema#label> "Mixta"@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <http://www.w3.org/2000/01/rdf-schema#label> "Mixed"@en .
+<https://w3id.org/def/Tissue#NaturalezaSecrecionMixta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#NumeroCapas> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#TieneNumeroCapas> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/2000/01/rdf-schema#label> "tiene C\u00E9lula"@es .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/2000/01/rdf-schema#label> "has Cell"@en .
+<https://w3id.org/def/Tissue#tieneCelula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Morfolog\u00EDa de "@es .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Morphology of"@en .
+<https://w3id.org/def/Tissue#esMorfologiaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7feb <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaMiocitoLiso> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7feb <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/2000/01/rdf-schema#comment> "El col\u00E1geno constituye una familia de prote\u00EDnas que se diferencian durante la evoluci\u00F3n y adoptan una morfolog\u00EDa y patolog\u00EDa caracter\u00EDsticas.\nLas fibras de col\u00E1geno son las m\u00E1s frecuentes en el tejido conjuntivo."@es .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra Colagena"@es .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/2000/01/rdf-schema#label> "Collagen Fiber"@en .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoDenso> <http://www.w3.org/2000/01/rdf-schema#comment> "Se caracteriza por la ausencia casi completa de otros tipos de c\u00E9lulas que no sean fibroblastos y por la escasa cantidad de sustancia intercelular amorfa, siendo rica en sustancia intercelular forme, tales como fibras col\u00E1genas o el\u00E1sticas."@es .
+<https://w3id.org/def/Tissue#ConectivoDenso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> .
+<https://w3id.org/def/Tissue#ConectivoDenso> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Denso"@es .
+<https://w3id.org/def/Tissue#ConectivoDenso> <http://www.w3.org/2000/01/rdf-schema#label> "Dense Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoDenso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#ConectivoLaxo> .
+<https://w3id.org/def/Tissue#ConectivoDensoRegular> <http://www.w3.org/2000/01/rdf-schema#comment> "compuesto de fibras col\u00E1genas dispuestas en una forma ordenada, paralela una respecto a la otra, lo que proporciona la m\u00E1xima fortaleza."@es .
+<https://w3id.org/def/Tissue#ConectivoDensoRegular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#ConectivoDenso> .
+<https://w3id.org/def/Tissue#ConectivoDensoRegular> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Denso Regular"@es .
+<https://w3id.org/def/Tissue#ConectivoDensoRegular> <http://www.w3.org/2000/01/rdf-schema#label> "Regular Dense Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoDensoRegular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/2000/01/rdf-schema#comment> " l\u00E1mina el\u00E1stica interna separando la \u00EDntima de la media"@es .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffb .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/2000/01/rdf-schema#label> "Lamina Elastica Interna"@en .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/2000/01/rdf-schema#label> "Internal Elastic Lamina"@en .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/2000/01/rdf-schema#comment> "Son soporte de las neuronas; adem\u00E1s intervienen activamente en el procesamiento cerebral de la informaci\u00F3n en el organismo."@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNerviosoComponente> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/2000/01/rdf-schema#label> "Glia"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/2000/01/rdf-schema#label> "Glia"@en .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteGlias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#comment> "Se encuentra en las paredes de las v\u00EDsceras huecas y en la mayor parte de los vasos sangu\u00EDneos. Sus c\u00E9lulas son fusiformes y no presentan estriaciones, ni un sistema de t\u00FAbulos."@es .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000166"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.690.467"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoMuscular> .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Muscular Liso"@es .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/2000/01/rdf-schema#label> "Smooth Muscle Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado> <http://www.w3.org/2000/01/rdf-schema#comment> "Formado por un n\u00FAmero variable de capas, al menos por dos tipos celulares"@es .
+<https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado> <http://www.w3.org/2000/01/rdf-schema#label> "Capa Seudoestratificado"@es .
+<https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado> <http://www.w3.org/2000/01/rdf-schema#label> "Pseudostratified Layer"@en .
+<https://w3id.org/def/Tissue#NumeroCapasSeudoestratificado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecion> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Secreci\u00F3n mixta, mucosa y serosa."@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#GlandulaExocrina> .
+<https://w3id.org/def/Tissue#NaturalezaSecrecion> <http://www.w3.org/2000/01/rdf-schema#label> "Naturaleza de la Secreci\u00F3n"@es .
+<https://w3id.org/def/Tissue#NaturalezaSecrecion> <http://www.w3.org/2000/01/rdf-schema#label> "Nature of Secretion"@en .
+<https://w3id.org/def/Tissue#NaturalezaSecrecion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/2000/01/rdf-schema#comment> "produce y transmite impulsos nerviosos y est\u00E1 formado por neuronas y c\u00E9lulas de apoyo."@es .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.755"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Nervioso"@es .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/2000/01/rdf-schema#label> "Nervous Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoNervioso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina> <http://www.w3.org/2000/01/rdf-schema#comment> "El producto es liberado por la ruptura y desintegraci\u00F3n de la c\u00E9lula, lisis celular."@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MecanismoDeSecrecion> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Holocrina"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Holocrina"@en .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoMucoide> <http://www.w3.org/2000/01/rdf-schema#comment> "Tejido conectivo embrionario que se localiza alrededor de los vasos sangu\u00EDneos del cord\u00F3n umbilical, cerca de su inserci\u00F3n con la placa cori\u00F3nica."@es .
+<https://w3id.org/def/Tissue#ConectivoMucoide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> .
+<https://w3id.org/def/Tissue#ConectivoMucoide> <http://www.w3.org/2000/01/rdf-schema#label> "Conectivo Mucoide"@es .
+<https://w3id.org/def/Tissue#ConectivoMucoide> <http://www.w3.org/2000/01/rdf-schema#label> "Mucoid Connective"@en .
+<https://w3id.org/def/Tissue#ConectivoMucoide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NumeroConductosSimple> <http://www.w3.org/2000/01/rdf-schema#comment> "Un \u00FAnico conducto no ramificado"@es .
+<https://w3id.org/def/Tissue#NumeroConductosSimple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroConductos> .
+<https://w3id.org/def/Tissue#NumeroConductosSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Conductos Simple"@es .
+<https://w3id.org/def/Tissue#NumeroConductosSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Ducts"@en .
+<https://w3id.org/def/Tissue#NumeroConductosSimple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponente> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Glias y Neuronas"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponente> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNervioso> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponente> <http://www.w3.org/2000/01/rdf-schema#label> "Componentes"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponente> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lula aplanada que recubre el interior de los vasos sangu\u00EDneos"@es .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12865"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/2000/01/rdf-schema#label> "Endotelial"@es .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/2000/01/rdf-schema#label> "Endothelial"@en .
+<https://w3id.org/def/Tissue#CelulaEndotelial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe3 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoMuscular> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdc .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff6 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoMuscular> .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/2000/01/rdf-schema#comment> "constituido por el enc\u00E9falo y la m\u00E9dula espinal."@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#SistemaNerviosoPeriferico> .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Nervioso Central"@es .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/2000/01/rdf-schema#label> "Central Nervous System"@en .
+<https://w3id.org/def/Tissue#SistemaNerviosoCentral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades> <http://www.w3.org/2000/01/rdf-schema#comment> "Son expansiones citoplasm\u00E1ticas cil\u00EDndricas limitadas por la unidad de membrana cuya principal funci\u00F3n es aumentar la superficie de absorci\u00F3n."@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#EspecializacionApical> .
+<https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades> <http://www.w3.org/2000/01/rdf-schema#label> "Microvellosidades"@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades> <http://www.w3.org/2000/01/rdf-schema#label> "Microvilli"@en .
+<https://w3id.org/def/Tissue#EspecializacionApicalMicrovellosidades> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina> <http://www.w3.org/2000/01/rdf-schema#comment> "Peque\u00F1as ves\u00EDculas llenas de la sustancia se funden con la membrana (exocitosis). En este proceso, las c\u00E9lulas no pierden ninguna parte de la membrana celular y ning\u00FAn o muy poco citoplasma."@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MecanismoDeSecrecion> .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Merocrina"@es .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Merocrine"@en .
+<https://w3id.org/def/Tissue#MecanismoDeSecrecionMerocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/2000/01/rdf-schema#comment> "formado por una sola capa de c\u00E9lulas aplanadas de contorno poligonal o irregular"@es .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Epitelial Plano Simple"@es .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Flat Epithelial Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lulas del miocardio o m\u00FAsculo card\u00EDaco capaces de contraerse de forma espont\u00E1nea e individual"@es .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13002"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiomiocito"@es .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiomyocyte"@en .
+<https://w3id.org/def/Tissue#CelulaCardiomiocito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaEndotelial> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fea <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaCardiomiocito> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fea <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/2000/01/rdf-schema#comment> "conjunto de venas que se unen para formar un gran vaso que recoge la sangre del miocardio"@es .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/2000/01/rdf-schema#label> "Seno Coronario"@es .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/2000/01/rdf-schema#label> "Coronary Sinus"@en .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#GlandulaEndocrina> <http://www.w3.org/2000/01/rdf-schema#comment> "conjunto de gl\u00E1ndulas que producen sustancias mensajeras llamadas hormonas"@es .
+<https://w3id.org/def/Tissue#GlandulaEndocrina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelialGlandular> .
+<https://w3id.org/def/Tissue#GlandulaEndocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Glandula Endrocrina"@es .
+<https://w3id.org/def/Tissue#GlandulaEndocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Endocrine Gland"@en .
+<https://w3id.org/def/Tissue#GlandulaEndocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#members> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd5 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/2000/01/rdf-schema#comment> "Sistema ductal ramificado"@es .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#NumeroConductosSimple> .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroConductos> .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/2000/01/rdf-schema#label> "Conductos Compuesto"@es .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/2000/01/rdf-schema#label> "Composed Ducts"@en .
+<https://w3id.org/def/Tissue#NumeroConductosCompuesto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaFibraDePurkinje> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.165"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff5 .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conjuntivo"@es .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Tejido que establece conexi\u00F3n con los otros tejidos y sirve de soporte a diferentes estructuras del cuerpo; es un tejido rico en fibras y de abundante sustancia intercelular."@es .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000011"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#label> "Connective Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo"@es .
+<https://w3id.org/def/Tissue#TejidoConectivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff4 .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.690"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fea .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#comment> "formado por c\u00E9lulas contr\u00E1ctiles (miocitos) que se han especializado al m\u00E1ximo para conseguir trabajo mec\u00E1nico"@es .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7feb .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe9 .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0002437"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Muscular"@es .
+<https://w3id.org/def/Tissue#EspecializacionApical> <http://www.w3.org/2000/01/rdf-schema#comment> "Especializaciones de la superficie celular en los epitelios."@es .
+<https://w3id.org/def/Tissue#EspecializacionApical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> .
+<https://w3id.org/def/Tissue#EspecializacionApical> <http://www.w3.org/2000/01/rdf-schema#label> "Especializaci\u00F3n Apical"@es .
+<https://w3id.org/def/Tissue#EspecializacionApical> <http://www.w3.org/2000/01/rdf-schema#label> "Apical Specialization"@en .
+<https://w3id.org/def/Tissue#EspecializacionApical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/2000/01/rdf-schema#comment> "Las fibras el\u00E1sticas son paquetes de prote\u00EDnas (elastina) que se encuentran en la matriz extracelular del tejido conectivo."@es .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra Elastica"@es .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/2000/01/rdf-schema#label> "Elastic Fiber"@es .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Mesenquimatico> <http://www.w3.org/2000/01/rdf-schema#comment> " tejido del organismo embrionario, de conjuntivo laxo."@es .
+<https://w3id.org/def/Tissue#Mesenquimatico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> .
+<https://w3id.org/def/Tissue#Mesenquimatico> <http://www.w3.org/2000/01/rdf-schema#label> "Mesenquimatico"@es .
+<https://w3id.org/def/Tissue#Mesenquimatico> <http://www.w3.org/2000/01/rdf-schema#label> "Mesenchymal"@en .
+<https://w3id.org/def/Tissue#Mesenquimatico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/2000/01/rdf-schema#comment> "predominan las c\u00E9lulas conjuntivas llamadas adipocitos."@es .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://bioonto.de/mesh.owl#A10.165.114"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#ConectivoEspecializado> .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/2000/01/rdf-schema#label> "Adiposo"@es .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/2000/01/rdf-schema#label> "Adipose Specialised Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoEspecializadoAdiposo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoNervioso> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdb .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> .
+<https://w3id.org/def/Tissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoNervioso> .
+<https://w3id.org/def/Tissue#Celula> <http://www.w3.org/2000/01/rdf-schema#comment> " Unidad morfol\u00F3gica y funcional de todo ser vivo"@es .
+<https://w3id.org/def/Tissue#Celula> <http://www.w3.org/2000/01/rdf-schema#label> "C\u00E9lula"@es .
+<https://w3id.org/def/Tissue#Celula> <http://www.w3.org/2000/01/rdf-schema#label> "Cell"@en .
+<https://w3id.org/def/Tissue#Celula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/2000/01/rdf-schema#comment> "Insertado en cart\u00EDlagos o aponeurosis. Est\u00E1 compuesto por c\u00E9lulas \"multinucleadas\" largas (hasta 30 cm) y cil\u00EDndricas que se contraen para facilitar el movimiento del cuerpo y de sus partes."@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0002439"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoMuscularEstriado> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Muscular Estriado Esquel\u00E9tico"@es .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/2000/01/rdf-schema#label> "Skeletal Striated Muscle Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoEsqueletico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fef <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fef <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fef <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#TieneMorfologia> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Recubren la superficie corporal externa y los \u00F3rganos internos."@es .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fec .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fed .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Epithelial Coating Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Epitelial de Revestimiento"^^<http://www.w3.org/2001/XMLSchema#Name> .
+<https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#GlandulaExocrina> <http://www.w3.org/2000/01/rdf-schema#comment> "conjunto de gl\u00E1ndulas que se distribuyen por todo el organismo, formando parte de distintos \u00F3rganos y aparatos que producen diferentes sustancias no hormonales."@es .
+<https://w3id.org/def/Tissue#GlandulaExocrina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelialGlandular> .
+<https://w3id.org/def/Tissue#GlandulaExocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Glandula Exocrina"@es .
+<https://w3id.org/def/Tissue#GlandulaExocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Exocrine Gland"@en .
+<https://w3id.org/def/Tissue#GlandulaExocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Central y periferico"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNervioso> .
+<https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> <http://www.w3.org/2000/01/rdf-schema#label> "Distribuci\u00F3n Anatomica"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> <http://www.w3.org/2000/01/rdf-schema#label> "Anatomic Distribution"@en .
+<https://w3id.org/def/Tissue#TejidoNerviosoDistribucionAnatomica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/2000/01/rdf-schema#comment> "estructuras constituidas por un conjunto organizado de c\u00E9lulas"@es .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffa .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido"@es .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/2000/01/rdf-schema#label> "Tissue"@en .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#comment> "Forman parte del m\u00FAsculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio"@es .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12651"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra de Purkinje"@es .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#label> "Purkinje Fiber"@en .
+<https://w3id.org/def/Tissue#CelulaFibraDePurkinje> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff0 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff0 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#esCercanoA> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd4 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#MorfologiaCelularCilindrica> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomero> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Acinar, Tubular y Tubulo-Acinar"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#GlandulaExocrina> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomero> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa del Adenomero"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomero> <http://www.w3.org/2000/01/rdf-schema#label> "Morphology of Adenomere"@en .
+<https://w3id.org/def/Tissue#MorfologiaAdenomero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene el tejido reticular y adiposo"@es .
+<https://w3id.org/def/Tissue#ConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> .
+<https://w3id.org/def/Tissue#ConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#label> "Conectivo Especializado"@es .
+<https://w3id.org/def/Tissue#ConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#label> "Specialised Connective"@en .
+<https://w3id.org/def/Tissue#ConectivoEspecializado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#NumeroCapas> <http://www.w3.org/2000/01/rdf-schema#comment> "Cantidad de capas o t\u00FAnicas"@es .
+<https://w3id.org/def/Tissue#NumeroCapas> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAmero de Capas"@es .
+<https://w3id.org/def/Tissue#NumeroCapas> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Layers"@en .
+<https://w3id.org/def/Tissue#NumeroCapas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MorfologiaCelularCubica> <http://www.w3.org/2000/01/rdf-schema#comment> "Circulares"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularCubica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaCelular> .
+<https://w3id.org/def/Tissue#MorfologiaCelularCubica> <http://www.w3.org/2000/01/rdf-schema#label> "Cubica"@es .
+<https://w3id.org/def/Tissue#MorfologiaCelularCubica> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic"@en .
+<https://w3id.org/def/Tissue#MorfologiaCelularCubica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#Morfologia> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene morfolog\u00EDa cordonal y folicular"@es .
+<https://w3id.org/def/Tissue#Morfologia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#GlandulaEndocrina> .
+<https://w3id.org/def/Tissue#Morfologia> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa"@es .
+<https://w3id.org/def/Tissue#Morfologia> <http://www.w3.org/2000/01/rdf-schema#label> "Morphology"@en .
+<https://w3id.org/def/Tissue#Morfologia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#ConectivoEpecializadoReticular> <http://www.w3.org/2000/01/rdf-schema#comment> "forma una malla tridimensional estable, que otorga un soporte estructural a las c\u00E9lulas migratorias de \u00F3rganos relacionados directamente con los leucocitos de la sangre como son el bazo, los ganglios linf\u00E1ticos y la m\u00E9dula \u00F3sea hematopoy\u00E9tica."@es .
+<https://w3id.org/def/Tissue#ConectivoEpecializadoReticular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#ConectivoEspecializado> .
+<https://w3id.org/def/Tissue#ConectivoEpecializadoReticular> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Especializado Reticular"@es .
+<https://w3id.org/def/Tissue#ConectivoEpecializadoReticular> <http://www.w3.org/2000/01/rdf-schema#label> "Reticular Specialised Connective Tissue"@en .
+<https://w3id.org/def/Tissue#ConectivoEpecializadoReticular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaMiocitoLiso> <http://www.w3.org/2000/01/rdf-schema#comment> "La fibra muscular o miocito liso"@es .
+<https://w3id.org/def/Tissue#CelulaMiocitoLiso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaMiocitoLiso> <http://www.w3.org/2000/01/rdf-schema#label> "Miocito Liso"@es .
+<https://w3id.org/def/Tissue#CelulaMiocitoLiso> <http://www.w3.org/2000/01/rdf-schema#label> "Smooth Muscle"@en .
+<https://w3id.org/def/Tissue#CelulaMiocitoLiso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraFibraElastica> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#estaCompuestaPor> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#NumeroCapasTransicional> <http://www.w3.org/2000/01/rdf-schema#comment> "formado por un n\u00FAmero variable de capas con una transici\u00F3n entre el epitelio plano estratificado y el cil\u00EDndrico estratificado"@es .
+<https://w3id.org/def/Tissue#NumeroCapasTransicional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#NumeroCapasTransicional> <http://www.w3.org/2000/01/rdf-schema#label> "Capa Transicional"@es .
+<https://w3id.org/def/Tissue#NumeroCapasTransicional> <http://www.w3.org/2000/01/rdf-schema#label> "Transitional Layer"@en .
+<https://w3id.org/def/Tissue#NumeroCapasTransicional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe8 <http://www.w3.org/2000/01/rdf-schema#label> "Epithelium Tissue"^^<http://www.w3.org/2001/XMLSchema#Name> .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lulas dispuestas formando cordones"@es .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#MorfologiaFolicular> .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Morfologia> .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa Cordonal"@es .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/2000/01/rdf-schema#label> "Cordonal Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaCordonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Tissue#esCercanoA> .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n de cercania entre la regi\u00F3n de luz y el tejido"@es .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#label> "es Cercano a"@es .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#label> "in Near to"@en .
+<https://w3id.org/def/Tissue#esCercanoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar> <http://www.w3.org/2000/01/rdf-schema#comment> "El aden\u00F3mero tambi\u00E9n esf\u00E9rico, presenta un lumen peque\u00F1o"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaAdenomero> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa Acinar"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar> <http://www.w3.org/2000/01/rdf-schema#label> "Acinar Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#TejidoConectivoEspecializado> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#members> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe1 .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar> <http://www.w3.org/2000/01/rdf-schema#comment> "constan de dos elementos: los acinos glandulares, donde encontramos las c\u00E9lula productoras de la secreci\u00F3n glandular, y un conjunto de estructuras tubulares huecas, como ramas de un \u00E1rbol, donde los estrechos canal\u00EDculos confluyen progresivamente a conductos finales m\u00E1s y m\u00E1s gruesos."@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#MorfologiaAdenomero> .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa T\u00FAbulo-Acinar"@es .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar> <http://www.w3.org/2000/01/rdf-schema#label> "Tubule-Acinar Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaAdenomeroTubuloAcinar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#MorfologiaFolicular> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lulas dispuestas formando esferas denominadas fol\u00EDculos "@es .
+<https://w3id.org/def/Tissue#MorfologiaFolicular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Morfologia> .
+<https://w3id.org/def/Tissue#MorfologiaFolicular> <http://www.w3.org/2000/01/rdf-schema#label> "Morfolog\u00EDa Folicular"@es .
+<https://w3id.org/def/Tissue#MorfologiaFolicular> <http://www.w3.org/2000/01/rdf-schema#label> "Follicular Morphology"@en .
+<https://w3id.org/def/Tissue#MorfologiaFolicular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/2000/01/rdf-schema#comment> "l\u00E1mina el\u00E1stica externa que separa la media de la adventicia"@es .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ffc .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/2000/01/rdf-schema#label> "Lamina Elastica Externa"@es .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/2000/01/rdf-schema#label> "External Elastic Lamina"@en .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene el conectivo mucoide y mesenquimatico."@es .
+<https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivo> .
+<https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Embrionario"@es .
+<https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <http://www.w3.org/2000/01/rdf-schema#label> "Connective Embryonic Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoConectivoEmbrionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> <http://www.w3.org/2000/01/rdf-schema#comment> "especializadas en la recepci\u00F3n de est\u00EDmulos y conducci\u00F3n del impulso nervioso"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoNerviosoComponente> .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> <http://www.w3.org/2000/01/rdf-schema#label> "Neurona"@es .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> <http://www.w3.org/2000/01/rdf-schema#label> "Neuron"@en .
+<https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#NumeroCapas> .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#label> "tiene N\u00FAmero de Capas"@es .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/2000/01/rdf-schema#label> "has Number of Layers"@en .
+<https://w3id.org/def/Tissue#TieneNumeroCapas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#CelulaAdipocito> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#tieneCelula> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fee <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#TejidoMuscularLiso> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fee <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Tissue#esCercanoA> .
+_:AX2dX352891a3X3aX15637cb9b0bX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2000/01/rdf-schema#comment> "conjunto de c\u00E9lulas cuya funci\u00F3n es sintetizar sustancias qu\u00EDmicas, como las hormonas, para liberarlas, a menudo en la corriente sangu\u00EDnea y en el interior de una cavidad corporal o su superficie exterior."@es .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45715"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Tissue#TejidoEpitelialRevestimiento> .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoEpitelial> .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Epitelial Glandular"@es .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/2000/01/rdf-schema#label> "Glandular Epithelium Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoEpitelialGlandular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#EspecializacionApicalCilios> <http://www.w3.org/2000/01/rdf-schema#comment> "Formaciones celulares alargadas dotadas de movimiento pendular u ondulante. Son m\u00E1s largas que las microvellosidades."@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalCilios> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#EspecializacionApical> .
+<https://w3id.org/def/Tissue#EspecializacionApicalCilios> <http://www.w3.org/2000/01/rdf-schema#label> "Cilios"@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalCilios> <http://www.w3.org/2000/01/rdf-schema#label> "Cilia"@en .
+<https://w3id.org/def/Tissue#EspecializacionApicalCilios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.w3.org/2000/01/rdf-schema#comment> "tipo de tejido conectivo ubicuo, de funci\u00F3n m\u00E1s general, menos diferenciado desde el punto de vista histofisiol\u00F3gico."@es .
+<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivo> .
+<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Adulto Propiamente Dicho"@es .
+<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.w3.org/2000/01/rdf-schema#label> "Connective Proper  Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoConectivoAdultoPropiamenteDicho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00E9lulas que forman el mesotelio"@es .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C33104"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/2000/01/rdf-schema#label> "Mesotelial"@es .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/2000/01/rdf-schema#label> "Mesothelial"@en .
+<https://w3id.org/def/Tissue#CelulaMesotelial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/2000/01/rdf-schema#label> "esta Compuesta por"@es .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/2000/01/rdf-schema#label> "is Composed for"@en .
+<https://w3id.org/def/Tissue#estaCompuestaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#TejidoConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene el cartilago, oseo y sanguineo"@es .
+<https://w3id.org/def/Tissue#TejidoConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#TejidoConectivo> .
+<https://w3id.org/def/Tissue#TejidoConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#label> "Tejido Conectivo Especializado"@es .
+<https://w3id.org/def/Tissue#TejidoConectivoEspecializado> <http://www.w3.org/2000/01/rdf-schema#label> "Connective Specialised Tissue"@en .
+<https://w3id.org/def/Tissue#TejidoConectivoEspecializado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Tissue#tieneCelula> .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2000/01/rdf-schema#label> "es C\u00E9lula de"@es .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Cell of"@en .
+<https://w3id.org/def/Tissue#esCelulaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Tissue#EspecializacionApicalQueratina> <http://www.w3.org/2000/01/rdf-schema#comment> "forma una capa fuerte y resistente a la fricci\u00F3n, impermeable al agua y casi impenetrable por bacterias, adapt\u00E1ndose a funciones de protecci\u00F3n."@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalQueratina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#EspecializacionApical> .
+<https://w3id.org/def/Tissue#EspecializacionApicalQueratina> <http://www.w3.org/2000/01/rdf-schema#label> "Queratina"@es .
+<https://w3id.org/def/Tissue#EspecializacionApicalQueratina> <http://www.w3.org/2000/01/rdf-schema#label> "Keratin"@en .
+<https://w3id.org/def/Tissue#EspecializacionApicalQueratina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
