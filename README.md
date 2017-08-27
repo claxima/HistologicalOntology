@@ -10,7 +10,7 @@ We left the histological ontology publicly available at http://bioportal.bioonto
 
 License
 
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic1 license: https://creativecommons.org/licenses/by-nc-sa/2.0/
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic1 license: http://creativecommons.org/licenses/by/4.0/
 
 To view
 
