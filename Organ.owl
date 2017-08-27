@@ -1,0 +1,1978 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="https://w3id.org/def/Organ#"
+     xml:base="https://w3id.org/def/Organ"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="https://w3id.org/def/Organ">
+        <date rdf:datatype="&xsd;dateTime">25/11/2016</date>
+        <rdfs:comment rdf:datatype="&xsd;string">Inicialmente la ontología fue creada en Español y posteriormente se incluyo una versión en Ingles. La ontologia esta disponible en http://bioportal.bioontology.org/ontologies/HO, la documentación en https://w3id.org/def/System  y los archivos OWL en https://github.com/claxima/HistologicalOntology.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Initially, the ontology was created in Spanish and later on a version in English was included. We left the histological ontology publicly available at http://bioportal.bioontology.org/ontologies/HO, the documentation at https://w3id.org/def/System and the OWL files at https://github.com/claxima/HistologicalOntology.</rdfs:comment>
+        <creator rdf:datatype="&xsd;string">PhD. Claudia Mazo (Universidad del Valle, Universidad de León)</creator>
+        <creator rdf:datatype="&xsd;string">PhD. Enrique Alegre (Universidad de León)</creator>
+        <creator rdf:datatype="&xsd;string">PhD. Maria Trujillo (Universidad del Valle)</creator>
+        <creator rdf:datatype="&xsd;string">PhD. Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</creator>
+        <license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/def/Organ/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/Organ#creator -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/Organ#creator"/>
+    
+
+
+    <!-- https://w3id.org/def/Organ#date -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/Organ#date"/>
+    
+
+
+    <!-- https://w3id.org/def/Organ#license -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/Organ#license"/>
+    
+
+
+    <!-- https://w3id.org/def/Organ#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/Organ#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/Organ#esCercanoA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esCercanoA">
+        <rdfs:label xml:lang="en">is near to</rdfs:label>
+        <rdfs:label xml:lang="es">es cercano a </rdfs:label>
+        <rdfs:comment xml:lang="es">Cercania de órganos</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esCercanoA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esComponenteDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esComponenteDe">
+        <rdfs:label xml:lang="en">is Component of</rdfs:label>
+        <rdfs:label xml:lang="es">es Componente de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esOrganoDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esOrganoDe">
+        <rdfs:label xml:lang="en">is Organ of</rdfs:label>
+        <rdfs:label xml:lang="es">es Órgano de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#tieneOrgano"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esOrganoTipo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esOrganoTipo">
+        <rdfs:label xml:lang="en">is Type Organ</rdfs:label>
+        <rdfs:label xml:lang="es">es Órgano Tipo</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esRegionDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esRegionDe">
+        <rdfs:label xml:lang="en">is Region of</rdfs:label>
+        <rdfs:label xml:lang="es">es Región de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Region"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#tieneRegion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esSector -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esSector">
+        <rdfs:label xml:lang="en">is Sector of</rdfs:label>
+        <rdfs:label xml:lang="es">es Sector de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Sector"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esTipoDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esTipoDe">
+        <rdfs:label xml:lang="en">is Type of</rdfs:label>
+        <rdfs:label xml:lang="es">es Tipo de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esTunicaDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esTunicaDe">
+        <rdfs:label xml:lang="en">is Layer of</rdfs:label>
+        <rdfs:label xml:lang="es">es Túnica de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#esValvulaDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#esValvulaDe">
+        <rdfs:label xml:lang="en">is Valve of</rdfs:label>
+        <rdfs:label xml:lang="es">es Válvula de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#estaCompuestoDe -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#estaCompuestoDe">
+        <rdfs:label xml:lang="en">is Composed of</rdfs:label>
+        <rdfs:label xml:lang="es">esta Compuesto de</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esComponenteDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneOrgano -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneOrgano">
+        <rdfs:label xml:lang="en">has Organ</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Órgano</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneOrganoTipo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneOrganoTipo">
+        <rdfs:label xml:lang="en">has Type Organ</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Órgano Tipo</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esOrganoTipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneRegion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneRegion">
+        <rdfs:label xml:lang="en">has Region</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Región</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneSector -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneSector">
+        <rdfs:label xml:lang="en">has Sector</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Sector</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Sector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneTipo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneTipo">
+        <rdfs:label xml:lang="en">has Type</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Tipo</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esTipoDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneTunica -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneTunica">
+        <rdfs:label xml:lang="en">has Layer</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Túnica</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esTunicaDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#tieneValvula -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Organ#tieneValvula">
+        <rdfs:label xml:lang="en">has Valve</rdfs:label>
+        <rdfs:label xml:lang="es">tiene Válvula</rdfs:label>
+        <rdfs:comment xml:lang="es">relación de composición o formación</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/Organ#esValvulaDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/Organ#espacio -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/Organ#espacio">
+        <rdfs:label xml:lang="en">Space</rdfs:label>
+        <rdfs:label xml:lang="es">Espacio</rdfs:label>
+        <rdfs:comment xml:lang="en">Espacios</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/Organ#grosor -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/Organ#grosor">
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+        <rdfs:label xml:lang="es">Grosor</rdfs:label>
+        <rdfs:comment xml:lang="es">Ancho, grosor</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/Organ#Organo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#Organo">
+        <rdfs:label xml:lang="en">Organ</rdfs:label>
+        <rdfs:label xml:lang="es">Órgano</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="es">es una agrupación de diversos tejidos que forman una unidad estructural encargada del cumplimiento de una función determinada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteria -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteria">
+        <rdfs:label xml:lang="en">Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esCercanoA"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoVena"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#grosor"/>
+                                <owl:hasValue>Gruesa</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTubular"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">cada uno de los vasos que llevan la sangre oxigenada (exceptuando las arterias pulmonares) desde el corazón hacia las demás partes del cuerpo.</rdfs:comment>
+        <sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D001158"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaArteriola -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaArteriola">
+        <rdfs:label xml:lang="en">Arteriole</rdfs:label>
+        <rdfs:label xml:lang="es">Arteriola</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteria"/>
+        <rdfs:comment xml:lang="es"> vaso sanguíneo de diámetro menor de 40 o 100 micras</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElastica -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElastica">
+        <rdfs:label xml:lang="en">Elastic Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Elástica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteria"/>
+        <rdfs:comment xml:lang="es">Conforman las grandes arterias</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElasticaAorta -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaAorta">
+        <rdfs:label xml:lang="en">Aorta Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Aorta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+        <rdfs:comment xml:lang="es">principal arteria del cuerpo humano</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun">
+        <rdfs:label xml:lang="en">Common Carotid Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Carotida Común</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+        <rdfs:comment xml:lang="es">situadas a ambos lados de la región cervical anterior en el cuello</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral">
+        <rdfs:label xml:lang="en">Femoral Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Femoral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+        <rdfs:comment xml:lang="es"> gran arteria del muslo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca">
+        <rdfs:label xml:lang="en">Iliac Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Iliaca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+        <rdfs:comment xml:lang="es">se originan de la bifurcación de la aorta. Las arterias se extienden hacia abajo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia">
+        <rdfs:label xml:lang="en">Subclavian Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Subclavia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaElastica"/>
+        <rdfs:comment xml:lang="es"> arteria del miembro superior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscular -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscular">
+        <rdfs:label xml:lang="en">Muscular Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Muscular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteria"/>
+        <rdfs:comment xml:lang="es">Constituyen las arterias pequeñas y medianas del organismo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar">
+        <rdfs:label xml:lang="en">Axillary Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Axilar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es"> constituye la continuación de la subclavia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial">
+        <rdfs:label xml:lang="en">Brachial Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Braquial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">arteria del brazo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar">
+        <rdfs:label xml:lang="en">Palmar Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Palmar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">Situada en la mano</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar">
+        <rdfs:label xml:lang="en">Plantar Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Plantar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">Situada en el pie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea">
+        <rdfs:label xml:lang="en">Popliteal Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Popitlea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">prolongación de la arteria femoral</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularRadial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularRadial">
+        <rdfs:label xml:lang="en">Radial Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Radial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es"> arteria del antebrazo que se origina como rama de bifurcación externa de la arteria humeral</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularTibial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularTibial">
+        <rdfs:label xml:lang="en">Tibial Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Tibial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">Se origina como rama de bifurcación anterior de la arteria poplítea</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar">
+        <rdfs:label xml:lang="en">Ulnar Artery</rdfs:label>
+        <rdfs:label xml:lang="es">Arteria Ulnar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoArteriaMuscular"/>
+        <rdfs:comment xml:lang="es">se origina como rama terminal interna de la arteria humeral.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCapilar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCapilar">
+        <rdfs:label xml:lang="en">Capillary</rdfs:label>
+        <rdfs:label xml:lang="es">Capilar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineos"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTubular"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es"> vasos sanguíneos de menor diámetro</rdfs:comment>
+        <sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D002196"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCapilarContinuo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCapilarContinuo">
+        <rdfs:label xml:lang="en">Continuous Capillary</rdfs:label>
+        <rdfs:label xml:lang="es">Capilar Continuo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoCapilar"/>
+        <rdfs:comment xml:lang="es">no poseen poros ni menestras en sus paredes. Se encuentran en los tejidos muscular, nervioso y conectivo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCapilarDiscontinuo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCapilarDiscontinuo">
+        <rdfs:label xml:lang="en">Discontinuous Capilar</rdfs:label>
+        <rdfs:label xml:lang="es">Capilar Discontinuo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoCapilar"/>
+        <rdfs:comment xml:lang="es">presencia de fenestraciones sin diafragmas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCapilarFenestrado -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCapilarFenestrado">
+        <rdfs:label xml:lang="en">Fenestrated Capillary</rdfs:label>
+        <rdfs:label xml:lang="es">Capilar Fenestrado</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoCapilar"/>
+        <rdfs:comment xml:lang="es">poseen poros (fenestras) en sus paredes que estan recubiertos por diafragma de poros. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCapilarSinusoide -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCapilarSinusoide">
+        <rdfs:label xml:lang="en">Sinusoide Capillary</rdfs:label>
+        <rdfs:label xml:lang="es">Capilar Sinusoide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoCapilar"/>
+        <rdfs:comment xml:lang="es"> pueden tener células endoteliales y lámina basal discontinuas e incluyen muchas menestras grandes sin diafragmas, que aumentan el intercambio entre la sangre y el tejido.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoCorazon -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoCorazon">
+        <rdfs:label xml:lang="en">Heart</rdfs:label>
+        <rdfs:label xml:lang="es">Corazón</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneRegion"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#RegionAtrioIzquierdo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">4</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvulaMitral"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónMiocardio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvulaAortica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvulaTricuspide"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorCuerdasTendinosas"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorMusculoPectinado"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvulaPulmonar"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónPericardio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorMusculoPapilar"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneRegion"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#RegionVentriculoIzquierdo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneRegion"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#RegionAtrioDerecho"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneRegion"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#RegionVentriculoDerecho"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneSector"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónEndocardio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12727</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es"> órgano muscular principal del aparato circulatorio</rdfs:comment>
+        <sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D006321"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoTipo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoTipo">
+        <rdfs:label xml:lang="en">Type of Organ</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de Órgano</rdfs:label>
+        <rdfs:comment xml:lang="es">Contiene Tubular y Visceral</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoTubular -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoTubular">
+        <rdfs:label xml:lang="en">Tubular Organ</rdfs:label>
+        <rdfs:label xml:lang="es">Órgano Tubular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+        <rdfs:comment xml:lang="es">Órganos huecos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVena -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVena">
+        <rdfs:label xml:lang="en">Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#grosor"/>
+                                <owl:hasValue>Gruesa</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#grosor"/>
+                                <owl:hasValue>Delgada</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Organo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#esOrganoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTubular"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">vaso sanguíneo que conduce la sangre desde los capilares hasta el corazón</rdfs:comment>
+        <sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D014680"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibre -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibre">
+        <rdfs:label xml:lang="en">Large Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena de Gran Calibre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVena"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">aquellas venas cercanas al corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior">
+        <rdfs:label xml:lang="en">Inferior Vein Cava</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Cava Inferior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es">retorna sangre de los miembros inferiores, los órganos del abdomen y la pelvis hasta la aurícula derecha del corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior">
+        <rdfs:label xml:lang="en">Superior Vein Cava</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Cava Superior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es"> recoge la sangre de la cabeza, el cuello, los miembros superiores y el tórax</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral">
+        <rdfs:label xml:lang="en">Femoral Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Femoral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es">es la continuación de la vena poplítea</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca">
+        <rdfs:label xml:lang="en">Iliac Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Iliaca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es">prolongación de la vena femoral</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia">
+        <rdfs:label xml:lang="en">Subclavian Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Subclavia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es">es la continuación de la vena axilar</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular">
+        <rdfs:label xml:lang="en">Jugular Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Yugular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+        <rdfs:comment xml:lang="es"> Drena la sangre que proviene en su mayor parte del cuero cabelludo y de la cara.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibre -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre">
+        <rdfs:label xml:lang="en">Medium Caliber Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Mediano Calibre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaVena"/>
+        <rdfs:comment xml:lang="es">desde 1 hasta 10 mm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar">
+        <rdfs:label xml:lang="en">Axillary Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Axilar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es"> conduce la sangre de la parte lateral del tórax, axila y miembro superior hacia el corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial">
+        <rdfs:label xml:lang="en">Brachial Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Braquial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">son venas comitantes de la arteria braquial en el brazo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar">
+        <rdfs:label xml:lang="en">Palmar Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Palmar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">Recogén sangre de la mano</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar">
+        <rdfs:label xml:lang="en">Plantar Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Plantar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">Recogén sangre del pie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea">
+        <rdfs:label xml:lang="en">Popliteal Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Popitlea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es"> pasa por detrás del rombo poplíteo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial">
+        <rdfs:label xml:lang="en">Radial Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Radial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">su trayectoria a través del dorso de la mano y la cara lateral del antebrazo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial">
+        <rdfs:label xml:lang="en">Tibial Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Tibial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">se origina como rama de bifurcación anterior de la arteria poplítea</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar">
+        <rdfs:label xml:lang="en">Ulnar Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Ulnar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaMedianoCalibre"/>
+        <rdfs:comment xml:lang="es">Vena ulnar .</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaPequeñoCalibre -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaPequeñoCalibre">
+        <rdfs:label xml:lang="en">Small Caliber Vein</rdfs:label>
+        <rdfs:label xml:lang="es">Vena Pequeño Calibre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaVena"/>
+        <rdfs:comment xml:lang="es">Venas de menor diametro</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaVena -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaVena">
+        <rdfs:label xml:lang="en">Vein Organ</rdfs:label>
+        <rdfs:label xml:lang="es">Órgano Vena</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVena"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Las venas de los miembros inferiores de pequeño y mediano calibre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaVénula -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaVénula">
+        <rdfs:label xml:lang="en">Venule</rdfs:label>
+        <rdfs:label xml:lang="es">Vénula</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaPequeñoCalibre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneTunica"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">pequeñas venas que conducen la sangre desde los capilares hacia las venas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaVénulaColectora -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaVénulaColectora">
+        <rdfs:label xml:lang="en">Collection Venule</rdfs:label>
+        <rdfs:label xml:lang="es">Vénula Colectora</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaVénula"/>
+        <rdfs:comment xml:lang="es">30 - 50 micrones, donde podemos observar una capa muscular continua con gran cantidad de glóbulos rojos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaVénulaMuscular -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaVénulaMuscular">
+        <rdfs:label xml:lang="en">Muscle Venule</rdfs:label>
+        <rdfs:label xml:lang="es">Vénula Muscular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaVénula"/>
+        <rdfs:comment xml:lang="es">50 - 100 micrones, aquí ya podemos encontrar claramente fibras musculares lisas formando parte de la pared</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVenaVénulaPostcapilar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVenaVénulaPostcapilar">
+        <rdfs:label xml:lang="en">Postcapillary Venule</rdfs:label>
+        <rdfs:label xml:lang="es">Vénula Postcapilar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoVenaVénula"/>
+        <rdfs:comment xml:lang="es">son muy porosas, mas parecidas a capilares que venas en este estado, y los fluidos y células sanguíneas atraviesan fácilmente sus paredes desde el torrente sanguíneo. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#OrganoVisceral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#OrganoVisceral">
+        <rdfs:label xml:lang="en">Visceral Organ</rdfs:label>
+        <rdfs:label xml:lang="es">Órgano Visceral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#OrganoTipo"/>
+        <rdfs:comment xml:lang="es">Órganos macizos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#Region -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#Region">
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="es">Región</rdfs:label>
+        <rdfs:comment xml:lang="es">zonas específicas delimitadas por ciertas estructuras.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#RegionAtrioDerecho -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#RegionAtrioDerecho">
+        <rdfs:label xml:lang="en">Right Atrium</rdfs:label>
+        <rdfs:label xml:lang="es">Atrio Derecho</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Region"/>
+        <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte superior y derecha de éste</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#RegionAtrioIzquierdo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#RegionAtrioIzquierdo">
+        <rdfs:label xml:lang="en">Left Atrium</rdfs:label>
+        <rdfs:label xml:lang="es">Atrio Izquierdo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Region"/>
+        <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte superior e izquierdo de éste</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#RegionVentriculoDerecho -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#RegionVentriculoDerecho">
+        <rdfs:label xml:lang="en">Right Ventricle</rdfs:label>
+        <rdfs:label xml:lang="es">Ventriculo Derecho</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Region"/>
+        <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte inferior y derecha de éste</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#RegionVentriculoIzquierdo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#RegionVentriculoIzquierdo">
+        <rdfs:label xml:lang="en">Left Ventricle</rdfs:label>
+        <rdfs:label xml:lang="es">Ventriculo Izquierdo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Region"/>
+        <rdfs:comment xml:lang="es">una de las cuatro cavidades del corazón, localizada en la parte inferior e izquireda de éste</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#Sector -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#Sector">
+        <rdfs:label xml:lang="en">Sector</rdfs:label>
+        <rdfs:label xml:lang="es">Sector</rdfs:label>
+        <rdfs:comment xml:lang="es">Sectores anatómicos: partes que se encuentran en una región anatómica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorCuerdasTendinosas -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorCuerdasTendinosas">
+        <rdfs:label xml:lang="en">Chordae Tendineae</rdfs:label>
+        <rdfs:label xml:lang="es">Cuerdas Tendinosas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Sector"/>
+        <rdfs:comment xml:lang="es">Fibras tendinosas con forma de salvavidas que atraviesan el corazón y conectan las cúspides de las válvulas AV con el músculo papilar.</rdfs:comment>
+        <sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D002815"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorMusculo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorMusculo">
+        <rdfs:label xml:lang="en">Muscle Sector</rdfs:label>
+        <rdfs:label xml:lang="es">Músculo Sector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Sector"/>
+        <rdfs:comment xml:lang="es">Contiene musculos papilared, pectinados y trabéculas cárneas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorMusculoPapilar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorMusculoPapilar">
+        <rdfs:label xml:lang="en">Papillary Muscle</rdfs:label>
+        <rdfs:label xml:lang="es">Músculo Papilar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorMusculo"/>
+        <rdfs:comment xml:lang="es">proyecciones musculares con forma de cono,sus bases se unen a la pared ventricular,por lo tanto los músculos papilares se encuentran situados en en el interior de los ventrículos cardíacos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorMusculoPectinado -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorMusculoPectinado">
+        <rdfs:label xml:lang="en">Pectinate Muscle</rdfs:label>
+        <rdfs:label xml:lang="es">Músculo Pectinado</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorMusculo"/>
+        <rdfs:comment xml:lang="es">Musculo pectinado que conforma los sectores del corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas">
+        <rdfs:label xml:lang="en">Trabeculae Carneae</rdfs:label>
+        <rdfs:label xml:lang="es">Trabéculas Cárneas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorMusculo"/>
+        <rdfs:comment xml:lang="es">bandas y fascículos musculares irregulares que se proyectan desde la pared muscular de los ventrículos cardíacos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón">
+        <rdfs:label xml:lang="en">Leading System of Heart</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema Conducente del Corazón</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Sector"/>
+        <rdfs:comment xml:lang="es">permite que el impulso generado en el nodo sinusal (SA) sea propagado y estimule al miocardio (el músculo cardíaco), causando su contracción</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje">
+        <rdfs:label xml:lang="en">Purkinje Fibers</rdfs:label>
+        <rdfs:label xml:lang="es">Fibra de Purkinje</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"/>
+        <rdfs:comment xml:lang="es">forman parte del músculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis">
+        <rdfs:label xml:lang="en"> Bundle of His</rdfs:label>
+        <rdfs:label xml:lang="es">Haz de His</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"/>
+        <rdfs:comment xml:lang="es"> formación intracardíaca consistente en un fino cordón de naturaleza muscular, de aproximadamente 1 cm de longitud, que forma parte del sistema de conducción del corazón, por medio del cual la excitación de las aurículas se trasmite a los ventrículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular">
+        <rdfs:label xml:lang="en">Atrioventricular Node</rdfs:label>
+        <rdfs:label xml:lang="es">Nodo Atrioventricular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"/>
+        <rdfs:comment xml:lang="es">está formado por células cardíacas especializadas en la formación y la conducción de impulsos eléctricos cardíacos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal">
+        <rdfs:label xml:lang="en">Sinusal Node</rdfs:label>
+        <rdfs:label xml:lang="es">Nodo Sinusal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"/>
+        <rdfs:comment xml:lang="es">es una de las estructuras que compone el sistema de conducción del corazón; recibe el nombre común de «marcapasos del corazón»</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorValvula -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorValvula">
+        <rdfs:label xml:lang="en">Valve</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Sector"/>
+        <rdfs:comment xml:lang="es">Mecanismo que regula el flujo de la comunicación entre dos partes del sistema</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorValvulaAortica -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorValvulaAortica">
+        <rdfs:label xml:lang="en">Aortic Valve</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula Aortica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/MA_0000087</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">se encuentran en los conductos de salida de las cuatro cavidades del corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorValvulaMitral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorValvulaMitral">
+        <rdfs:label xml:lang="en">Left Atrioventricular Valve</rdfs:label>
+        <rdfs:label xml:lang="en">Mitral Valve</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula Atrioventricular Izquierda</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula Mitral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneValvula"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/MA_0000088</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las cuatro cavidades del corazón.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorValvulaPulmonar -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorValvulaPulmonar">
+        <rdfs:label xml:lang="en">Pulmonary Valve</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula Pulmonar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/MA_0000089</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las 4 cavidades del corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SectorValvulaTricuspide -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SectorValvulaTricuspide">
+        <rdfs:label xml:lang="en">Right Atrioventricular Valve</rdfs:label>
+        <rdfs:label xml:lang="en">Tricuspid Valve</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula Tricuspide</rdfs:label>
+        <rdfs:label xml:lang="es">Válvula atrioventricular Derecha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneValvula"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#SectorValvula"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/MA_0000090</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">Se encuentran en los conductos de salida de las cuatro cavidades del corazón,</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#Sistema -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#Sistema">
+        <rdfs:label xml:lang="en">System</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrgano"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#Organo"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="es">conjunto de órganos y estructuras que trabajan en conjunto para cumplir algunas funciones especificas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SistemaCirculatorio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SistemaCirculatorio">
+        <rdfs:label xml:lang="en">Circulatory System</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema Circulatorio</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrgano"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/Organ#Organo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#OrganoTubular"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrganoTipo"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/Organ#OrganoTubular"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Sistema"/>
+        <rdfs:comment xml:lang="es"> estructura anatómica compuesta por el sistema cardiovascular  y por el sistema linfático </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SistemaCirculatorioLinfatico -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SistemaCirculatorioLinfatico">
+        <rdfs:label xml:lang="en">Lymphatic System</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema Linfatico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo"/>
+        <rdfs:comment xml:lang="es">conduce la linfa unidireccionalmente hacia el corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#SistemaCirculatorioSanguineo -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#SistemaCirculatorioSanguineo">
+        <rdfs:label xml:lang="en">Cardiovascular System</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema Sanguineo</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteria"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilar"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVena"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/def/Organ#tieneOrgano"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#SistemaCirculatorio"/>
+        <rdfs:comment xml:lang="es">conduce y hace circular la sangre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#Tunica -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#Tunica">
+        <rdfs:label xml:lang="en">Layer</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica</rdfs:label>
+        <rdfs:comment xml:lang="es">Capas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazón -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazón">
+        <rdfs:label xml:lang="en">Heart&apos;s Layers</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica del corazón</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <rdfs:comment xml:lang="es">Capas que componen el corazón</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónEndocardio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónEndocardio">
+        <rdfs:label xml:lang="en">Endocardium</rdfs:label>
+        <rdfs:label xml:lang="es">Endocardio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónSubendocardio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónEndotelio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/Organ#estaCompuestoDe"/>
+                <owl:onClass rdf:resource="https://w3id.org/def/Organ#TunicaCorazónSubendotelio"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Membrana que recubre el interior de las cavidades del corazón.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónEndotelio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónEndotelio">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:comment xml:lang="es">Capa endotelial</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónMiocardio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónMiocardio">
+        <rdfs:label xml:lang="en">Myocardial</rdfs:label>
+        <rdfs:label xml:lang="es">Miocardio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/MA_0000080</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">Parte muscular del corazón.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónPericardio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónPericardio">
+        <rdfs:label xml:lang="en">Pericardium</rdfs:label>
+        <rdfs:label xml:lang="es">Pericardio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:comment xml:lang="es">Membrana fibrosa doble que envuelve el corazón y cuya capa interior está revestida de una membrana serosa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónPericardioParietal -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónPericardioParietal">
+        <rdfs:label xml:lang="en">Parietal Pericardium</rdfs:label>
+        <rdfs:label xml:lang="es">Pericardio Parietal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazónPericardio"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/Organ#TunicaCorazónPericardioVisceral"/>
+        <rdfs:comment xml:lang="es">Cara interna del pericardio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónPericardioVisceral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónPericardioVisceral">
+        <rdfs:label xml:lang="en">Visceral Pericardium</rdfs:label>
+        <rdfs:label xml:lang="es">Pericardio Visceral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazónPericardio"/>
+        <rdfs:comment xml:lang="es">Cara externa del pericardio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónSubendocardio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónSubendocardio">
+        <rdfs:label xml:lang="en">Subendocardial</rdfs:label>
+        <rdfs:label xml:lang="es">Subendocardio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:comment xml:lang="es">corresponde al tejido conectivo laxo que se ubica bajo el subendotelio del endocardio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónSubendotelio -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaCorazónSubendotelio">
+        <rdfs:label xml:lang="en">Subendotelio</rdfs:label>
+        <rdfs:label xml:lang="es">Subendotelio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaCorazón"/>
+        <rdfs:comment xml:lang="es"> tejido conjuntivo delicado con células ramificadas dispuestas en los inter-espacios del tejido.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaVasosSanguineos -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineos">
+        <rdfs:label xml:lang="en">Blood Vessels&apos; Layers</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica Vasos Sanguineos</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#Tunica"/>
+        <rdfs:comment xml:lang="es">Capas que componen los vasos sanguineos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia">
+        <rdfs:label xml:lang="en">Adventitia Layer</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica Adventicia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineos"/>
+        <rdfs:comment xml:lang="es">túnica externa</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaVasosSanguineosIntima -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima">
+        <rdfs:label xml:lang="en">Inner Layer</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica Intima</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineos"/>
+        <rdfs:comment xml:lang="es">túnica interna</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaVasosSanguineosMedia -->
+
+    <owl:Class rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia">
+        <rdfs:label xml:lang="en">Media Layer</rdfs:label>
+        <rdfs:label xml:lang="es">Túnica Media</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/Organ#TunicaVasosSanguineos"/>
+        <rdfs:comment xml:lang="es">túnica media</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/Organ#Arteriola -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/Organ#Arteriola"/>
+    
+
+
+    <!-- https://w3id.org/def/Organ#Corazón -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/Organ#Corazón">
+        <rdf:type rdf:resource="https://w3id.org/def/Organ#OrganoCorazon"/>
+        <tieneTunica rdf:resource="https://w3id.org/def/Organ#TunicaCorazónEndocardio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/Organ#TunicaCorazónEndocardio -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/Organ#TunicaCorazónEndocardio">
+        <rdf:type rdf:resource="https://w3id.org/def/Organ#TunicaCorazónEndocardio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#RegionAtrioDerecho"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#RegionAtrioIzquierdo"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#RegionVentriculoDerecho"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#RegionVentriculoIzquierdo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorValvulaAortica"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorValvulaMitral"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorValvulaPulmonar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorValvulaTricuspide"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularRadial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularTibial"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilarContinuo"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilarDiscontinuo"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilarFenestrado"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilarSinusoide"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosIntima"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#TunicaVasosSanguineosMedia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorCuerdasTendinosas"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorMusculo"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorValvula"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaAorta"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaGranCalibre"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaVena"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVenaVénula"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoArteria"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCapilar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoCorazon"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#OrganoVena"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorMusculoPapilar"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorMusculoPectinado"/>
+            <rdf:Description rdf:about="https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
