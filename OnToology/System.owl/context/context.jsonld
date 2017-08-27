@@ -12,6 +12,9 @@
     "Celula" : {
       "@id" : "https://w3id.org/def/Tissue#Celula"
     },
+    "license" : {
+      "@id" : "https://w3id.org/def/Tissue#license"
+    },
     "OrganoArteriaArteriola" : {
       "@id" : "https://w3id.org/def/Organ#OrganoArteriaArteriola"
     },
@@ -74,6 +77,9 @@
     "TejidoMuscularEstriadoCardiaco" : {
       "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"
     },
+    "creator" : {
+      "@id" : "https://w3id.org/def/Tissue#creator"
+    },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
@@ -133,8 +139,14 @@
       "@id" : "https://w3id.org/def/System#amplitud",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "date" : {
+      "@id" : "https://w3id.org/def/Organ#date"
+    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "sameAs" : {
+      "@id" : "https://w3id.org/def/Tissue#sameAs"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"

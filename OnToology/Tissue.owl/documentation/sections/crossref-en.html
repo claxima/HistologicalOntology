@@ -1,7 +1,7 @@
-<h2>4. Cross reference for Tissue classes, properties and dataproperties</h2>
+<h2  id="crossreference" class="list">Cross reference for Tissue classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Tissue.
 <div id="classes">
-   <h2>Classes</h2>
+   <h3 id="classes" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#MorfologiaAdenomeroAcinar"
@@ -819,14 +819,14 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo.</span>
             <a href="#tieneCelula" title="https://w3id.org/def/Tissue#tieneCelula">has Cell</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#CelulaFibroblasto" title="https://w3id.org/def/Tissue#CelulaFibroblasto">Fibroblast</a>
+            <a href="#CelulaAdipocito" title="https://w3id.org/def/Tissue#CelulaAdipocito">Adipocyte</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
             <a href="#tieneCelula" title="https://w3id.org/def/Tissue#tieneCelula">has Cell</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#CelulaAdipocito" title="https://w3id.org/def/Tissue#CelulaAdipocito">Adipocyte</a>
+            <a href="#CelulaFibroblasto" title="https://w3id.org/def/Tissue#CelulaFibroblasto">Fibroblast</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1107,18 +1107,6 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo.</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#TieneNumeroCapas" title="https://w3id.org/def/Tissue#TieneNumeroCapas">has Number of Layers</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">exactly</span> 1 <a href="#NumeroCapas" title="https://w3id.org/def/Tissue#NumeroCapas">Number of Layers</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#TieneMorfologia" title="https://w3id.org/def/Tissue#TieneMorfologia">has Morphology</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">exactly</span> 1 <a href="#MorfologiaCelular" title="https://w3id.org/def/Tissue#MorfologiaCelular">Cell Morphology</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <a href="#esCercanoA" title="https://w3id.org/def/Tissue#esCercanoA">in Near to</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
@@ -1130,6 +1118,18 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo.</span>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
             <a href="#CelulaEndotelial" title="https://w3id.org/def/Tissue#CelulaEndotelial">Endothelial</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#TieneMorfologia" title="https://w3id.org/def/Tissue#TieneMorfologia">has Morphology</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#MorfologiaCelular" title="https://w3id.org/def/Tissue#MorfologiaCelular">Cell Morphology</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#TieneNumeroCapas" title="https://w3id.org/def/Tissue#TieneNumeroCapas">has Number of Layers</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#NumeroCapas" title="https://w3id.org/def/Tissue#NumeroCapas">Number of Layers</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
@@ -1701,15 +1701,15 @@ Las fibras de colágeno son las más frecuentes en el tejido conjuntivo.</span>
             <a href="#tieneCelula" title="https://w3id.org/def/Tissue#tieneCelula">has Cell</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#CelulaMiocitoLiso" title="https://w3id.org/def/Tissue#CelulaMiocitoLiso">Smooth Muscle</a>
+            <a href="#CelulaFibraDePurkinje"
+               title="https://w3id.org/def/Tissue#CelulaFibraDePurkinje">Purkinje Fiber</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
             <a href="#tieneCelula" title="https://w3id.org/def/Tissue#tieneCelula">has Cell</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#CelulaFibraDePurkinje"
-               title="https://w3id.org/def/Tissue#CelulaFibraDePurkinje">Purkinje Fiber</a>
+            <a href="#CelulaMiocitoLiso" title="https://w3id.org/def/Tissue#CelulaMiocitoLiso">Smooth Muscle</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -2515,7 +2515,7 @@ adenómero</span>
       </dl>
    </div>
 </div><div id="objectproperties">
-   <h2>Object Properties</h2>
+   <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#tieneCelula" title="https://w3id.org/def/Tissue#tieneCelula">has Cell</a>
@@ -2825,7 +2825,7 @@ adenómero</span>
       </div>
    </div>
 </div><div id="dataproperties">
-   <h2>Data Properties</h2>
+   <h3 id="dataproperties" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#Cercano" title="https://w3id.org/def/Tissue#Cercano">Near</a>
@@ -2855,4 +2855,12 @@ adenómero</span>
          </dl>
       </div>
    </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
 </div>

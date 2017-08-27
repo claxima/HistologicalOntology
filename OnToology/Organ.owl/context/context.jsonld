@@ -36,6 +36,9 @@
     "SectorMusculoPectinado" : {
       "@id" : "https://w3id.org/def/Organ#SectorMusculoPectinado"
     },
+    "license" : {
+      "@id" : "https://w3id.org/def/Organ#license"
+    },
     "TunicaCorazónPericardioParietal" : {
       "@id" : "https://w3id.org/def/Organ#TunicaCorazónPericardioParietal"
     },
@@ -171,6 +174,9 @@
       "@id" : "https://w3id.org/def/Organ#esRegionDe",
       "@type" : "@id"
     },
+    "creator" : {
+      "@id" : "https://w3id.org/def/Organ#creator"
+    },
     "SectorSistemaConducenteDelCorazónHazDeHis" : {
       "@id" : "https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis"
     },
@@ -273,6 +279,9 @@
     "OrganoArteriaElasticaAorta" : {
       "@id" : "https://w3id.org/def/Organ#OrganoArteriaElasticaAorta"
     },
+    "date" : {
+      "@id" : "https://w3id.org/def/Organ#date"
+    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
@@ -292,6 +301,9 @@
     },
     "TunicaVasosSanguineos" : {
       "@id" : "https://w3id.org/def/Organ#TunicaVasosSanguineos"
+    },
+    "sameAs" : {
+      "@id" : "https://w3id.org/def/Organ#sameAs"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"

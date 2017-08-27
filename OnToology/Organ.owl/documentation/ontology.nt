@@ -1,0 +1,1474 @@
+<https://w3id.org/def/Organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/Organ> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/Organ/1.0> .
+<https://w3id.org/def/Organ> <http://www.w3.org/2000/01/rdf-schema#comment> "Inicialmente la ontolog\u00EDa fue creada en Espa\u00F1ol y posteriormente se incluyo una versi\u00F3n en Ingles. La ontologia esta disponible en http://bioportal.bioontology.org/ontologies/HO, la documentaci\u00F3n en https://w3id.org/def/System  y los archivos OWL en https://github.com/claxima/HistologicalOntology." .
+<https://w3id.org/def/Organ> <http://www.w3.org/2000/01/rdf-schema#comment> "Initially, the ontology was created in Spanish and later on a version in English was included. We left the histological ontology publicly available at http://bioportal.bioontology.org/ontologies/HO, the documentation at https://w3id.org/def/System and the OWL files at https://github.com/claxima/HistologicalOntology." .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#creator> "PhD. Claudia Mazo (Universidad del Valle, Universidad de Le\u00F3n)" .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#creator> "PhD. Enrique Alegre (Universidad de Le\u00F3n)" .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#creator> "PhD. Maria Trujillo (Universidad del Valle)" .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#creator> "PhD. Oscar Corcho (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)" .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#date> "25/11/2016"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/def/Organ> <https://w3id.org/def/Organ#license> <http://creativecommons.org/licenses/by/4.0/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#creator
+<https://w3id.org/def/Organ#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/Organ#date
+<https://w3id.org/def/Organ#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/Organ#license
+<https://w3id.org/def/Organ#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/Organ#sameAs
+<https://w3id.org/def/Organ#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#esCercanoA
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esCercanoA> .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#comment> "Cercania de \u00F3rganos"@es .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#label> "es cercano a "@es .
+<https://w3id.org/def/Organ#esCercanoA> <http://www.w3.org/2000/01/rdf-schema#label> "is near to"@en .
+# 
+# https://w3id.org/def/Organ#esComponenteDe
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Componente de"@es .
+<https://w3id.org/def/Organ#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Component of"@en .
+# 
+# https://w3id.org/def/Organ#esOrganoDe
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#tieneOrgano> .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#label> "es \u00D3rgano de"@es .
+<https://w3id.org/def/Organ#esOrganoDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Organ of"@en .
+# 
+# https://w3id.org/def/Organ#esOrganoTipo
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "es \u00D3rgano Tipo"@es .
+<https://w3id.org/def/Organ#esOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "is Type Organ"@en .
+# 
+# https://w3id.org/def/Organ#esRegionDe
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#tieneRegion> .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#OrganoCorazon> .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Regi\u00F3n de"@es .
+<https://w3id.org/def/Organ#esRegionDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Region of"@en .
+# 
+# https://w3id.org/def/Organ#esSector
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#tieneSector> .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#OrganoCorazon> .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2000/01/rdf-schema#label> "es Sector de"@es .
+<https://w3id.org/def/Organ#esSector> <http://www.w3.org/2000/01/rdf-schema#label> "is Sector of"@en .
+# 
+# https://w3id.org/def/Organ#esTipoDe
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Tipo de"@es .
+<https://w3id.org/def/Organ#esTipoDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Type of"@en .
+# 
+# https://w3id.org/def/Organ#esTunicaDe
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/2000/01/rdf-schema#label> "es T\u00FAnica de"@es .
+<https://w3id.org/def/Organ#esTunicaDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Layer of"@en .
+# 
+# https://w3id.org/def/Organ#esValvulaDe
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/2000/01/rdf-schema#label> "es V\u00E1lvula de"@es .
+<https://w3id.org/def/Organ#esValvulaDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Valve of"@en .
+# 
+# https://w3id.org/def/Organ#estaCompuestoDe
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esComponenteDe> .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2000/01/rdf-schema#label> "esta Compuesto de"@es .
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Composed of"@en .
+# 
+# https://w3id.org/def/Organ#tieneOrgano
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/2000/01/rdf-schema#label> "has Organ"@en .
+<https://w3id.org/def/Organ#tieneOrgano> <http://www.w3.org/2000/01/rdf-schema#label> "tiene \u00D3rgano"@es .
+# 
+# https://w3id.org/def/Organ#tieneOrganoTipo
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esOrganoTipo> .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "has Type Organ"@en .
+<https://w3id.org/def/Organ#tieneOrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "tiene \u00D3rgano Tipo"@es .
+# 
+# https://w3id.org/def/Organ#tieneRegion
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#OrganoCorazon> .
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has Region"@en .
+<https://w3id.org/def/Organ#tieneRegion> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Regi\u00F3n"@es .
+# 
+# https://w3id.org/def/Organ#tieneSector
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#OrganoCorazon> .
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/2000/01/rdf-schema#label> "has Sector"@en .
+<https://w3id.org/def/Organ#tieneSector> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Sector"@es .
+# 
+# https://w3id.org/def/Organ#tieneTipo
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esTipoDe> .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2000/01/rdf-schema#label> "has Type"@en .
+<https://w3id.org/def/Organ#tieneTipo> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Tipo"@es .
+# 
+# https://w3id.org/def/Organ#tieneTunica
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esTunicaDe> .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2000/01/rdf-schema#label> "has Layer"@en .
+<https://w3id.org/def/Organ#tieneTunica> <http://www.w3.org/2000/01/rdf-schema#label> "tiene T\u00FAnica"@es .
+# 
+# https://w3id.org/def/Organ#tieneValvula
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/Organ#esValvulaDe> .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2000/01/rdf-schema#label> "has Valve"@en .
+<https://w3id.org/def/Organ#tieneValvula> <http://www.w3.org/2000/01/rdf-schema#label> "tiene V\u00E1lvula"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#espacio
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/2000/01/rdf-schema#comment> "Espacios"@en .
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio"@es .
+<https://w3id.org/def/Organ#espacio> <http://www.w3.org/2000/01/rdf-schema#label> "Space"@en .
+# 
+# https://w3id.org/def/Organ#grosor
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/2000/01/rdf-schema#comment> "Ancho, grosor"@es .
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/2000/01/rdf-schema#label> "Grosor"@es .
+<https://w3id.org/def/Organ#grosor> <http://www.w3.org/2000/01/rdf-schema#label> "thickness"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#Organo
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esOrganoDe> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTipo> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/2000/01/rdf-schema#comment> "es una agrupaci\u00F3n de diversos tejidos que forman una unidad estructural encargada del cumplimiento de una funci\u00F3n determinada"@es .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/2000/01/rdf-schema#label> "Organ"@en .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/2000/01/rdf-schema#label> "\u00D3rgano"@es .
+# 
+# https://w3id.org/def/Organ#OrganoArteria
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#grosor> .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> "Gruesa" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esCercanoA> .
+_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoVena> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esOrganoDe> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTipo> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTubular> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#comment> "cada uno de los vasos que llevan la sangre oxigenada (exceptuando las arterias pulmonares) desde el coraz\u00F3n hacia las dem\u00E1s partes del cuerpo."@es .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria"@es .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#label> "Artery"@en .
+<https://w3id.org/def/Organ#OrganoArteria> <https://w3id.org/def/Organ#sameAs> <http://purl.bioontology.org/ontology/MESH/D001158> .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaArteriola
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteria> .
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/2000/01/rdf-schema#comment> " vaso sangu\u00EDneo de di\u00E1metro menor de 40 o 100 micras"@es .
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/2000/01/rdf-schema#label> "Arteriola"@es .
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/2000/01/rdf-schema#label> "Arteriole"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElastica
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteria> .
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/2000/01/rdf-schema#comment> "Conforman las grandes arterias"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria El\u00E1stica"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/2000/01/rdf-schema#label> "Elastic Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElasticaAorta
+<https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> <http://www.w3.org/2000/01/rdf-schema#comment> "principal arteria del cuerpo humano"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> <http://www.w3.org/2000/01/rdf-schema#label> "Aorta Artery"@en .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Aorta"@es .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun
+<https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> <http://www.w3.org/2000/01/rdf-schema#comment> "situadas a ambos lados de la regi\u00F3n cervical anterior en el cuello"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Carotida Com\u00FAn"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> <http://www.w3.org/2000/01/rdf-schema#label> "Common Carotid Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral
+<https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> <http://www.w3.org/2000/01/rdf-schema#comment> " gran arteria del muslo."@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Femoral"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> <http://www.w3.org/2000/01/rdf-schema#label> "Femoral Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca
+<https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> <http://www.w3.org/2000/01/rdf-schema#comment> "se originan de la bifurcaci\u00F3n de la aorta. Las arterias se extienden hacia abajo"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Iliaca"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> <http://www.w3.org/2000/01/rdf-schema#label> "Iliac Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia
+<https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> <http://www.w3.org/2000/01/rdf-schema#comment> " arteria del miembro superior."@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Subclavia"@es .
+<https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> <http://www.w3.org/2000/01/rdf-schema#label> "Subclavian Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscular
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteria> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#comment> "Constituyen las arterias peque\u00F1as y medianas del organismo."@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Muscular"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "Muscular Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar
+<https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> <http://www.w3.org/2000/01/rdf-schema#comment> " constituye la continuaci\u00F3n de la subclavia"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Axilar"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> <http://www.w3.org/2000/01/rdf-schema#label> "Axillary Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial
+<https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> <http://www.w3.org/2000/01/rdf-schema#comment> "arteria del brazo"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Braquial"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> <http://www.w3.org/2000/01/rdf-schema#label> "Brachial Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> <http://www.w3.org/2000/01/rdf-schema#comment> "Situada en la mano"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Palmar"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> <http://www.w3.org/2000/01/rdf-schema#label> "Palmar Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> <http://www.w3.org/2000/01/rdf-schema#comment> "Situada en el pie"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Plantar"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> <http://www.w3.org/2000/01/rdf-schema#label> "Plantar Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> <http://www.w3.org/2000/01/rdf-schema#comment> "prolongaci\u00F3n de la arteria femoral"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Popitlea"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> <http://www.w3.org/2000/01/rdf-schema#label> "Popliteal Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularRadial
+<https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> <http://www.w3.org/2000/01/rdf-schema#comment> " arteria del antebrazo que se origina como rama de bifurcaci\u00F3n externa de la arteria humeral"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Radial"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> <http://www.w3.org/2000/01/rdf-schema#label> "Radial Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularTibial
+<https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> <http://www.w3.org/2000/01/rdf-schema#comment> "Se origina como rama de bifurcaci\u00F3n anterior de la arteria popl\u00EDtea"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Tibial"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> <http://www.w3.org/2000/01/rdf-schema#label> "Tibial Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar
+<https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> <http://www.w3.org/2000/01/rdf-schema#comment> "se origina como rama terminal interna de la arteria humeral."@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> <http://www.w3.org/2000/01/rdf-schema#label> "Arteria Ulnar"@es .
+<https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> <http://www.w3.org/2000/01/rdf-schema#label> "Ulnar Artery"@en .
+# 
+# https://w3id.org/def/Organ#OrganoCapilar
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esOrganoDe> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTipo> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTubular> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineos> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#comment> " vasos sangu\u00EDneos de menor di\u00E1metro"@es .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#label> "Capilar"@es .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#label> "Capillary"@en .
+<https://w3id.org/def/Organ#OrganoCapilar> <https://w3id.org/def/Organ#sameAs> <http://purl.bioontology.org/ontology/MESH/D002196> .
+# 
+# https://w3id.org/def/Organ#OrganoCapilarContinuo
+<https://w3id.org/def/Organ#OrganoCapilarContinuo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilarContinuo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoCapilar> .
+<https://w3id.org/def/Organ#OrganoCapilarContinuo> <http://www.w3.org/2000/01/rdf-schema#comment> "no poseen poros ni menestras en sus paredes. Se encuentran en los tejidos muscular, nervioso y conectivo"@es .
+<https://w3id.org/def/Organ#OrganoCapilarContinuo> <http://www.w3.org/2000/01/rdf-schema#label> "Capilar Continuo"@es .
+<https://w3id.org/def/Organ#OrganoCapilarContinuo> <http://www.w3.org/2000/01/rdf-schema#label> "Continuous Capillary"@en .
+# 
+# https://w3id.org/def/Organ#OrganoCapilarDiscontinuo
+<https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoCapilar> .
+<https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> <http://www.w3.org/2000/01/rdf-schema#comment> "presencia de fenestraciones sin diafragmas"@es .
+<https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> <http://www.w3.org/2000/01/rdf-schema#label> "Capilar Discontinuo"@es .
+<https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> <http://www.w3.org/2000/01/rdf-schema#label> "Discontinuous Capilar"@en .
+# 
+# https://w3id.org/def/Organ#OrganoCapilarFenestrado
+<https://w3id.org/def/Organ#OrganoCapilarFenestrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilarFenestrado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoCapilar> .
+<https://w3id.org/def/Organ#OrganoCapilarFenestrado> <http://www.w3.org/2000/01/rdf-schema#comment> "poseen poros (fenestras) en sus paredes que estan recubiertos por diafragma de poros. "@es .
+<https://w3id.org/def/Organ#OrganoCapilarFenestrado> <http://www.w3.org/2000/01/rdf-schema#label> "Capilar Fenestrado"@es .
+<https://w3id.org/def/Organ#OrganoCapilarFenestrado> <http://www.w3.org/2000/01/rdf-schema#label> "Fenestrated Capillary"@en .
+# 
+# https://w3id.org/def/Organ#OrganoCapilarSinusoide
+<https://w3id.org/def/Organ#OrganoCapilarSinusoide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilarSinusoide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoCapilar> .
+<https://w3id.org/def/Organ#OrganoCapilarSinusoide> <http://www.w3.org/2000/01/rdf-schema#comment> " pueden tener c\u00E9lulas endoteliales y l\u00E1mina basal discontinuas e incluyen muchas menestras grandes sin diafragmas, que aumentan el intercambio entre la sangre y el tejido."@es .
+<https://w3id.org/def/Organ#OrganoCapilarSinusoide> <http://www.w3.org/2000/01/rdf-schema#label> "Capilar Sinusoide"@es .
+<https://w3id.org/def/Organ#OrganoCapilarSinusoide> <http://www.w3.org/2000/01/rdf-schema#label> "Sinusoide Capillary"@en .
+# 
+# https://w3id.org/def/Organ#OrganoCorazon
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esOrganoDe> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneRegion> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#RegionAtrioDerecho> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneRegion> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#RegionAtrioIzquierdo> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneRegion> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#RegionVentriculoDerecho> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneRegion> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#RegionVentriculoIzquierdo> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorCuerdasTendinosas> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorMusculoPapilar> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorMusculoPectinado> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvulaAortica> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvulaMitral> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvulaPulmonar> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvulaTricuspide> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneSector> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "4"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#comment> " \u00F3rgano muscular principal del aparato circulatorio"@es .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#label> "Coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#label> "Heart"@en .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12727"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Organ#OrganoCorazon> <https://w3id.org/def/Organ#sameAs> <http://purl.bioontology.org/ontology/MESH/D006321> .
+# 
+# https://w3id.org/def/Organ#OrganoTipo
+<https://w3id.org/def/Organ#OrganoTipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoTipo> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene Tubular y Visceral"@es .
+<https://w3id.org/def/Organ#OrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de \u00D3rgano"@es .
+<https://w3id.org/def/Organ#OrganoTipo> <http://www.w3.org/2000/01/rdf-schema#label> "Type of Organ"@en .
+# 
+# https://w3id.org/def/Organ#OrganoTubular
+<https://w3id.org/def/Organ#OrganoTubular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoTubular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoTubular> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00D3rganos huecos"@es .
+<https://w3id.org/def/Organ#OrganoTubular> <http://www.w3.org/2000/01/rdf-schema#label> "Tubular Organ"@en .
+<https://w3id.org/def/Organ#OrganoTubular> <http://www.w3.org/2000/01/rdf-schema#label> "\u00D3rgano Tubular"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVena
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#grosor> .
+_:genid47 <http://www.w3.org/2002/07/owl#hasValue> "Gruesa" .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#grosor> .
+_:genid52 <http://www.w3.org/2002/07/owl#hasValue> "Delgada" .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#esOrganoDe> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTipo> .
+_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTubular> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#comment> "vaso sangu\u00EDneo que conduce la sangre desde los capilares hasta el coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#label> "Vein"@en .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#label> "Vena"@es .
+<https://w3id.org/def/Organ#OrganoVena> <https://w3id.org/def/Organ#sameAs> <http://purl.bioontology.org/ontology/MESH/D014680> .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibre
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVena> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#comment> "aquellas venas cercanas al coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Large Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Vena de Gran Calibre"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> <http://www.w3.org/2000/01/rdf-schema#comment> "retorna sangre de los miembros inferiores, los \u00F3rganos del abdomen y la pelvis hasta la aur\u00EDcula derecha del coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> <http://www.w3.org/2000/01/rdf-schema#label> "Inferior Vein Cava"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Cava Inferior"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> <http://www.w3.org/2000/01/rdf-schema#comment> " recoge la sangre de la cabeza, el cuello, los miembros superiores y el t\u00F3rax"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> <http://www.w3.org/2000/01/rdf-schema#label> "Superior Vein Cava"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Cava Superior"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> <http://www.w3.org/2000/01/rdf-schema#comment> "es la continuaci\u00F3n de la vena popl\u00EDtea"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> <http://www.w3.org/2000/01/rdf-schema#label> "Femoral Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Femoral"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> <http://www.w3.org/2000/01/rdf-schema#comment> "prolongaci\u00F3n de la vena femoral"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> <http://www.w3.org/2000/01/rdf-schema#label> "Iliac Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Iliaca"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> <http://www.w3.org/2000/01/rdf-schema#comment> "es la continuaci\u00F3n de la vena axilar"@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> <http://www.w3.org/2000/01/rdf-schema#label> "Subclavian Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Subclavia"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> <http://www.w3.org/2000/01/rdf-schema#comment> " Drena la sangre que proviene en su mayor parte del cuero cabelludo y de la cara."@es .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> <http://www.w3.org/2000/01/rdf-schema#label> "Jugular Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Yugular"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibre
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaVena> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> <http://www.w3.org/2000/01/rdf-schema#comment> "desde 1 hasta 10 mm"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Caliber Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Mediano Calibre"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> <http://www.w3.org/2000/01/rdf-schema#comment> " conduce la sangre de la parte lateral del t\u00F3rax, axila y miembro superior hacia el coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> <http://www.w3.org/2000/01/rdf-schema#label> "Axillary Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Axilar"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> <http://www.w3.org/2000/01/rdf-schema#comment> "son venas comitantes de la arteria braquial en el brazo."@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> <http://www.w3.org/2000/01/rdf-schema#label> "Brachial Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Braquial"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> <http://www.w3.org/2000/01/rdf-schema#comment> "Recog\u00E9n sangre de la mano"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> <http://www.w3.org/2000/01/rdf-schema#label> "Palmar Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Palmar"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> <http://www.w3.org/2000/01/rdf-schema#comment> "Recog\u00E9n sangre del pie"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> <http://www.w3.org/2000/01/rdf-schema#label> "Plantar Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Plantar"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> <http://www.w3.org/2000/01/rdf-schema#comment> " pasa por detr\u00E1s del rombo popl\u00EDteo"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> <http://www.w3.org/2000/01/rdf-schema#label> "Popliteal Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Popitlea"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> <http://www.w3.org/2000/01/rdf-schema#comment> "su trayectoria a trav\u00E9s del dorso de la mano y la cara lateral del antebrazo"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> <http://www.w3.org/2000/01/rdf-schema#label> "Radial Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Radial"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> <http://www.w3.org/2000/01/rdf-schema#comment> "se origina como rama de bifurcaci\u00F3n anterior de la arteria popl\u00EDtea"@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> <http://www.w3.org/2000/01/rdf-schema#label> "Tibial Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Tibial"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> <http://www.w3.org/2000/01/rdf-schema#comment> "Vena ulnar ."@es .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> <http://www.w3.org/2000/01/rdf-schema#label> "Ulnar Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Ulnar"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaPequeñoCalibre
+<https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaVena> .
+<https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> <http://www.w3.org/2000/01/rdf-schema#comment> "Venas de menor diametro"@es .
+<https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Small Caliber Vein"@en .
+<https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> <http://www.w3.org/2000/01/rdf-schema#label> "Vena Peque\u00F1o Calibre"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaVena
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVena> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid61 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid63 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#comment> "Las venas de los miembros inferiores de peque\u00F1o y mediano calibre"@es .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#label> "Vein Organ"@en .
+<https://w3id.org/def/Organ#OrganoVenaVena> <http://www.w3.org/2000/01/rdf-schema#label> "\u00D3rgano Vena"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaVénula
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaPeque\u00F1oCalibre> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid65 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneTunica> .
+_:genid66 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#comment> "peque\u00F1as venas que conducen la sangre desde los capilares hacia las venas."@es .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#label> "Venule"@en .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E9nula"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaVénulaColectora
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaColectora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaColectora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaColectora> <http://www.w3.org/2000/01/rdf-schema#comment> "30 - 50 micrones, donde podemos observar una capa muscular continua con gran cantidad de gl\u00F3bulos rojos"@es .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaColectora> <http://www.w3.org/2000/01/rdf-schema#label> "Collection Venule"@en .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaColectora> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E9nula Colectora"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaVénulaMuscular
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaMuscular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaMuscular> <http://www.w3.org/2000/01/rdf-schema#comment> "50 - 100 micrones, aqu\u00ED ya podemos encontrar claramente fibras musculares lisas formando parte de la pared"@es .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle Venule"@en .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaMuscular> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E9nula Muscular"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVenaVénulaPostcapilar
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaPostcapilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaPostcapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaPostcapilar> <http://www.w3.org/2000/01/rdf-schema#comment> "son muy porosas, mas parecidas a capilares que venas en este estado, y los fluidos y c\u00E9lulas sangu\u00EDneas atraviesan f\u00E1cilmente sus paredes desde el torrente sangu\u00EDneo. "@es .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaPostcapilar> <http://www.w3.org/2000/01/rdf-schema#label> "Postcapillary Venule"@en .
+<https://w3id.org/def/Organ#OrganoVenaV\u00E9nulaPostcapilar> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E9nula Postcapilar"@es .
+# 
+# https://w3id.org/def/Organ#OrganoVisceral
+<https://w3id.org/def/Organ#OrganoVisceral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVisceral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoTipo> .
+<https://w3id.org/def/Organ#OrganoVisceral> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00D3rganos macizos"@es .
+<https://w3id.org/def/Organ#OrganoVisceral> <http://www.w3.org/2000/01/rdf-schema#label> "Visceral Organ"@en .
+<https://w3id.org/def/Organ#OrganoVisceral> <http://www.w3.org/2000/01/rdf-schema#label> "\u00D3rgano Visceral"@es .
+# 
+# https://w3id.org/def/Organ#Region
+<https://w3id.org/def/Organ#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "zonas espec\u00EDficas delimitadas por ciertas estructuras."@es .
+<https://w3id.org/def/Organ#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<https://w3id.org/def/Organ#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Regi\u00F3n"@es .
+# 
+# https://w3id.org/def/Organ#RegionAtrioDerecho
+<https://w3id.org/def/Organ#RegionAtrioDerecho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#RegionAtrioDerecho> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#RegionAtrioDerecho> <http://www.w3.org/2000/01/rdf-schema#comment> "una de las cuatro cavidades del coraz\u00F3n, localizada en la parte superior y derecha de \u00E9ste"@es .
+<https://w3id.org/def/Organ#RegionAtrioDerecho> <http://www.w3.org/2000/01/rdf-schema#label> "Atrio Derecho"@es .
+<https://w3id.org/def/Organ#RegionAtrioDerecho> <http://www.w3.org/2000/01/rdf-schema#label> "Right Atrium"@en .
+# 
+# https://w3id.org/def/Organ#RegionAtrioIzquierdo
+<https://w3id.org/def/Organ#RegionAtrioIzquierdo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#RegionAtrioIzquierdo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#RegionAtrioIzquierdo> <http://www.w3.org/2000/01/rdf-schema#comment> "una de las cuatro cavidades del coraz\u00F3n, localizada en la parte superior e izquierdo de \u00E9ste"@es .
+<https://w3id.org/def/Organ#RegionAtrioIzquierdo> <http://www.w3.org/2000/01/rdf-schema#label> "Atrio Izquierdo"@es .
+<https://w3id.org/def/Organ#RegionAtrioIzquierdo> <http://www.w3.org/2000/01/rdf-schema#label> "Left Atrium"@en .
+# 
+# https://w3id.org/def/Organ#RegionVentriculoDerecho
+<https://w3id.org/def/Organ#RegionVentriculoDerecho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#RegionVentriculoDerecho> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#RegionVentriculoDerecho> <http://www.w3.org/2000/01/rdf-schema#comment> "una de las cuatro cavidades del coraz\u00F3n, localizada en la parte inferior y derecha de \u00E9ste"@es .
+<https://w3id.org/def/Organ#RegionVentriculoDerecho> <http://www.w3.org/2000/01/rdf-schema#label> "Right Ventricle"@en .
+<https://w3id.org/def/Organ#RegionVentriculoDerecho> <http://www.w3.org/2000/01/rdf-schema#label> "Ventriculo Derecho"@es .
+# 
+# https://w3id.org/def/Organ#RegionVentriculoIzquierdo
+<https://w3id.org/def/Organ#RegionVentriculoIzquierdo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#RegionVentriculoIzquierdo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Region> .
+<https://w3id.org/def/Organ#RegionVentriculoIzquierdo> <http://www.w3.org/2000/01/rdf-schema#comment> "una de las cuatro cavidades del coraz\u00F3n, localizada en la parte inferior e izquireda de \u00E9ste"@es .
+<https://w3id.org/def/Organ#RegionVentriculoIzquierdo> <http://www.w3.org/2000/01/rdf-schema#label> "Left Ventricle"@en .
+<https://w3id.org/def/Organ#RegionVentriculoIzquierdo> <http://www.w3.org/2000/01/rdf-schema#label> "Ventriculo Izquierdo"@es .
+# 
+# https://w3id.org/def/Organ#Sector
+<https://w3id.org/def/Organ#Sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#Sector> <http://www.w3.org/2000/01/rdf-schema#comment> "Sectores anat\u00F3micos: partes que se encuentran en una regi\u00F3n anat\u00F3mica."@es .
+<https://w3id.org/def/Organ#Sector> <http://www.w3.org/2000/01/rdf-schema#label> "Sector"@en .
+<https://w3id.org/def/Organ#Sector> <http://www.w3.org/2000/01/rdf-schema#label> "Sector"@es .
+# 
+# https://w3id.org/def/Organ#SectorCuerdasTendinosas
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <http://www.w3.org/2000/01/rdf-schema#comment> "Fibras tendinosas con forma de salvavidas que atraviesan el coraz\u00F3n y conectan las c\u00FAspides de las v\u00E1lvulas AV con el m\u00FAsculo papilar."@es .
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <http://www.w3.org/2000/01/rdf-schema#label> "Chordae Tendineae"@en .
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <http://www.w3.org/2000/01/rdf-schema#label> "Cuerdas Tendinosas"@es .
+<https://w3id.org/def/Organ#SectorCuerdasTendinosas> <https://w3id.org/def/Organ#sameAs> <http://purl.bioontology.org/ontology/MESH/D002815> .
+# 
+# https://w3id.org/def/Organ#SectorMusculo
+<https://w3id.org/def/Organ#SectorMusculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorMusculo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#SectorMusculo> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene musculos papilared, pectinados y trab\u00E9culas c\u00E1rneas"@es .
+<https://w3id.org/def/Organ#SectorMusculo> <http://www.w3.org/2000/01/rdf-schema#label> "Muscle Sector"@en .
+<https://w3id.org/def/Organ#SectorMusculo> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00FAsculo Sector"@es .
+# 
+# https://w3id.org/def/Organ#SectorMusculoPapilar
+<https://w3id.org/def/Organ#SectorMusculoPapilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorMusculoPapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorMusculo> .
+<https://w3id.org/def/Organ#SectorMusculoPapilar> <http://www.w3.org/2000/01/rdf-schema#comment> "proyecciones musculares con forma de cono,sus bases se unen a la pared ventricular,por lo tanto los m\u00FAsculos papilares se encuentran situados en en el interior de los ventr\u00EDculos card\u00EDacos."@es .
+<https://w3id.org/def/Organ#SectorMusculoPapilar> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00FAsculo Papilar"@es .
+<https://w3id.org/def/Organ#SectorMusculoPapilar> <http://www.w3.org/2000/01/rdf-schema#label> "Papillary Muscle"@en .
+# 
+# https://w3id.org/def/Organ#SectorMusculoPectinado
+<https://w3id.org/def/Organ#SectorMusculoPectinado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorMusculoPectinado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorMusculo> .
+<https://w3id.org/def/Organ#SectorMusculoPectinado> <http://www.w3.org/2000/01/rdf-schema#comment> "Musculo pectinado que conforma los sectores del coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#SectorMusculoPectinado> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00FAsculo Pectinado"@es .
+<https://w3id.org/def/Organ#SectorMusculoPectinado> <http://www.w3.org/2000/01/rdf-schema#label> "Pectinate Muscle"@en .
+# 
+# https://w3id.org/def/Organ#SectorMusculoTrabéculasCárneas
+<https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorMusculo> .
+<https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> <http://www.w3.org/2000/01/rdf-schema#comment> "bandas y fasc\u00EDculos musculares irregulares que se proyectan desde la pared muscular de los ventr\u00EDculos card\u00EDacos"@es .
+<https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> <http://www.w3.org/2000/01/rdf-schema#label> "Trabeculae Carneae"@en .
+<https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> <http://www.w3.org/2000/01/rdf-schema#label> "Trab\u00E9culas C\u00E1rneas"@es .
+# 
+# https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazón
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#comment> "permite que el impulso generado en el nodo sinusal (SA) sea propagado y estimule al miocardio (el m\u00FAsculo card\u00EDaco), causando su contracci\u00F3n"@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Leading System of Heart"@en .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Conducente del Coraz\u00F3n"@es .
+# 
+# https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónFibraDePurkinje
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#comment> "forman parte del m\u00FAsculo cardiaco y se localizan en las paredes ventriculares, por debajo del endocardio."@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra de Purkinje"@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> <http://www.w3.org/2000/01/rdf-schema#label> "Purkinje Fibers"@en .
+# 
+# https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónHazDeHis
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> <http://www.w3.org/2000/01/rdf-schema#comment> " formaci\u00F3n intracard\u00EDaca consistente en un fino cord\u00F3n de naturaleza muscular, de aproximadamente 1 cm de longitud, que forma parte del sistema de conducci\u00F3n del coraz\u00F3n, por medio del cual la excitaci\u00F3n de las aur\u00EDculas se trasmite a los ventr\u00EDculos."@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> <http://www.w3.org/2000/01/rdf-schema#label> " Bundle of His"@en .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> <http://www.w3.org/2000/01/rdf-schema#label> "Haz de His"@es .
+# 
+# https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoAtrioVentricular
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> <http://www.w3.org/2000/01/rdf-schema#comment> "est\u00E1 formado por c\u00E9lulas card\u00EDacas especializadas en la formaci\u00F3n y la conducci\u00F3n de impulsos el\u00E9ctricos card\u00EDacos"@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> <http://www.w3.org/2000/01/rdf-schema#label> "Atrioventricular Node"@en .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> <http://www.w3.org/2000/01/rdf-schema#label> "Nodo Atrioventricular"@es .
+# 
+# https://w3id.org/def/Organ#SectorSistemaConducenteDelCorazónNodoSinusal
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> <http://www.w3.org/2000/01/rdf-schema#comment> "es una de las estructuras que compone el sistema de conducci\u00F3n del coraz\u00F3n; recibe el nombre com\u00FAn de \u00ABmarcapasos del coraz\u00F3n\u00BB"@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> <http://www.w3.org/2000/01/rdf-schema#label> "Nodo Sinusal"@es .
+<https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> <http://www.w3.org/2000/01/rdf-schema#label> "Sinusal Node"@en .
+# 
+# https://w3id.org/def/Organ#SectorValvula
+<https://w3id.org/def/Organ#SectorValvula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorValvula> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Sector> .
+<https://w3id.org/def/Organ#SectorValvula> <http://www.w3.org/2000/01/rdf-schema#comment> "Mecanismo que regula el flujo de la comunicaci\u00F3n entre dos partes del sistema"@es .
+<https://w3id.org/def/Organ#SectorValvula> <http://www.w3.org/2000/01/rdf-schema#label> "Valve"@en .
+<https://w3id.org/def/Organ#SectorValvula> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula"@es .
+# 
+# https://w3id.org/def/Organ#SectorValvulaAortica
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/2000/01/rdf-schema#comment> "se encuentran en los conductos de salida de las cuatro cavidades del coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/2000/01/rdf-schema#label> "Aortic Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula Aortica"@es .
+<https://w3id.org/def/Organ#SectorValvulaAortica> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000087"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/def/Organ#SectorValvulaMitral
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneValvula> .
+_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#comment> "Se encuentran en los conductos de salida de las cuatro cavidades del coraz\u00F3n."@es .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#label> "Left Atrioventricular Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#label> "Mitral Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula Atrioventricular Izquierda"@es .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula Mitral"@es .
+<https://w3id.org/def/Organ#SectorValvulaMitral> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000088"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/def/Organ#SectorValvulaPulmonar
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/2000/01/rdf-schema#comment> "Se encuentran en los conductos de salida de las 4 cavidades del coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/2000/01/rdf-schema#label> "Pulmonary Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula Pulmonar"@es .
+<https://w3id.org/def/Organ#SectorValvulaPulmonar> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000089"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/def/Organ#SectorValvulaTricuspide
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneValvula> .
+_:genid68 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#SectorValvula> .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#comment> "Se encuentran en los conductos de salida de las cuatro cavidades del coraz\u00F3n,"@es .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#label> "Right Atrioventricular Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#label> "Tricuspid Valve"@en .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula Tricuspide"@es .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00E1lvula atrioventricular Derecha"@es .
+<https://w3id.org/def/Organ#SectorValvulaTricuspide> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000090"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/def/Organ#Sistema
+<https://w3id.org/def/Organ#Sistema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#Sistema> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrgano> .
+_:genid69 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#Sistema> <http://www.w3.org/2000/01/rdf-schema#comment> "conjunto de \u00F3rganos y estructuras que trabajan en conjunto para cumplir algunas funciones especificas"@es .
+<https://w3id.org/def/Organ#Sistema> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema"@es .
+<https://w3id.org/def/Organ#Sistema> <http://www.w3.org/2000/01/rdf-schema#label> "System"@en .
+# 
+# https://w3id.org/def/Organ#SistemaCirculatorio
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrgano> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid71 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/Organ#OrganoTubular> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrganoTipo> .
+_:genid72 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#OrganoTubular> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Sistema> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2000/01/rdf-schema#comment> " estructura anat\u00F3mica compuesta por el sistema cardiovascular  y por el sistema linf\u00E1tico "@es .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2000/01/rdf-schema#label> "Circulatory System"@en .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Circulatorio"@es .
+# 
+# https://w3id.org/def/Organ#SistemaCirculatorioLinfatico
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> .
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/2000/01/rdf-schema#comment> "conduce la linfa unidireccionalmente hacia el coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/2000/01/rdf-schema#label> "Lymphatic System"@en .
+<https://w3id.org/def/Organ#SistemaCirculatorioLinfatico> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Linfatico"@es .
+# 
+# https://w3id.org/def/Organ#SistemaCirculatorioSanguineo
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteria> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilar> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVena> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#tieneOrgano> .
+_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/Organ#OrganoCorazon> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#SistemaCirculatorio> .
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/2000/01/rdf-schema#comment> "conduce y hace circular la sangre"@es .
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiovascular System"@en .
+<https://w3id.org/def/Organ#SistemaCirculatorioSanguineo> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema Sanguineo"@es .
+# 
+# https://w3id.org/def/Organ#Tunica
+<https://w3id.org/def/Organ#Tunica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#Tunica> <http://www.w3.org/2000/01/rdf-schema#comment> "Capas"@es .
+<https://w3id.org/def/Organ#Tunica> <http://www.w3.org/2000/01/rdf-schema#label> "Layer"@en .
+<https://w3id.org/def/Organ#Tunica> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica"@es .
+# 
+# https://w3id.org/def/Organ#TunicaCorazón
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#comment> "Capas que componen el coraz\u00F3n"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Heart's Layers"@en .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica del coraz\u00F3n"@es .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónEndocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndotelio> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid80 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid81 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónEndotelio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndotelio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndotelio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndotelio> <http://www.w3.org/2000/01/rdf-schema#comment> "Capa endotelial"@es .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónMiocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte muscular del coraz\u00F3n."@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Miocardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Myocardial"@en .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/MA_0000080"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónPericardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#comment> "Membrana fibrosa doble que envuelve el coraz\u00F3n y cuya capa interior est\u00E1 revestida de una membrana serosa."@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#label> "Pericardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#label> "Pericardium"@en .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónPericardioParietal
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/2000/01/rdf-schema#comment> "Cara interna del pericardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/2000/01/rdf-schema#label> "Parietal Pericardium"@en .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioParietal> <http://www.w3.org/2000/01/rdf-schema#label> "Pericardio Parietal"@es .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónPericardioVisceral
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> <http://www.w3.org/2000/01/rdf-schema#comment> "Cara externa del pericardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> <http://www.w3.org/2000/01/rdf-schema#label> "Pericardio Visceral"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardioVisceral> <http://www.w3.org/2000/01/rdf-schema#label> "Visceral Pericardium"@en .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónSubendocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/2000/01/rdf-schema#comment> "corresponde al tejido conectivo laxo que se ubica bajo el subendotelio del endocardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Subendocardial"@en .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Subendocardio"@es .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónSubendotelio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaCoraz\u00F3n> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/2000/01/rdf-schema#comment> " tejido conjuntivo delicado con c\u00E9lulas ramificadas dispuestas en los inter-espacios del tejido."@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/2000/01/rdf-schema#label> "Subendotelio"@en .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/2000/01/rdf-schema#label> "Subendotelio"@es .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineos
+<https://w3id.org/def/Organ#TunicaVasosSanguineos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineos> <http://www.w3.org/2000/01/rdf-schema#comment> "Capas que componen los vasos sanguineos"@es .
+<https://w3id.org/def/Organ#TunicaVasosSanguineos> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Vessels' Layers"@en .
+<https://w3id.org/def/Organ#TunicaVasosSanguineos> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica Vasos Sanguineos"@es .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaVasosSanguineos> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/2000/01/rdf-schema#comment> "t\u00FAnica externa"@es .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/2000/01/rdf-schema#label> "Adventitia Layer"@en .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica Adventicia"@es .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosIntima
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaVasosSanguineos> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#comment> "t\u00FAnica interna"@es .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#label> "Inner Layer"@en .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica Intima"@es .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosMedia
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#TunicaVasosSanguineos> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "t\u00FAnica media"@es .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#label> "Media Layer"@en .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00FAnica Media"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#Arteriola
+<https://w3id.org/def/Organ#Arteriola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/Organ#Corazón
+<https://w3id.org/def/Organ#Coraz\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/Organ#Coraz\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/Organ#OrganoCorazon> .
+<https://w3id.org/def/Organ#Coraz\u00F3n> <https://w3id.org/def/Organ#tieneTunica> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónEndocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#comment> "Membrana que recubre el interior de las cavidades del coraz\u00F3n."@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Endocardio"@es .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nEndocardio> <http://www.w3.org/2000/01/rdf-schema#label> "Endocardium"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid82 <http://www.w3.org/2002/07/owl#members> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteria> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilar> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCorazon> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVena> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid87 <http://www.w3.org/2002/07/owl#members> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElasticaAorta> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElasticaCarotidaComun> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElasticaFemoral> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElasticaIliaca> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElasticaSubclavia> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid93 <http://www.w3.org/2002/07/owl#members> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularAxilar> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularBraquial> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularPalmar> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularPlantar> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularPopitlea> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularRadial> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularTibial> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscularUlnar> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid102 <http://www.w3.org/2002/07/owl#members> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilarContinuo> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilarDiscontinuo> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilarFenestrado> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoCapilarSinusoide> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid107 <http://www.w3.org/2002/07/owl#members> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibre> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaVena> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaV\u00E9nula> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid111 <http://www.w3.org/2002/07/owl#members> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaInferior> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreCavaSuperior> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreFemoral> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreIliaca> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreSubclavia> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaGranCalibreYugular> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid118 <http://www.w3.org/2002/07/owl#members> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibreAxilar> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibreBraquial> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePalmar> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePlantar> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibrePopitlea> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibreRadial> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibreTibial> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoVenaMedianoCalibreUlnar> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid127 <http://www.w3.org/2002/07/owl#members> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#RegionAtrioDerecho> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#RegionAtrioIzquierdo> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#RegionVentriculoDerecho> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#RegionVentriculoIzquierdo> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid132 <http://www.w3.org/2002/07/owl#members> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorCuerdasTendinosas> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorMusculo> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3n> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorValvula> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid137 <http://www.w3.org/2002/07/owl#members> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorMusculoPapilar> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorMusculoPectinado> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorMusculoTrab\u00E9culasC\u00E1rneas> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid141 <http://www.w3.org/2002/07/owl#members> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nFibraDePurkinje> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nHazDeHis> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoAtrioVentricular> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorSistemaConducenteDelCoraz\u00F3nNodoSinusal> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid146 <http://www.w3.org/2002/07/owl#members> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorValvulaAortica> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorValvulaMitral> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorValvulaPulmonar> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#SectorValvulaTricuspide> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid151 <http://www.w3.org/2002/07/owl#members> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
