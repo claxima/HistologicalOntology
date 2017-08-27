@@ -24,6 +24,9 @@ The data directory contains the created datasets:
 * CompetencyQuestions.pdf --- the document which contain all competency questions
 * SPARQL_Queries.pdf --- the document with the SPARQL queries to evaluate the ontology
 
+Comments
+
+Initially, the ontology was created in Spanish and later on a version in English was included.
 
 Contact Us
 
