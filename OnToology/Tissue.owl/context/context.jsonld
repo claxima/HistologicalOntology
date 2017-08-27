@@ -31,6 +31,9 @@
     "TejidoNerviosoComponenteNeurona" : {
       "@id" : "https://w3id.org/def/Tissue#TejidoNerviosoComponenteNeurona"
     },
+    "license" : {
+      "@id" : "https://w3id.org/def/Tissue#license"
+    },
     "MorfologiaFolicular" : {
       "@id" : "https://w3id.org/def/Tissue#MorfologiaFolicular"
     },
@@ -128,6 +131,9 @@
     "TejidoMuscularEstriadoCardiaco" : {
       "@id" : "https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco"
     },
+    "creator" : {
+      "@id" : "https://w3id.org/def/Tissue#creator"
+    },
     "MorfologiaAdenomeroAcinar" : {
       "@id" : "https://w3id.org/def/Tissue#MorfologiaAdenomeroAcinar"
     },
@@ -222,6 +228,9 @@
     "MecanismoDeSecrecionHolocrina" : {
       "@id" : "https://w3id.org/def/Tissue#MecanismoDeSecrecionHolocrina"
     },
+    "date" : {
+      "@id" : "https://w3id.org/def/Tissue#date"
+    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
@@ -248,6 +257,9 @@
     },
     "TejidoEpitelialGlandular" : {
       "@id" : "https://w3id.org/def/Tissue#TejidoEpitelialGlandular"
+    },
+    "sameAs" : {
+      "@id" : "https://w3id.org/def/Tissue#sameAs"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"

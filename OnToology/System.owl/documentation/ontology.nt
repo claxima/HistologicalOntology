@@ -1,0 +1,408 @@
+<https://w3id.org/def/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/System> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/System/1.0> .
+<https://w3id.org/def/System> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/Organ> .
+<https://w3id.org/def/System> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/Tissue> .
+<https://w3id.org/def/System> <http://www.w3.org/2000/01/rdf-schema#comment> "Inicialmente la ontolog\u00EDa fue creada en Espa\u00F1ol y posteriormente se incluyo una versi\u00F3n en Ingles. La ontologia esta disponible en http://bioportal.bioontology.org/ontologies/HO, la documentaci\u00F3n en https://w3id.org/def/System  y los archivos OWL en https://github.com/claxima/HistologicalOntology." .
+<https://w3id.org/def/System> <http://www.w3.org/2000/01/rdf-schema#comment> "Initially, the ontology was created in Spanish and later on a version in English was included. We left the histological ontology publicly available at http://bioportal.bioontology.org/ontologies/HO, the documentation at https://w3id.org/def/System and the OWL files at https://github.com/claxima/HistologicalOntology." .
+<https://w3id.org/def/System> <https://w3id.org/def/Organ#creator> "PhD. Enrique Alegre (Universidad de Le\u00F3n)" .
+<https://w3id.org/def/System> <https://w3id.org/def/Organ#creator> "PhD. Maria Trujillo (Universidad del Valle)" .
+<https://w3id.org/def/System> <https://w3id.org/def/Organ#creator> "PhD. Oscar Corcho (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)" .
+<https://w3id.org/def/System> <https://w3id.org/def/Organ#date> "25/11/2016"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/def/System> <https://w3id.org/def/Tissue#creator> "PhD. Claudia Mazo (Universidad del Valle, Universidad de Le\u00F3n) " .
+<https://w3id.org/def/System> <https://w3id.org/def/Tissue#license> <http://creativecommons.org/licenses/by/4.0/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/Tissue#sameAs
+<https://w3id.org/def/Tissue#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/Organ#estaCompuestoDe
+<https://w3id.org/def/Organ#estaCompuestoDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/System#esComponenteDe
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/System#estaCompuestoPor> .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/Organ#Tunica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/Tissue#Tejido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Componente de"@es .
+<https://w3id.org/def/System#esComponenteDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Component of"@en .
+# 
+# https://w3id.org/def/System#esEstructuraDe
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/System#tieneEstructura> .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/Organ#Organo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/Tissue#Estructura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2000/01/rdf-schema#label> "es Estructura de"@es .
+<https://w3id.org/def/System#esEstructuraDe> <http://www.w3.org/2000/01/rdf-schema#label> "is Structure of"@en .
+# 
+# https://w3id.org/def/System#esRegionDeLuzDe
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+<https://w3id.org/def/Tissue#EstructuraRegionLuz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Es regi\u00F3n de luz de un \u00F3rgano"@en .
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/2000/01/rdf-schema#label> "es regi\u00F3n de luz"@es .
+<https://w3id.org/def/System#esRegionDeLuzDe> <http://www.w3.org/2000/01/rdf-schema#label> "is light region of"@en .
+# 
+# https://w3id.org/def/System#estaCompuestoPor
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Tejido> .
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Tunica> .
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/2000/01/rdf-schema#label> "esta Compuesto por"@es .
+<https://w3id.org/def/System#estaCompuestoPor> <http://www.w3.org/2000/01/rdf-schema#label> "is Composed by"@en .
+# 
+# https://w3id.org/def/System#tieneEstructura
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#Estructura> .
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n de composici\u00F3n o formaci\u00F3n"@es .
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/2000/01/rdf-schema#label> "has Structure"@en .
+<https://w3id.org/def/System#tieneEstructura> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Estructura"@es .
+# 
+# https://w3id.org/def/System#tieneRegionDeLuz
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/System#esRegionDeLuzDe> .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Organ#Organo> .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2000/01/rdf-schema#comment> "tiene regi\u00F3n de luz"@es .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2000/01/rdf-schema#label> "has light region"@en .
+<https://w3id.org/def/System#tieneRegionDeLuz> <http://www.w3.org/2000/01/rdf-schema#label> "tiene Regi\u00F3n de Luz"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/System#amplitud
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/2000/01/rdf-schema#comment> "Amplitud de una regi\u00F3n de luz"@es .
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/2000/01/rdf-schema#label> "Amplitud"@es .
+<https://w3id.org/def/System#amplitud> <http://www.w3.org/2000/01/rdf-schema#label> "Amplitude"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#Organo
+# 
+# https://w3id.org/def/Organ#OrganoArteria
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneRegionDeLuz> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#amplitud> .
+_:genid4 <http://www.w3.org/2002/07/owl#hasValue> "Angosta" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error7> .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaArteriola
+<https://w3id.org/def/Organ#OrganoArteriaArteriola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaElastica
+<https://w3id.org/def/Organ#OrganoArteriaElastica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#OrganoArteriaMuscular
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraFibraElastica> .
+<https://w3id.org/def/Tissue#EstructuraFibraElastica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> .
+<https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoArteriaMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraVasoVasorum> .
+<https://w3id.org/def/Tissue#EstructuraVasoVasorum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#OrganoCapilar
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
+<https://w3id.org/def/Organ#OrganoCapilar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error5> .
+# 
+# https://w3id.org/def/Organ#OrganoCorazon
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<https://w3id.org/def/Organ#OrganoCorazon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/Tissue#EstructuraSenoCoronario> .
+<https://w3id.org/def/Tissue#EstructuraSenoCoronario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#OrganoVena
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneRegionDeLuz> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Tissue#EstructuraRegionLuz> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#amplitud> .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> "Amplia" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error6> .
+<https://w3id.org/def/Organ#OrganoVena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraVasoVasorum> .
+# 
+# https://w3id.org/def/Organ#OrganoVenaGranCalibre
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#OrganoVenaGranCalibre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#tieneEstructura> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraVasoVasorum> .
+# 
+# https://w3id.org/def/Organ#Tunica
+# 
+# https://w3id.org/def/Organ#TunicaCorazónMiocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nMiocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> .
+<https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónPericardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoLaxo> .
+<https://w3id.org/def/Tissue#ConectivoLaxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nPericardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> .
+<https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónSubendocardio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendocardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoDensoIrregular> .
+<https://w3id.org/def/Tissue#ConectivoDensoIrregular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/Organ#TunicaCorazónSubendotelio
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaCoraz\u00F3nSubendotelio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoLaxo> .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosAdventicia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoLaxo> .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosIntima
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#ConectivoLaxo> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosIntima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/System#esComponenteDe> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple> .
+# 
+# https://w3id.org/def/Organ#TunicaVasosSanguineosMedia
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraFibraColagena> .
+<https://w3id.org/def/Tissue#EstructuraFibraColagena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#EstructuraFibraElastica> .
+<https://w3id.org/def/Organ#TunicaVasosSanguineosMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/Organ#estaCompuestoDe> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Tissue#TejidoMuscularLiso> .
+<https://w3id.org/def/Tissue#TejidoMuscularLiso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/System#CelulaFibraMuscular
+<https://w3id.org/def/System#CelulaFibraMuscular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#CelulaFibraMuscular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Tissue#Celula> .
+<https://w3id.org/def/Tissue#Celula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/System#OrganoArteriaMetarteriola
+<https://w3id.org/def/System#OrganoArteriaMetarteriola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#OrganoArteriaMetarteriola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#OrganoArteria> .
+# 
+# https://w3id.org/def/System#OrganoConducto
+<https://w3id.org/def/System#OrganoConducto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/System#OrganoConducto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<https://w3id.org/def/System#OrganoConducto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
+<https://w3id.org/def/System#OrganoConducto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/Organ#Organo> .
+# 
+# https://w3id.org/def/Tissue#Celula
+# 
+# https://w3id.org/def/Tissue#ConectivoDensoIrregular
+# 
+# https://w3id.org/def/Tissue#ConectivoLaxo
+# 
+# https://w3id.org/def/Tissue#Estructura
+# 
+# https://w3id.org/def/Tissue#EstructuraFibraColagena
+# 
+# https://w3id.org/def/Tissue#EstructuraFibraElastica
+# 
+# https://w3id.org/def/Tissue#EstructuraLaminaElasticaExterna
+# 
+# https://w3id.org/def/Tissue#EstructuraLaminaElasticaInterna
+# 
+# https://w3id.org/def/Tissue#EstructuraRegionLuz
+# 
+# https://w3id.org/def/Tissue#EstructuraSenoCoronario
+# 
+# https://w3id.org/def/Tissue#EstructuraVasoVasorum
+# 
+# https://w3id.org/def/Tissue#Tejido
+# 
+# https://w3id.org/def/Tissue#TejidoEpitelialPlanoSimple
+# 
+# https://w3id.org/def/Tissue#TejidoMuscularEstriadoCardiaco
+# 
+# https://w3id.org/def/Tissue#TejidoMuscularLiso
+# 
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/def/Organ#SistemaCirculatorio> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12686"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/def/Organ#SistemaCirculatorio> <https://w3id.org/def/Tissue#sameAs> <http://purl.bioontology.org/ontology/MESH/D002319> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid37 <http://www.w3.org/2002/07/owl#members> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaArteriola> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaElastica> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/Organ#OrganoArteriaMuscular> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/System#OrganoArteriaMetarteriola> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
